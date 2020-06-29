@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run Xunit tests
-      run:  dotnet test ./BikeDataProject.App.sln --configuration Release
+      run:  dotnet test ./test/BikeDataProject.App.Test/BikeDataProject.App.Test.csproj --configuration Release
         
   Android:
     runs-on: macos-latest
