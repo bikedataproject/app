@@ -1,25 +1,14 @@
-name: CI on Push and Pull Request
+name: Android/iOS
 
 on: [push, pull_request]
 
 jobs:
-  Practice:
+  Tests:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-    - name: Show what in there
-      run: |
-        ls
-    - name: Show what it's inside
-      run: |
-        cd ..
-        ls
+    - name: Run Xunit tests
+      run:  dotnet test ./BikeDataProject.App.sln --configuration Release
         
   Android:
     runs-on: macos-latest
