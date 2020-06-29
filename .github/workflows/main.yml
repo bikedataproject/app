@@ -1,15 +1,10 @@
 name: CI on Push and Pull Request
 
-on: 
-  push:
-    tags:
-    - '*'
+on: [push, pull_request]
 
 jobs:
   Practice:
-
     runs-on: macos-latest
-    
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
@@ -25,28 +20,22 @@ jobs:
       run: |
         cd ..
         ls
+        
   Android:
-
     runs-on: macos-latest
-    
     steps:
-
     - uses: actions/checkout@v1
-      
     - name: Android
       run: |
         cd .
         nuget restore
         cd src/BikeDataProject.App.Android
         msbuild BikeDataProject.App.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
+        
   iOS:
-
     runs-on: macos-latest
-    
     steps:
-
     - uses: actions/checkout@v1
-      
     - name: iOS
       run: |
         cd .
