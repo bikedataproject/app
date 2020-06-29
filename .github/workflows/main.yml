@@ -1,0 +1,54 @@
+name: CI on Push and Pull Request
+
+on: 
+  push:
+    tags:
+    - '*'
+
+jobs:
+  Practice:
+
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+    - name: Show what in there
+      run: |
+        ls
+    - name: Show what it's inside
+      run: |
+        cd ..
+        ls
+  Android:
+
+    runs-on: macos-latest
+    
+    steps:
+
+    - uses: actions/checkout@v1
+      
+    - name: Android
+      run: |
+        cd .
+        nuget restore
+        cd src/BikeDataProject.App.Android
+        msbuild BikeDataProject.App.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
+  iOS:
+
+    runs-on: macos-latest
+    
+    steps:
+
+    - uses: actions/checkout@v1
+      
+    - name: iOS
+      run: |
+        cd .
+        nuget restore
+        msbuild src/BikeDataProject.App.iOS/BikeDataProject.App.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
