@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BikeDataProject.App.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -12,7 +13,15 @@ namespace BikeDataProject.App.ViewModels
 
         public MainPageViewModel()
         {
+            StartTrackingCommand = new Command(async () =>
+            {
+                var trackingVM = new TrackingPageViewModel();
+                var trackingPage = new TrackingPage();
+                trackingPage.BindingContext = trackingVM;
 
+                await Application.Current.MainPage.Navigation.PushAsync(trackingPage);
+
+            });
         }
 
         public Command StartTrackingCommand { get; }
