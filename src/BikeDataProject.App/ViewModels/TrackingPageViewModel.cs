@@ -25,9 +25,10 @@ namespace BikeDataProject.App.ViewModels
 
             Device.StartTimer(TimeSpan.FromMilliseconds(5000), () =>
             {
+
                 Task.Factory.StartNew(async () =>
                 {
-                    var location = await GetLocation();
+                    var location = await MainThread.InvokeOnMainThreadAsync<Location>(GetLocation);
                     if (location != null)
                     {
 
