@@ -6,6 +6,14 @@
              mc:Ignorable="d"
              x:Class="BikeDataProject.App.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style x:Key="buttonTracking" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="CornerRadius" Value="45"/>
+                <Setter Property="Margin" Value="0,30,0,0"/>
+                <Setter Property="Font" Value="SF Pro Text"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
