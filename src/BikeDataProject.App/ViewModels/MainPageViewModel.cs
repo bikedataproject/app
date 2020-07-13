@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace BikeDataProject.App.ViewModels
 {
@@ -15,15 +17,49 @@ namespace BikeDataProject.App.ViewModels
         {
             StartTrackingCommand = new Command(async () =>
             {
-                var trackingVM = new TrackingPageViewModel();
-                var trackingPage = new TrackingPage();
-                trackingPage.BindingContext = trackingVM;
-
-                await Application.Current.MainPage.Navigation.PushAsync(trackingPage);
+                if (await GetLocationPermissions())
+                {
+                    await NavigateToTrackingPage();
+                }
+                else
+                {
+                    await RequestLocationPermission();
+                    if (await GetLocationPermissions())
+                    {
+                        await NavigateToTrackingPage();
+                    }
+                }
 
             });
         }
 
         public Command StartTrackingCommand { get; }
+
+        public async Task<Boolean> GetLocationPermissions()
+        {
+            var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
+            if (status == PermissionStatus.Granted)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public async Task NavigateToTrackingPage()
+        {
+            var trackingVM = new TrackingPageViewModel();
+            var trackingPage = new TrackingPage();
+            trackingPage.BindingContext = trackingVM;
+
+            await Application.Current.MainPage.Navigation.PushAsync(trackingPage);
+        }
+
+        public async Task RequestLocationPermission()
+        {
+            await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+        }
     }
 }
