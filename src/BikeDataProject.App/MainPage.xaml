@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:BikeDataProject.App.ViewModels"
              mc:Ignorable="d"
-             x:Class="BikeDataProject.App.MainPage">
+             x:Class="BikeDataProject.App.MainPage"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.BindingContext>
         <local:MainPageViewModel/>
     </ContentPage.BindingContext>
