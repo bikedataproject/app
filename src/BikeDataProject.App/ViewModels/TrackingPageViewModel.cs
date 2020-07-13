@@ -23,7 +23,7 @@ namespace BikeDataProject.App.ViewModels
                 await Application.Current.MainPage.Navigation.PopAsync();
             });
 
-            Device.StartTimer(TimeSpan.FromMilliseconds(5000), () =>
+            Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
             {
 
                 Task.Factory.StartNew(async () =>
@@ -61,6 +61,24 @@ namespace BikeDataProject.App.ViewModels
                 var request = new GeolocationRequest(GeolocationAccuracy.Best);
                 var location = await Geolocation.GetLocationAsync(request);
                 return location;
+            }
+            catch (FeatureNotSupportedException fnsEx)
+            {
+                // Handle not supported on device exception
+                Debug.WriteLine($"FeatureNotSupportedException: {fnsEx.Message}");
+                return null;
+            }
+            catch (FeatureNotEnabledException fneEx)
+            {
+                // Handle not enabled on device exception (when location isn't turned on)
+                Debug.WriteLine($"FeatureNotEnabledException: {fneEx.Message}");
+                return null;
+            }
+            catch (PermissionException pEx)
+            {
+                // Handle permission exception
+                Debug.WriteLine($"PermissionException: {pEx.Message}");
+                return null;
             }
             catch (Exception ex)
             {
