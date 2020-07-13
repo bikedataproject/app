@@ -35,7 +35,7 @@ namespace BikeDataProject.App.ViewModels
 
         public Command StartTrackingCommand { get; }
 
-        public async Task<Boolean> GetLocationPermissions()
+        private async Task<Boolean> GetLocationPermissions()
         {
             var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
             if (status == PermissionStatus.Granted)
@@ -48,7 +48,7 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
-        public async Task NavigateToTrackingPage()
+        private async Task NavigateToTrackingPage()
         {
             var trackingVM = new TrackingPageViewModel();
             var trackingPage = new TrackingPage();
@@ -57,7 +57,7 @@ namespace BikeDataProject.App.ViewModels
             await Application.Current.MainPage.Navigation.PushAsync(trackingPage);
         }
 
-        public async Task RequestLocationPermission()
+        private async Task RequestLocationPermission()
         {
             await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
         }
