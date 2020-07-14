@@ -11,21 +11,23 @@ namespace BikeDataProject.App.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        private bool _state = false;
+        private object _sync = new object();
+
         public MainPageViewModel()
         {
             Running = false;
             StartTrackingCommand = new Command(async () =>
             {
-                if (await GetLocationPermissions())
+                lock (_sync)
                 {
-                    if (await GetLocation())
-                    {
-                        await NavigateToTrackingPage();
-                    }
+
+                    if (_state) return;
+                    _state = true;
                 }
-                else
+
+                try
                 {
-                    await RequestLocationPermission();
                     if (await GetLocationPermissions())
                     {
                         if (await GetLocation())
@@ -33,14 +35,33 @@ namespace BikeDataProject.App.ViewModels
                             await NavigateToTrackingPage();
                         }
                     }
+                    else
+                    {
+                        await RequestLocationPermission();
+                        if (await GetLocationPermissions())
+                        {
+                            if (await GetLocation())
+                            {
+                                await NavigateToTrackingPage();
+                            }
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    // TODO: log exception here!
+                }
+                finally
+                {
+                    _state = false;
                 }
             });
         }
 
         public Command StartTrackingCommand { get; }
 
-        Boolean running;
-        public Boolean Running
+        bool running;
+        public bool Running
         {
             get => running;
             set
@@ -51,7 +72,7 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
-        private async Task<Boolean> GetLocationPermissions()
+        private async Task<bool> GetLocationPermissions()
         {
             var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
             if (status == PermissionStatus.Granted)
