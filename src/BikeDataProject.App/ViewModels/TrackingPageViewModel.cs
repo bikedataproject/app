@@ -72,12 +72,6 @@ namespace BikeDataProject.App.ViewModels
                 var location = await Geolocation.GetLocationAsync(request);
                 return location;
             }
-            //catch (FeatureNotSupportedException fnsEx)
-            //{
-            //    // Handle not supported on device exception
-            //    Debug.WriteLine($"FeatureNotSupportedException: {fnsEx.Message}");
-            //    return null;
-            //}
             catch (FeatureNotEnabledException fneEx)
             {
                 // Handle not enabled on device exception (when location isn't turned on)
@@ -85,12 +79,6 @@ namespace BikeDataProject.App.ViewModels
                 continueTimer = false;
                 return null;
             }
-            //catch (PermissionException pEx)
-            //{
-            //    // Handle permission exception
-            //    Debug.WriteLine($"PermissionException: {pEx.Message}");
-            //    return null;
-            //}
             catch (Exception ex)
             {
                 Debug.WriteLine($"Something is wrong: {ex.Message}");
