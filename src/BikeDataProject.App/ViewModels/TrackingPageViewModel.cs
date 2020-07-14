@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -18,14 +19,14 @@ namespace BikeDataProject.App.ViewModels
             continueTimer = true;
             GetTrackingOutputs = new List<TrackingOutput>();
 
-            StopTrackingCommand = new Command(async () => {
+            StopTrackingCommand = new Command(async () =>
+            {
                 continueTimer = false;
-                await Application.Current.MainPage.Navigation.PopAsync();
+                await NavigateToMainPage();
             });
 
             Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
             {
-
                 Task.Factory.StartNew(async () =>
                 {
                     var location = await MainThread.InvokeOnMainThreadAsync<Location>(GetLocation);
@@ -44,6 +45,7 @@ namespace BikeDataProject.App.ViewModels
                     }
                 });
 
+
                 return continueTimer;
             });
         }
@@ -53,6 +55,11 @@ namespace BikeDataProject.App.ViewModels
         private List<TrackingOutput> GetTrackingOutputs;
 
         private bool continueTimer;
+
+        private async Task NavigateToMainPage()
+        {
+            await Application.Current.MainPage.Navigation.PopAsync();
+        }
 
         private async Task<Location> GetLocation()
         {

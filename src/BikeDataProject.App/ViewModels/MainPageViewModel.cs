@@ -1,11 +1,10 @@
 ﻿using BikeDataProject.App.Views;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
+using System.Diagnostics;
 
 namespace BikeDataProject.App.ViewModels
 {
