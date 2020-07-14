@@ -11,11 +11,18 @@ namespace BikeDataProject.App.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        private bool _state = false;
+
         public MainPageViewModel()
         {
             Running = false;
             StartTrackingCommand = new Command(async () =>
             {
+                if (_state) return;
+                _state = true;
+
+                try
+                {
                     if (await GetLocationPermissions())
                     {
                         if (await GetLocation())
@@ -34,6 +41,15 @@ namespace BikeDataProject.App.ViewModels
                             }
                         }
                     }
+                }
+                catch(Exception e)
+                {
+                    // TODO: log exception here!
+                }
+                finally
+                {
+                    _state = false;
+                }
             });
         }
 
