@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
-using System.Diagnostics;
 
 namespace BikeDataProject.App.ViewModels
 {

@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -43,6 +42,10 @@ namespace BikeDataProject.App.ViewModels
                         GetTrackingOutputs.Add(trackingOutput);
                         Console.WriteLine($"Accuracy: {location.Accuracy}, Time: {location.Timestamp}, Long: {location.Longitude}, lat: {location.Latitude}");
                     }
+                    else
+                    {
+                        await MainThread.InvokeOnMainThreadAsync(NavigateToMainPage);
+                    }
                 });
 
 
@@ -79,6 +82,7 @@ namespace BikeDataProject.App.ViewModels
             {
                 // Handle not enabled on device exception (when location isn't turned on)
                 Debug.WriteLine($"FeatureNotEnabledException: {fneEx.Message}");
+                continueTimer = false;
                 return null;
             }
             catch (PermissionException pEx)
