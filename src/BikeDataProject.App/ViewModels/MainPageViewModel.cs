@@ -16,6 +16,16 @@ namespace BikeDataProject.App.ViewModels
             Running = false;
             StartTrackingCommand = new Command(async () =>
             {
+                if (await GetLocationPermissions())
+                {
+                    if (await GetLocation())
+                    {
+                        await NavigateToTrackingPage();
+                    }
+                }
+                else
+                {
+                    await RequestLocationPermission();
                     if (await GetLocationPermissions())
                     {
                         if (await GetLocation())
@@ -23,17 +33,7 @@ namespace BikeDataProject.App.ViewModels
                             await NavigateToTrackingPage();
                         }
                     }
-                    else
-                    {
-                        await RequestLocationPermission();
-                        if (await GetLocationPermissions())
-                        {
-                            if (await GetLocation())
-                            {
-                                await NavigateToTrackingPage();
-                            }
-                        }
-                    }
+                }
             });
         }
 
