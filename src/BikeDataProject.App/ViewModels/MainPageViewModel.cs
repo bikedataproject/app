@@ -12,14 +12,19 @@ namespace BikeDataProject.App.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         private bool _state = false;
+        private object _sync = new object();
 
         public MainPageViewModel()
         {
             Running = false;
             StartTrackingCommand = new Command(async () =>
             {
-                if (_state) return;
-                _state = true;
+                lock (_sync)
+                {
+
+                    if (_state) return;
+                    _state = true;
+                }
 
                 try
                 {
@@ -42,7 +47,7 @@ namespace BikeDataProject.App.ViewModels
                         }
                     }
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     // TODO: log exception here!
                 }
