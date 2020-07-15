@@ -26,7 +26,7 @@ namespace BikeDataProject.App.ViewModels
             {
                 continueTimer = false;
 
-
+                await GetLocationsAsync();
 
                 //await SendTracks();
 
@@ -41,14 +41,15 @@ namespace BikeDataProject.App.ViewModels
                     if (location != null)
                     {
 
-                        var trackingOutput = new Models.Loc { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp };
+                        var loc = new Loc { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp };
                         if (location.Altitude != null)
                         {
-                            trackingOutput.Altitude = (double)location.Altitude;
+                            loc.Altitude = (double)location.Altitude;
                         }
 
+                        await App.Database.SaveLocationAsync(loc);
 
-                        GetLocations.Add(trackingOutput);
+                        GetLocations.Add(loc);
                         Console.WriteLine($"Accuracy: {location.Accuracy}, Time: {location.Timestamp}, Long: {location.Longitude}, lat: {location.Latitude}");
                     }
                     else
@@ -103,6 +104,16 @@ namespace BikeDataProject.App.ViewModels
             {
                 Debug.WriteLine($"Something is wrong: {ex.Message}");
                 return null;
+            }
+        }
+
+        private async Task GetLocationsAsync()
+        {
+            var locations = await App.Database.GetLocationsAsync();
+
+            foreach(Loc loc in locations)
+            {
+                Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude}");
             }
         }
     }
