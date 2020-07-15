@@ -20,7 +20,6 @@ namespace BikeDataProject.App.ViewModels
         {
             handler = new APIHandler();
             continueTimer = true;
-            GetLocations = new List<Loc>();
 
             StopTrackingCommand = new Command(async () =>
             {
@@ -37,7 +36,7 @@ namespace BikeDataProject.App.ViewModels
             {
                 Task.Factory.StartNew(async () =>
                 {
-                    var location = await MainThread.InvokeOnMainThreadAsync<Xamarin.Essentials.Location>(this.GetLocation);
+                    var location = await MainThread.InvokeOnMainThreadAsync<Location>(this.GetLocation);
                     if (location != null)
                     {
 
@@ -49,7 +48,6 @@ namespace BikeDataProject.App.ViewModels
 
                         await App.Database.SaveLocationAsync(loc);
 
-                        GetLocations.Add(loc);
                         Console.WriteLine($"Accuracy: {location.Accuracy}, Time: {location.Timestamp}, Long: {location.Longitude}, lat: {location.Latitude}");
                     }
                     else
@@ -66,15 +64,13 @@ namespace BikeDataProject.App.ViewModels
 
         public Command StopTrackingCommand { private set; get; }
 
-        private List<Loc> GetLocations;
-
         private bool continueTimer;
 
         private async Task<bool> SendTracks()
         {
             return await handler.SendTracks(new Track()
             {
-                Locations = GetLocations,
+                Locations = await GetLocationsAsync(),
                 UserId = Guid.Empty
             });
         }
@@ -85,7 +81,7 @@ namespace BikeDataProject.App.ViewModels
             await Application.Current.MainPage.Navigation.PopAsync();
         }
 
-        private async Task<Xamarin.Essentials.Location> GetLocation()
+        private async Task<Location> GetLocation()
         {
             try
             {
@@ -107,14 +103,16 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
-        private async Task GetLocationsAsync()
+        private async Task<List<Loc>> GetLocationsAsync()
         {
             var locations = await App.Database.GetLocationsAsync();
 
             foreach(Loc loc in locations)
             {
-                Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude}");
+                Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude} {loc.DateTimeOffset}");
             }
+
+            return locations;
         }
     }
 }
