@@ -1,4 +1,5 @@
-﻿using BikeDataProject.App.Models;
+﻿using BikeDataProject.App.API;
+using BikeDataProject.App.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +14,22 @@ namespace BikeDataProject.App.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        APIHandler handler;
+
         public TrackingPageViewModel()
         {
+            handler = new APIHandler();
             continueTimer = true;
             GetTrackingOutputs = new List<TrackingOutput>();
 
             StopTrackingCommand = new Command(async () =>
             {
                 continueTimer = false;
+
+
+
+                //await SendTracks();
+
                 await NavigateToMainPage();
             });
 
@@ -44,6 +53,7 @@ namespace BikeDataProject.App.ViewModels
                     }
                     else
                     {
+                        //await SendTracks();
                         await MainThread.InvokeOnMainThreadAsync(NavigateToMainPage);
                     }
                 });
@@ -58,6 +68,16 @@ namespace BikeDataProject.App.ViewModels
         private List<TrackingOutput> GetTrackingOutputs;
 
         private bool continueTimer;
+
+        private async Task<bool> SendTracks()
+        {
+            return await handler.SendTracks(new Track()
+            {
+                Locations = GetTrackingOutputs,
+                UserId = Guid.Empty
+            });
+        }
+
 
         private async Task NavigateToMainPage()
         {

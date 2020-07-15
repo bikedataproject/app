@@ -10,5 +10,6 @@ namespace BikeDataProject.App.Models
         public double Latitude { get; set; }
         public double Altitude { get; set; }
         public DateTimeOffset DateTimeOffset { get; set; }
+        public bool IsFromMockProvider { get; set; }
     }
 }
