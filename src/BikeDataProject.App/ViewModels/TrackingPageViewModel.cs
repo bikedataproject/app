@@ -20,7 +20,7 @@ namespace BikeDataProject.App.ViewModels
         {
             handler = new APIHandler();
             continueTimer = true;
-            GetTrackingOutputs = new List<TrackingOutput>();
+            GetLocations = new List<Loc>();
 
             StopTrackingCommand = new Command(async () =>
             {
@@ -37,24 +37,24 @@ namespace BikeDataProject.App.ViewModels
             {
                 Task.Factory.StartNew(async () =>
                 {
-                    var location = await MainThread.InvokeOnMainThreadAsync<Location>(GetLocation);
+                    var location = await MainThread.InvokeOnMainThreadAsync<Xamarin.Essentials.Location>(this.GetLocation);
                     if (location != null)
                     {
 
-                        var trackingOutput = new TrackingOutput { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp };
+                        var trackingOutput = new Models.Loc { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp };
                         if (location.Altitude != null)
                         {
                             trackingOutput.Altitude = (double)location.Altitude;
                         }
 
 
-                        GetTrackingOutputs.Add(trackingOutput);
+                        GetLocations.Add(trackingOutput);
                         Console.WriteLine($"Accuracy: {location.Accuracy}, Time: {location.Timestamp}, Long: {location.Longitude}, lat: {location.Latitude}");
                     }
                     else
                     {
                         //await SendTracks();
-                        await MainThread.InvokeOnMainThreadAsync(NavigateToMainPage);
+                        await MainThread.InvokeOnMainThreadAsync(this.NavigateToMainPage);
                     }
                 });
 
@@ -65,7 +65,7 @@ namespace BikeDataProject.App.ViewModels
 
         public Command StopTrackingCommand { private set; get; }
 
-        private List<TrackingOutput> GetTrackingOutputs;
+        private List<Loc> GetLocations;
 
         private bool continueTimer;
 
@@ -73,7 +73,7 @@ namespace BikeDataProject.App.ViewModels
         {
             return await handler.SendTracks(new Track()
             {
-                Locations = GetTrackingOutputs,
+                Locations = GetLocations,
                 UserId = Guid.Empty
             });
         }
@@ -84,7 +84,7 @@ namespace BikeDataProject.App.ViewModels
             await Application.Current.MainPage.Navigation.PopAsync();
         }
 
-        private async Task<Location> GetLocation()
+        private async Task<Xamarin.Essentials.Location> GetLocation()
         {
             try
             {
