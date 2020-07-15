@@ -15,14 +15,14 @@ namespace BikeDataProject.App.API
         public APIHandler()
         {
             client = new HttpClient();
-            client.BaseAddress = new Uri("https://localhost:5001/");
+            client.BaseAddress = new Uri(Constants.BaseAPIUri);
         }
 
         public async Task<bool> SendTracks(Track track)
         {
-            HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Post, "Track/StoreTrack") 
+            HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Post, Constants.StoreTrackEndPoint) 
             { 
-                Content = new StringContent(JsonConvert.SerializeObject(track), Encoding.UTF8, "application/json")
+                Content = new StringContent(JsonConvert.SerializeObject(track), Encoding.UTF8, Constants.ApplicationJson)
             };
 
             var response =  await client.SendAsync(requestMessage);
