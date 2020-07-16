@@ -13,6 +13,8 @@ namespace BikeDataProject.App.Models
 
         public Double AmountOfKm { get; set; }
 
+        public TimeSpan ElapsedTime { get; set; }
+
         [OneToMany]
         public List<Loc> Locations { get; set; }
     }

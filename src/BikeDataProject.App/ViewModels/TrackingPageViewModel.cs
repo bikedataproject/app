@@ -16,12 +16,15 @@ namespace BikeDataProject.App.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         APIHandler handler;
+        Stopwatch stopwatch;
 
         private readonly Random _random;
 
         public TrackingPageViewModel()
         {
             handler = new APIHandler();
+            stopwatch = new Stopwatch();
+            stopwatch.Start();
             continueTimer = true;
             Distance = 0;
             lastLoc = null;
@@ -36,13 +39,19 @@ namespace BikeDataProject.App.ViewModels
             {
                 continueTimer = false;
 
-                await App.Database.SaveRideInfoAsync(new RideInfo() {ID=rideInfoId, AmountOfKm = Distance });
+                await App.Database.SaveRideInfoAsync(new RideInfo() {ID=rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
 
                 await GetRideInfoAsync();
 
                 //await SendTracks();
 
                 await NavigateToMainPage();
+            });
+
+            Device.StartTimer(TimeSpan.FromMilliseconds(1000), () => {
+
+                ElapsedTime = stopwatch.Elapsed;
+                return continueTimer;
             });
 
             Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
@@ -66,7 +75,7 @@ namespace BikeDataProject.App.ViewModels
                         if (lastLoc != null)
                         {
                             Distance += Location.CalculateDistance(lastLoc.Latitude, lastLoc.Longitude, loc.Latitude, loc.Longitude, DistanceUnits.Kilometers);
-                            Debug.WriteLine($"---------- Distance: {Distance} Accuray: {location.Accuracy}");
+                            //Debug.WriteLine($"---------- Distance: {Distance} Accuray: {location.Accuracy}");
 
 
                         }
@@ -102,6 +111,18 @@ namespace BikeDataProject.App.ViewModels
             {
                 distance = value;
                 var args = new PropertyChangedEventArgs(nameof(Distance));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        TimeSpan elapsedTime;
+        public TimeSpan ElapsedTime
+        {
+            get => elapsedTime;
+            set
+            {
+                elapsedTime = value;
+                var args = new PropertyChangedEventArgs(nameof(ElapsedTime));
                 PropertyChanged?.Invoke(this, args);
             }
         }
@@ -162,7 +183,7 @@ namespace BikeDataProject.App.ViewModels
 
             foreach (RideInfo rideInfo in rideInfos)
             {
-                Debug.WriteLine($"---------------- From Database: {rideInfo.ID} {rideInfo.AmountOfKm}");
+                Debug.WriteLine($"---------------- From Database: {rideInfo.ID} {rideInfo.AmountOfKm} {rideInfo.ElapsedTime.TotalSeconds}");
             }
 
 
@@ -177,7 +198,7 @@ namespace BikeDataProject.App.ViewModels
 
         private async Task<long> CreateRideInfoAsync()
         {
-            await App.Database.SaveRideInfoAsync(new RideInfo() { AmountOfKm = 0 });
+            await App.Database.SaveRideInfoAsync(new RideInfo() { AmountOfKm = 0, ElapsedTime = new TimeSpan(0) });
             var ids = await App.Database.GetLastRideInfoId();
 
             if (ids.Count > 0) return ids.First().ID;

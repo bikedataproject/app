@@ -57,7 +57,7 @@
                             <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Row="0" Text="{Binding Distance, StringFormat='{0:0.00} km'}" Style="{StaticResource trackingValue}"/>
+                            <Label Grid.Row="0" Text="{Binding ElapsedTime, StringFormat='{}{0:hh}:{0:mm}:{0:ss}' }" Style="{StaticResource trackingValue}"/>
                         <Label Grid.Row="1" Text="TIME" Style="{StaticResource trackingValueInfo}"/>
                     </Grid>
                 </Grid>
