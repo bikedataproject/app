@@ -36,19 +36,6 @@ namespace BikeDataProject.App.ViewModels
             {
                 continueTimer = false;
 
-                //await GetLocationsAsync();
-
-                //var locations = await GetLocationsAsyncByRideInfo();
-
-                //double distance = 0.0;
-
-                //for (int i = 0; i < locations.Count - 1; i++)
-                //{
-                //    distance = Location.CalculateDistance(locations[i].Latitude, locations[i].Longitude, locations[i + 1].Latitude, locations[i + 1].Longitude, DistanceUnits.Kilometers);
-                //}
-
-                Debug.WriteLine($"--------- distance: {Distance}");
-
                 await App.Database.SaveRideInfoAsync(new RideInfo() {ID=rideInfoId, AmountOfKm = Distance });
 
                 await GetRideInfoAsync();
