@@ -17,10 +17,15 @@ namespace BikeDataProject.App.ViewModels
 
         APIHandler handler;
 
+        private readonly Random _random;
+
         public TrackingPageViewModel()
         {
             handler = new APIHandler();
             continueTimer = true;
+            Distance = 0;
+            lastLoc = null;
+            _random = new Random();
 
             Task.Factory.StartNew(async () =>
             {
@@ -33,17 +38,20 @@ namespace BikeDataProject.App.ViewModels
 
                 //await GetLocationsAsync();
 
-                var locations = await GetLocationsAsyncByRideInfo();
+                //var locations = await GetLocationsAsyncByRideInfo();
 
-                double distance = 0.0;
+                //double distance = 0.0;
 
-                for (int i = 0; i < locations.Count - 1; i++)
-                {
-                    distance = Location.CalculateDistance(locations[i].Latitude, locations[i].Longitude, locations[i + 1].Latitude, locations[i + 1].Longitude, DistanceUnits.Kilometers);
-                }
+                //for (int i = 0; i < locations.Count - 1; i++)
+                //{
+                //    distance = Location.CalculateDistance(locations[i].Latitude, locations[i].Longitude, locations[i + 1].Latitude, locations[i + 1].Longitude, DistanceUnits.Kilometers);
+                //}
 
-                Debug.WriteLine($"--------- distance: {distance}");
+                Debug.WriteLine($"--------- distance: {Distance}");
 
+                await App.Database.SaveRideInfoAsync(new RideInfo() {ID=rideInfoId, AmountOfKm = Distance });
+
+                await GetRideInfoAsync();
 
                 //await SendTracks();
 
@@ -52,13 +60,15 @@ namespace BikeDataProject.App.ViewModels
 
             Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
             {
+
                 Task.Factory.StartNew(async () =>
                 {
                     var location = await MainThread.InvokeOnMainThreadAsync<Location>(this.GetLocation);
                     if (location != null)
                     {
 
-                        var loc = new Loc { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp, RideInfoID=rideInfoId};
+                        var loc = new Loc { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp, RideInfoID = rideInfoId };
+
                         if (location.Altitude != null)
                         {
                             loc.Altitude = (double)location.Altitude;
@@ -66,7 +76,22 @@ namespace BikeDataProject.App.ViewModels
 
                         await App.Database.SaveLocationAsync(loc);
 
-                        Console.WriteLine($"Accuracy: {location.Accuracy}, Time: {location.Timestamp}, Long: {location.Longitude}, lat: {location.Latitude}");
+                        if (lastLoc != null)
+                        {
+                            //Device.BeginInvokeOnMainThread(() =>
+                            //{
+                            //    Distance += Location.CalculateDistance(lastLoc.Latitude, lastLoc.Longitude, loc.Latitude, loc.Longitude, DistanceUnits.Kilometers);
+                            //});
+
+                            //Distance += Location.CalculateDistance(lastLoc.Latitude, lastLoc.Longitude, loc.Latitude, loc.Longitude, DistanceUnits.Kilometers);
+                            Debug.WriteLine($"---------- Distance: {Distance} Accuray: {location.Accuracy}");
+
+
+                        }
+                        //Debug.WriteLine($"---------- loc: {loc.Longitude}");
+                        lastLoc = loc;
+
+                        //Console.WriteLine($"Accuracy: {location.Accuracy}, Time: {location.Timestamp}, Long: {location.Longitude}, lat: {location.Latitude}");
                     }
                     else
                     {
@@ -85,6 +110,20 @@ namespace BikeDataProject.App.ViewModels
         private bool continueTimer;
 
         private long rideInfoId;
+
+        private Loc lastLoc;
+
+        double distance;
+        public double Distance
+        {
+            get => distance;
+            set
+            {
+                distance = value;
+                var args = new PropertyChangedEventArgs(nameof(Distance));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
 
         private async Task<bool> SendTracks()
         {
@@ -134,6 +173,19 @@ namespace BikeDataProject.App.ViewModels
 
 
             return locations;
+        }
+
+        private async Task<List<RideInfo>> GetRideInfoAsync()
+        {
+            var rideInfos = await App.Database.GetRideInfoAsync();
+
+            foreach (RideInfo rideInfo in rideInfos)
+            {
+                Debug.WriteLine($"---------------- From Database: {rideInfo.ID} {rideInfo.AmountOfKm}");
+            }
+
+
+            return rideInfos;
         }
 
         private async Task<List<Loc>> GetLocationsAsyncByRideInfo()

@@ -92,6 +92,11 @@ namespace BikeDataProject.App.Database
             }
         }
 
+        public Task<List<RideInfo>> GetRideInfoAsync() 
+        {
+            return Database.Table<RideInfo>().ToListAsync();        
+        }
+
 
 
     }
