@@ -57,5 +57,10 @@ namespace BikeDataProject.App.Database
                 return Database.InsertAsync(location);
             }
         }
+
+        public Task<List<Loc>> GetLastId()
+        {
+            return Database.QueryAsync<Loc>("SELECT * FROM LOC ORDER BY ID DESC LIMIT 1");
+        }
     }
 }

@@ -25,7 +25,13 @@ namespace BikeDataProject.App.ViewModels
             {
                 continueTimer = false;
 
-                await GetLocationsAsync();
+                //await GetLocationsAsync();
+
+                var result = await App.Database.GetLastId();
+                foreach(Loc l in result)
+                {
+                    Debug.WriteLine($"########### {l.ID} {l.DateTimeOffset}");
+                }
 
                 //await SendTracks();
 
