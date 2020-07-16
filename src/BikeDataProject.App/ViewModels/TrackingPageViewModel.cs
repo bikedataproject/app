@@ -78,17 +78,11 @@ namespace BikeDataProject.App.ViewModels
 
                         if (lastLoc != null)
                         {
-                            //Device.BeginInvokeOnMainThread(() =>
-                            //{
-                            //    Distance += Location.CalculateDistance(lastLoc.Latitude, lastLoc.Longitude, loc.Latitude, loc.Longitude, DistanceUnits.Kilometers);
-                            //});
-
-                            //Distance += Location.CalculateDistance(lastLoc.Latitude, lastLoc.Longitude, loc.Latitude, loc.Longitude, DistanceUnits.Kilometers);
+                            Distance += Location.CalculateDistance(lastLoc.Latitude, lastLoc.Longitude, loc.Latitude, loc.Longitude, DistanceUnits.Kilometers);
                             Debug.WriteLine($"---------- Distance: {Distance} Accuray: {location.Accuracy}");
 
 
                         }
-                        //Debug.WriteLine($"---------- loc: {loc.Longitude}");
                         lastLoc = loc;
 
                         //Console.WriteLine($"Accuracy: {location.Accuracy}, Time: {location.Timestamp}, Long: {location.Longitude}, lat: {location.Latitude}");
