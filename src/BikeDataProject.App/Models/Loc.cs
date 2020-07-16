@@ -1,4 +1,5 @@
 ﻿using SQLite;
+using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,5 +15,8 @@ namespace BikeDataProject.App.Models
         public double Altitude { get; set; }
         public DateTimeOffset DateTimeOffset { get; set; }
         public bool IsFromMockProvider { get; set; }
+
+        [ForeignKey(typeof(RideInfo))]
+        public long RideInfoID { get; set; }
     }
 }

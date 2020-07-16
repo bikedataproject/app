@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -21,17 +22,28 @@ namespace BikeDataProject.App.ViewModels
             handler = new APIHandler();
             continueTimer = true;
 
+            Task.Factory.StartNew(async () =>
+            {
+                rideInfoId = await CreateRideInfoAsync();
+            });
+
             StopTrackingCommand = new Command(async () =>
             {
                 continueTimer = false;
 
                 //await GetLocationsAsync();
 
-                var result = await App.Database.GetLastId();
-                foreach(Loc l in result)
+                var locations = await GetLocationsAsyncByRideInfo();
+
+                double distance = 0.0;
+
+                for (int i = 0; i < locations.Count - 1; i++)
                 {
-                    Debug.WriteLine($"########### {l.ID} {l.DateTimeOffset}");
+                    distance = Location.CalculateDistance(locations[i].Latitude, locations[i].Longitude, locations[i + 1].Latitude, locations[i + 1].Longitude, DistanceUnits.Kilometers);
                 }
+
+                Debug.WriteLine($"--------- distance: {distance}");
+
 
                 //await SendTracks();
 
@@ -46,7 +58,7 @@ namespace BikeDataProject.App.ViewModels
                     if (location != null)
                     {
 
-                        var loc = new Loc { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp };
+                        var loc = new Loc { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp, RideInfoID=rideInfoId};
                         if (location.Altitude != null)
                         {
                             loc.Altitude = (double)location.Altitude;
@@ -71,6 +83,8 @@ namespace BikeDataProject.App.ViewModels
         public Command StopTrackingCommand { private set; get; }
 
         private bool continueTimer;
+
+        private long rideInfoId;
 
         private async Task<bool> SendTracks()
         {
@@ -115,10 +129,26 @@ namespace BikeDataProject.App.ViewModels
 
             foreach(Loc loc in locations)
             {
-                Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude} {loc.DateTimeOffset}");
+                Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude} {loc.DateTimeOffset} {loc.RideInfoID}");
             }
 
+
             return locations;
+        }
+
+        private async Task<List<Loc>> GetLocationsAsyncByRideInfo()
+        {
+            var locations = await App.Database.GetLocationsAsync(rideInfoId);
+            return locations;
+        }
+
+        private async Task<long> CreateRideInfoAsync()
+        {
+            await App.Database.SaveRideInfoAsync(new RideInfo() { AmountOfKm = 0 });
+            var ids = await App.Database.GetLastRideInfoId();
+
+            if (ids.Count > 0) return ids.First().ID;
+            return -1;
         }
     }
 }

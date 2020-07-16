@@ -31,12 +31,24 @@ namespace BikeDataProject.App.Database
         /// <returns></returns>
         async Task InitializeAsync()
         {
+            var initLoc = false;
             if (!initialized)
             {
                 if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(Loc).Name))
                 {
                     await Database.CreateTablesAsync(CreateFlags.None, typeof(Loc)).ConfigureAwait(false);
-                    initialized = true;
+                    initLoc = true;
+                    //initialized = true;
+                }
+
+                if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(RideInfo).Name))
+                {
+                    await Database.CreateTablesAsync(CreateFlags.None, typeof(RideInfo)).ConfigureAwait(false);
+                    if (initLoc)
+                    {
+                        initialized = true;
+                    }
+                    //initialized = true;
                 }
             }
         }
@@ -44,6 +56,11 @@ namespace BikeDataProject.App.Database
         public Task<List<Loc>> GetLocationsAsync()
         {
             return Database.Table<Loc>().ToListAsync();
+        }
+
+        public Task<List<Loc>> GetLocationsAsync(long rideInfoId) 
+        {
+            return Database.QueryAsync<Loc>($"SELECT * FROM [LOC] WHERE [RIDEINFOID] = {rideInfoId}");
         }
 
         public Task<int> SaveLocationAsync(Loc location)
@@ -58,9 +75,24 @@ namespace BikeDataProject.App.Database
             }
         }
 
-        public Task<List<Loc>> GetLastId()
+        public Task<List<RideInfo>> GetLastRideInfoId()
         {
-            return Database.QueryAsync<Loc>("SELECT * FROM LOC ORDER BY ID DESC LIMIT 1");
+            return Database.QueryAsync<RideInfo>("SELECT * FROM RIDEINFO ORDER BY ID DESC LIMIT 1");
         }
+
+        public Task<int> SaveRideInfoAsync(RideInfo rideInfo)
+        {
+            if (rideInfo.ID != 0)
+            {
+                return Database.UpdateAsync(rideInfo);
+            }
+            else
+            {
+                return Database.InsertAsync(rideInfo);
+            }
+        }
+
+
+
     }
 }
