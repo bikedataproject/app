@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
+[assembly:InternalsVisibleTo("BikeDataProject.Data.GPS.Test")]
 namespace BikeDataProject.Data.GPS
 {
     internal static class RamerDouglasPeucker
@@ -13,6 +15,8 @@ namespace BikeDataProject.Data.GPS
             this IReadOnlyList<(double longitude, double latitude, long timeOffset)> track,
             double tolerance = 10)
         {
+            if (track.Count == 0) return EmptyList;
+            
             return track.Run(0, track.Count - 1, tolerance);
         }
         
@@ -22,7 +26,10 @@ namespace BikeDataProject.Data.GPS
             double tolerance = 10)
         {
             if (start > end) throw new ArgumentOutOfRangeException();
-            if (start == end) return EmptyList;
+            if (start == end) return new List<(double longitude, double latitude, long timeOffset)>
+            {
+                (track[start].longitude, track[start].latitude, track[start].timeOffset)
+            };
             if (start == end - 1) return new List<(double longitude, double latitude, long timeOffset)>
             {
                 (track[start].longitude, track[start].latitude, track[start].timeOffset),
@@ -43,7 +50,7 @@ namespace BikeDataProject.Data.GPS
                 for (var i = start + 1; i < end - 1; i++)
                 {
                     var current =(track[i].longitude, track[i].latitude);
-                    var distance = startLocation.DistanceEstimateInMeter(current);
+                    var distance = center.DistanceEstimateInMeter(current);
                     if (!(distance > farthestDistance)) continue;
                     
                     farthestDistance = distance;
@@ -74,14 +81,14 @@ namespace BikeDataProject.Data.GPS
                 return new List<(double longitude, double latitude, long timeOffset)>
                 {
                     (track[start].longitude, track[start].latitude, track[start].timeOffset),
-                    (track[start+1].longitude, track[start+1].latitude, track[start+1].timeOffset)
+                    (track[end].longitude, track[end].latitude, track[end].timeOffset)
                 };
             }
             
             var result = new List<(double longitude, double latitude, long timeOffset)>();
             var result1 = track.Run(start, farthest, tolerance);
             var result2 = track.Run(farthest, end, tolerance);
-            result.AddRange(result1.Take(result.Count - 1));
+            result.AddRange(result1.Take(result1.Count - 1));
             result.AddRange(result2);
             return result;
         }
