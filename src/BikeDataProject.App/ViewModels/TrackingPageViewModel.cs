@@ -50,19 +50,24 @@ namespace BikeDataProject.App.ViewModels
 
             Device.StartTimer(TimeSpan.FromMilliseconds(1000), () => {
 
-                ElapsedTime = stopwatch.Elapsed;
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    ElapsedTime = stopwatch.Elapsed;
+                });
+
                 return continueTimer;
             });
 
+            List<Loc> locs = new List<Loc>();
             Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
             {
-
+                
                 Task.Factory.StartNew(async () =>
                 {
                     var location = await MainThread.InvokeOnMainThreadAsync<Location>(this.GetLocation);
                     if (location != null)
                     {
-
+                        Debug.WriteLine($"------- Speed: {location.Speed} Longitude: {location.Longitude}");
                         var loc = new Loc { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp, RideInfoID = rideInfoId };
 
                         if (location.Altitude != null)
@@ -75,9 +80,6 @@ namespace BikeDataProject.App.ViewModels
                         if (lastLoc != null)
                         {
                             Distance += Location.CalculateDistance(lastLoc.Latitude, lastLoc.Longitude, loc.Latitude, loc.Longitude, DistanceUnits.Kilometers);
-                            //Debug.WriteLine($"---------- Distance: {Distance} Accuray: {location.Accuracy}");
-
-
                         }
                         lastLoc = loc;
 
@@ -89,7 +91,6 @@ namespace BikeDataProject.App.ViewModels
                         await MainThread.InvokeOnMainThreadAsync(this.NavigateToMainPage);
                     }
                 });
-
 
                 return continueTimer;
             });
@@ -168,11 +169,10 @@ namespace BikeDataProject.App.ViewModels
         {
             var locations = await App.Database.GetLocationsAsync();
 
-            foreach(Loc loc in locations)
-            {
-                Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude} {loc.DateTimeOffset} {loc.RideInfoID}");
-            }
-
+            //foreach(Loc loc in locations)
+            //{
+            //    Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude} {loc.DateTimeOffset} {loc.RideInfoID}");
+            //}
 
             return locations;
         }
@@ -193,6 +193,12 @@ namespace BikeDataProject.App.ViewModels
         private async Task<List<Loc>> GetLocationsAsyncByRideInfo()
         {
             var locations = await App.Database.GetLocationsAsync(rideInfoId);
+
+            foreach (Loc loc in locations)
+            {
+                Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude} {loc.DateTimeOffset}");
+            }
+
             return locations;
         }
 
