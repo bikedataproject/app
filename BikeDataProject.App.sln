@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0998D124-F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeDataProject.App.Test", "test\BikeDataProject.App.Test\BikeDataProject.App.Test.csproj", "{999F03A2-656B-4888-B482-EF2F905319D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeDataProject.Data.GPS", "src\BikeDataProject.Data.GPS\BikeDataProject.Data.GPS.csproj", "{670FB892-CBB3-45FB-99E0-31A70CF668CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{999F03A2-656B-4888-B482-EF2F905319D2}.Release|iPhone.Build.0 = Release|Any CPU
 		{999F03A2-656B-4888-B482-EF2F905319D2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{999F03A2-656B-4888-B482-EF2F905319D2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Release|iPhone.Build.0 = Release|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +106,7 @@ Global
 		{24EF2A7E-FB10-42C0-9704-EFAAEDA5BD95} = {65CD096B-2556-4D39-A883-DCCC1742A94A}
 		{461DE0FA-D838-4070-A4FA-764167BD1EBB} = {65CD096B-2556-4D39-A883-DCCC1742A94A}
 		{999F03A2-656B-4888-B482-EF2F905319D2} = {0998D124-F9E6-4A68-813A-38AAF0031D83}
+		{670FB892-CBB3-45FB-99E0-31A70CF668CE} = {65CD096B-2556-4D39-A883-DCCC1742A94A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38D23161-3F45-4B2F-B92A-3C3C27D6D900}
