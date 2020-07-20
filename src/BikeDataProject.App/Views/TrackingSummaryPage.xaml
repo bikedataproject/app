@@ -5,9 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="BikeDataProject.App.Views.TrackingSummaryPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             xmlns:converters="clr-namespace:BikeDataProject.App.Converters">
     <ContentPage.Resources>
         <ResourceDictionary>
+            <converters:BoolToColorConverter x:Key="BoolToColorConverter"/>
             <Style x:Key="trackingValue" TargetType="Label">
                 <Setter Property="BackgroundColor" Value="Black"/>
                 <Setter Property="TextColor" Value="White"/>
@@ -28,6 +30,13 @@
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="Padding" Value="5,0,0,0"/>
                 <Setter Property="FontFamily" Value="Roboto"/>
+            </Style>
+            <Style x:Key="optionLabelButton" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontFamily" Value="Roboto"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -80,7 +89,7 @@
                         </Grid>
                     </Grid>
                 </Frame>
-                
+
                 <!-- User Info-->
                 <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="White" Padding="0" Margin="0,0,0,0" CornerRadius="10">
                     <Grid>
@@ -91,7 +100,7 @@
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="auto" />
                         </Grid.RowDefinitions>
-                        
+
                         <!-- Your info -->
                         <Grid Grid.Row="0">
                             <Grid.RowDefinitions>
@@ -102,21 +111,71 @@
                             <Label Grid.Row="0" Text="YOUR INFO" Style="{StaticResource trackingValueInfo}" FontSize="20"/>
                             <BoxView Grid.Row="1" Color="LightGray" HeightRequest="1" Margin="10,0,10,0"/>
                         </Grid>
-                        
+
                         <!-- Gender -->
                         <Grid Grid.Row="1" Margin="10,0,10,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
-                            
+
                             <!-- Title -->
-                            <Label Grid.Row="0" Text="Gender" Style="{StaticResource userInfoOptionTitle}}"/>
+                            <Label Grid.Row="0" Text="Gender" Style="{StaticResource userInfoOptionTitle}"/>
 
                             <!-- Options -->
-                            
+                            <Grid Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Rather not share-->
+                                <Frame Grid.Row="0" Grid.Column="0" Padding="1,1,1,1" BorderColor="Black">
+                                    <Label Text="Rather not share" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderNotShare, Converter={StaticResource BoolToColorConverter}}">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding GenderCommand}"
+                                                              CommandParameter="Rather not share"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                </Frame>
+
+                                <!-- female-->
+                                <Frame Grid.Row="1" Grid.Column="0" Padding="1,1,1,1" BorderColor="Black">
+                                    <Label Text="Female" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderFemale, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding GenderCommand}"
+                                                              CommandParameter="Female"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- Male-->
+                                <Frame Grid.Row="0" Grid.Column="1" Padding="1,1,1,1" BorderColor="Black">
+                                    <Label  Text="Male" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderMale, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding GenderCommand}"
+                                                              CommandParameter="Male"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- Other-->
+                                <Frame Grid.Row="1" Grid.Column="1" Padding="1,1,1,1" BorderColor="Black">
+                                    <Label  Text="Other" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderOther, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding GenderCommand}"
+                                                              CommandParameter="Other"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+                            </Grid>
+
                         </Grid>
-                        
+
                         <!-- Age -->
 
                         <!-- Bike Type -->
@@ -125,7 +184,7 @@
 
                     </Grid>
                 </Frame>
-                
+
                 <!-- Buttons -->
             </Grid>
         </Frame>

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Text;
+using Xamarin.Forms;
 
 namespace BikeDataProject.App.ViewModels
 {
@@ -9,10 +11,46 @@ namespace BikeDataProject.App.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        public Command GenderCommand { private set; get; }
+
         public TrackingSummaryPageViewModel(double dist, TimeSpan time)
         {
             Distance = dist;
             ElapsedTime = time;
+
+            GenderCommand = new Command((option) =>
+            {
+                Debug.WriteLine($"The label is pressed: {option}");
+
+                switch ($"{option}") {
+                    case "Rather not share":
+                        GenderNotShare = true;
+                        GenderFemale = false;
+                        GenderMale = false;
+                        GenderOther = false;
+                        break;
+                    case "Female":
+                        GenderNotShare = false;
+                        GenderFemale = true;
+                        GenderMale = false;
+                        GenderOther = false;
+                        break;
+                    case "Male":
+                        GenderNotShare = false;
+                        GenderFemale = false;
+                        GenderMale = true;
+                        GenderOther = false;
+                        break;
+                    case "Other":
+                        GenderNotShare = false;
+                        GenderFemale = false;
+                        GenderMale = false;
+                        GenderOther = true;
+                        break;
+                }
+
+
+            });
         }
 
         double distance;
@@ -38,5 +76,56 @@ namespace BikeDataProject.App.ViewModels
                 PropertyChanged?.Invoke(this, args);
             }
         }
+
+        // Gender values
+        bool genderNotShare;
+        public bool GenderNotShare
+        {
+            get => genderNotShare;
+            set
+            {
+                genderNotShare = value;
+                var args = new PropertyChangedEventArgs(nameof(GenderNotShare));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool genderFemale;
+        public bool GenderFemale
+        {
+            get => genderFemale;
+            set
+            {
+                genderFemale = value;
+                var args = new PropertyChangedEventArgs(nameof(GenderFemale));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool genderMale;
+        public bool GenderMale
+        {
+            get => genderMale;
+            set
+            {
+                genderMale = value;
+                var args = new PropertyChangedEventArgs(nameof(GenderMale));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool genderOther;
+        public bool GenderOther
+        {
+            get => genderOther;
+            set
+            {
+                genderOther = value;
+                var args = new PropertyChangedEventArgs(nameof(GenderOther));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+
     }
 }
