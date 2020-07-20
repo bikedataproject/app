@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 
 [assembly:InternalsVisibleTo("BikeDataProject.Data.GPS.Test")]
+[assembly:InternalsVisibleTo("BikeDataProject.Data.GPS.Test.Functional")]
 namespace BikeDataProject.Data.GPS
 {
     internal static class RamerDouglasPeucker
