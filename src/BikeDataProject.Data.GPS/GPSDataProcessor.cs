@@ -5,11 +5,11 @@ namespace BikeDataProject.Data.GPS
 {
     public static class GPSDataProcessor 
     {
-        public static (double distance, long time) Process(
+        public static (double distance, long time) DistanceAndTime(
             this IReadOnlyList<(double longitude, double latitude, double accuracy, long timeOffset)> track,
-            int minLocations = 5, int windowSize = 3)
+            int minLocations = 5, int windowSize = 3, double tolerance = 10)
         {
-            var filtered = track.Filter(minLocations, windowSize);
+            var filtered = track.Filter(minLocations, windowSize, tolerance);
 
             var distance = 0.0;
             var time = System.Math.Abs(filtered[0].timeOffset - filtered[filtered.Count - 1].timeOffset);
@@ -31,7 +31,7 @@ namespace BikeDataProject.Data.GPS
 
             // calculate a running average.
             var runningAverage = track.RunningAverage(windowSize);
-            if (runningAverage.Count < minLocations) return new List<(double longitude, double latitude, long timeOffset)>(0);
+            if (runningAverage.Count < (minLocations - windowSize)) return new List<(double longitude, double latitude, long timeOffset)>(0);
             
             // execute Ramer–Douglas–Peucker algorithm
             // https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm

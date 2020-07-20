@@ -6,6 +6,13 @@
     &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.RamerDouglasPeuckerTest.RamerDouglasPeucker_Run_Pair_ShouldReturnPair&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.RamerDouglasPeuckerTest.RamerDouglasPeucker_Run_Line_ShouldReturnPair&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.RamerDouglasPeuckerTest.RamerDouglasPeucker_Run_Line1_ShouldReturnTriple&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.RunningAverageTests.RunningAverage_Empty_ThrowsArgumentOutOfRange&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.RunningAverageTests.RunningAverage_Window_Returns1&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.GSPDataProcessorTests.GPSDataProcessor_Filter_Empty&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.GSPDataProcessorTests.GPSDataProcessor_Filter_LessThanMinLocations_ShouldBeEmpty&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.GSPDataProcessorTests.GPSDataProcessor_Filter_TwoAfterWindow_ShouldBePair&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.GSPDataProcessorTests.GPSDataProcessor_Filter_TestTrack1_ShouldBe&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::BD4FF232-3973-4D41-9D32-BC97A38730B2::.NETCoreApp,Version=v3.1::BikeDataProject.Data.GPS.Test.GSPDataProcessorTests.GPSDataProcessor_DistanceAndTime_TestTrack1_ShouldBe&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=1dccdf02_002D473b_002D4657_002D8376_002D48aec29cdf6d_0023BikeDataProject_002EApp/@EntryIndexedValue">True</s:Boolean>

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -11,6 +12,8 @@ namespace BikeDataProject.Data.GPS
         public RunningAverage(
             IReadOnlyList<(double longitude, double latitude, double accuracy, long timeOffset)> track, int window)
         {
+            if (track.Count < window) throw new ArgumentOutOfRangeException();
+            
             _track = track;
             _window = window;
 
