@@ -38,10 +38,14 @@
                 <Setter Property="Padding" Value="5"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
+            <Style x:Key="optionLabelWrapper" TargetType="Frame">
+                <Setter Property="Padding" Value="1,1,1,1"/>
+                <Setter Property="BorderColor" Value="Black"/>
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <Frame Padding="0" BackgroundColor="LightGray">
+        <ScrollView Padding="0" BackgroundColor="LightGray">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
@@ -134,17 +138,17 @@
                                 </Grid.ColumnDefinitions>
 
                                 <!-- Rather not share-->
-                                <Frame Grid.Row="0" Grid.Column="0" Padding="1,1,1,1" BorderColor="Black">
+                                <Frame Grid.Row="0" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
                                     <Label Text="Rather not share" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderNotShare, Converter={StaticResource BoolToColorConverter}}">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding GenderCommand}"
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding GenderCommand}"
                                                               CommandParameter="Rather not share"/>
-                                    </Label.GestureRecognizers>
-                                </Label>
+                                        </Label.GestureRecognizers>
+                                    </Label>
                                 </Frame>
 
                                 <!-- female-->
-                                <Frame Grid.Row="1" Grid.Column="0" Padding="1,1,1,1" BorderColor="Black">
+                                <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
                                     <Label Text="Female" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderFemale, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
                                             <TapGestureRecognizer Command="{Binding GenderCommand}"
@@ -154,7 +158,7 @@
                                 </Frame>
 
                                 <!-- Male-->
-                                <Frame Grid.Row="0" Grid.Column="1" Padding="1,1,1,1" BorderColor="Black">
+                                <Frame Grid.Row="0" Grid.Column="1" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="Male" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderMale, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
                                             <TapGestureRecognizer Command="{Binding GenderCommand}"
@@ -164,7 +168,7 @@
                                 </Frame>
 
                                 <!-- Other-->
-                                <Frame Grid.Row="1" Grid.Column="1" Padding="1,1,1,1" BorderColor="Black">
+                                <Frame Grid.Row="1" Grid.Column="1" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="Other" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderOther, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
                                             <TapGestureRecognizer Command="{Binding GenderCommand}"
@@ -173,20 +177,125 @@
                                     </Label>
                                 </Frame>
                             </Grid>
-
                         </Grid>
 
                         <!-- Age -->
+                        <Grid Grid.Row="2" Margin="10,0,10,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Title -->
+                            <Label Grid.Row="0" Text="Age Range" Style="{StaticResource userInfoOptionTitle}"/>
+
+                            <!-- Options -->
+                            <Grid Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Rather not share-->
+                                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
+                                    <Label Text="Rather not share" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding AgeNotShare, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding AgeRangeCommand}"
+                                                              CommandParameter="Rather not share"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- -18-->
+                                <Frame Grid.Row="0" Grid.Column="2" Style="{StaticResource optionLabelWrapper}">
+                                    <Label Text="-18" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Min18, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding AgeRangeCommand}"
+                                                              CommandParameter="-18"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- 18-24-->
+                                <Frame Grid.Row="0" Grid.Column="3" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="18-24" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age18to24, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding AgeRangeCommand}"
+                                                              CommandParameter="18-24"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- 25-35-->
+                                <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="25-35" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age25to35, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding AgeRangeCommand}"
+                                                              CommandParameter="25-35"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- 36-45-->
+                                <Frame Grid.Row="1" Grid.Column="1" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="36-45" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age36to45, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding AgeRangeCommand}"
+                                                              CommandParameter="36-45"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- 46-55-->
+                                <Frame Grid.Row="1" Grid.Column="2" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="46-55" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age46to55, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding AgeRangeCommand}"
+                                                              CommandParameter="46-55"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- 56-65-->
+                                <Frame Grid.Row="1" Grid.Column="3" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="56-65" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age56to65, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding AgeRangeCommand}"
+                                                              CommandParameter="56-65"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- 65+-->
+                                <Frame Grid.Row="2" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="65+" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Plus65, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding AgeRangeCommand}"
+                                                              CommandParameter="65+"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+                            </Grid>
+                        </Grid>
 
                         <!-- Bike Type -->
+                        
 
                         <!-- Trip Purpose -->
+                       
 
                     </Grid>
                 </Frame>
 
                 <!-- Buttons -->
             </Grid>
-        </Frame>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -13,6 +13,8 @@ namespace BikeDataProject.App.ViewModels
 
         public Command GenderCommand { private set; get; }
 
+        public Command AgeRangeCommand { private set; get; }
+
         public TrackingSummaryPageViewModel(double dist, TimeSpan time)
         {
             Distance = dist;
@@ -51,6 +53,94 @@ namespace BikeDataProject.App.ViewModels
 
 
             });
+
+            AgeRangeCommand = new Command(option =>
+            {
+                Debug.WriteLine($"The label is pressed: {option}");
+                switch ($"{option}")
+                {
+                    case "Rather not share":
+                        AgeNotShare = true;
+                        Min18 = false;
+                        Age18to24 = false;
+                        Age25to35 = false;
+                        Age36to45 = false;
+                        Age46to55 = false;
+                        Age56to65 = false;
+                        Plus65 = false;
+                        break;
+                    case "-18":
+                        AgeNotShare = false;
+                        Min18 = true;
+                        Age18to24 = false;
+                        Age25to35 = false;
+                        Age36to45 = false;
+                        Age46to55 = false;
+                        Age56to65 = false;
+                        Plus65 = false;
+                        break;
+                    case "18-24":
+                        AgeNotShare = false;
+                        Min18 = false;
+                        Age18to24 = true;
+                        Age25to35 = false;
+                        Age36to45 = false;
+                        Age46to55 = false;
+                        Age56to65 = false;
+                        Plus65 = false;
+                        break;
+                    case "25-35":
+                        AgeNotShare = false;
+                        Min18 = false;
+                        Age18to24 = false;
+                        Age25to35 = true;
+                        Age36to45 = false;
+                        Age46to55 = false;
+                        Age56to65 = false;
+                        Plus65 = false;
+                        break;
+                    case "36-45":
+                        AgeNotShare = false;
+                        Min18 = false;
+                        Age18to24 = false;
+                        Age25to35 = false;
+                        Age36to45 = true;
+                        Age46to55 = false;
+                        Age56to65 = false;
+                        Plus65 = false;
+                        break;
+                    case "46-55":
+                        AgeNotShare = false;
+                        Min18 = false;
+                        Age18to24 = false;
+                        Age25to35 = false;
+                        Age36to45 = false;
+                        Age46to55 = true;
+                        Age56to65 = false;
+                        Plus65 = false;
+                        break;
+                    case "56-65":
+                        AgeNotShare = false;
+                        Min18 = false;
+                        Age18to24 = false;
+                        Age25to35 = false;
+                        Age36to45 = false;
+                        Age46to55 = false;
+                        Age56to65 = true;
+                        Plus65 = false;
+                        break;
+                    case "65+":
+                        AgeNotShare = false;
+                        Min18 = false;
+                        Age18to24 = false;
+                        Age25to35 = false;
+                        Age36to45 = false;
+                        Age46to55 = false;
+                        Age56to65 = false;
+                        Plus65 = true;
+                        break;
+                }
+            });
         }
 
         double distance;
@@ -77,7 +167,7 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
-        // Gender values
+        // Gender
         bool genderNotShare;
         public bool GenderNotShare
         {
@@ -126,6 +216,102 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        // Age Range
+        bool ageNotShare;
+        public bool AgeNotShare
+        {
+            get => ageNotShare;
+            set
+            {
+                ageNotShare = value;
+                var args = new PropertyChangedEventArgs(nameof(AgeNotShare));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool min18;
+        public bool Min18
+        {
+            get => min18;
+            set
+            {
+                min18 = value;
+                var args = new PropertyChangedEventArgs(nameof(Min18));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool age18to24;
+        public bool Age18to24
+        {
+            get => age18to24;
+            set
+            {
+                age18to24 = value;
+                var args = new PropertyChangedEventArgs(nameof(Age18to24));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool age25to35;
+        public bool Age25to35
+        {
+            get => age25to35;
+            set
+            {
+                age25to35 = value;
+                var args = new PropertyChangedEventArgs(nameof(Age25to35));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool age36to45;
+        public bool Age36to45
+        {
+            get => age36to45;
+            set
+            {
+                age36to45 = value;
+                var args = new PropertyChangedEventArgs(nameof(Age36to45));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool age46to55;
+        public bool Age46to55
+        {
+            get => age46to55;
+            set
+            {
+                age46to55 = value;
+                var args = new PropertyChangedEventArgs(nameof(Age46to55));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool age56to65;
+        public bool Age56to65
+        {
+            get => age56to65;
+            set
+            {
+                age56to65 = value;
+                var args = new PropertyChangedEventArgs(nameof(Age56to65));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool plus65;
+        public bool Plus65
+        {
+            get => plus65;
+            set
+            {
+                plus65 = value;
+                var args = new PropertyChangedEventArgs(nameof(Plus65));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
 
     }
 }
