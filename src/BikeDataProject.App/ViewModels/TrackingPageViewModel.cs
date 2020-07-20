@@ -44,7 +44,7 @@ namespace BikeDataProject.App.ViewModels
 
                 await GetRideInfoAsync();
 
-                await SendTracks();
+                //await SendTracks();
 
                 //await NavigateToMainPage();
 

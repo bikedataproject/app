@@ -14,12 +14,20 @@
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="VerticalTextAlignment" Value="Center"/>
                 <Setter Property="FontSize" Value="30"/>
+                <Setter Property="FontFamily" Value="Roboto"/>
             </Style>
             <Style x:Key="trackingValueInfo" TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontFamily" Value="Roboto"/>
+            </Style>
+            <Style x:Key="userInfoOptionTitle" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="Padding" Value="5,0,0,0"/>
+                <Setter Property="FontFamily" Value="Roboto"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -72,7 +80,51 @@
                         </Grid>
                     </Grid>
                 </Frame>
+                
                 <!-- User Info-->
+                <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="White" Padding="0" Margin="0,0,0,0" CornerRadius="10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        
+                        <!-- Your info -->
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+
+                            <Label Grid.Row="0" Text="YOUR INFO" Style="{StaticResource trackingValueInfo}" FontSize="20"/>
+                            <BoxView Grid.Row="1" Color="LightGray" HeightRequest="1" Margin="10,0,10,0"/>
+                        </Grid>
+                        
+                        <!-- Gender -->
+                        <Grid Grid.Row="1" Margin="10,0,10,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            
+                            <!-- Title -->
+                            <Label Grid.Row="0" Text="Gender" Style="{StaticResource userInfoOptionTitle}}"/>
+
+                            <!-- Options -->
+                            
+                        </Grid>
+                        
+                        <!-- Age -->
+
+                        <!-- Bike Type -->
+
+                        <!-- Trip Purpose -->
+
+                    </Grid>
+                </Frame>
                 
                 <!-- Buttons -->
             </Grid>
