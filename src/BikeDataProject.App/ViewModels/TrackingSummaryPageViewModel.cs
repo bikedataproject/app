@@ -24,119 +24,64 @@ namespace BikeDataProject.App.ViewModels
             {
                 Debug.WriteLine($"The label is pressed: {option}");
 
+                GenderNotShare = false;
+                GenderFemale = false;
+                GenderMale = false;
+                GenderOther = false;
+
                 switch ($"{option}") {
                     case "Rather not share":
                         GenderNotShare = true;
-                        GenderFemale = false;
-                        GenderMale = false;
-                        GenderOther = false;
                         break;
                     case "Female":
-                        GenderNotShare = false;
                         GenderFemale = true;
-                        GenderMale = false;
-                        GenderOther = false;
                         break;
                     case "Male":
-                        GenderNotShare = false;
-                        GenderFemale = false;
                         GenderMale = true;
-                        GenderOther = false;
                         break;
                     case "Other":
-                        GenderNotShare = false;
-                        GenderFemale = false;
-                        GenderMale = false;
                         GenderOther = true;
                         break;
                 }
-
-
             });
 
             AgeRangeCommand = new Command(option =>
             {
                 Debug.WriteLine($"The label is pressed: {option}");
+
+                AgeNotShare = false;
+                Min18 = false;
+                Age18to24 = false;
+                Age25to35 = false;
+                Age36to45 = false;
+                Age46to55 = false;
+                Age56to65 = false;
+                Plus65 = false;
+
                 switch ($"{option}")
                 {
                     case "Rather not share":
                         AgeNotShare = true;
-                        Min18 = false;
-                        Age18to24 = false;
-                        Age25to35 = false;
-                        Age36to45 = false;
-                        Age46to55 = false;
-                        Age56to65 = false;
-                        Plus65 = false;
                         break;
                     case "-18":
-                        AgeNotShare = false;
                         Min18 = true;
-                        Age18to24 = false;
-                        Age25to35 = false;
-                        Age36to45 = false;
-                        Age46to55 = false;
-                        Age56to65 = false;
-                        Plus65 = false;
                         break;
                     case "18-24":
-                        AgeNotShare = false;
-                        Min18 = false;
                         Age18to24 = true;
-                        Age25to35 = false;
-                        Age36to45 = false;
-                        Age46to55 = false;
-                        Age56to65 = false;
-                        Plus65 = false;
                         break;
                     case "25-35":
-                        AgeNotShare = false;
-                        Min18 = false;
-                        Age18to24 = false;
                         Age25to35 = true;
-                        Age36to45 = false;
-                        Age46to55 = false;
-                        Age56to65 = false;
-                        Plus65 = false;
                         break;
                     case "36-45":
-                        AgeNotShare = false;
-                        Min18 = false;
-                        Age18to24 = false;
-                        Age25to35 = false;
                         Age36to45 = true;
-                        Age46to55 = false;
-                        Age56to65 = false;
-                        Plus65 = false;
                         break;
                     case "46-55":
-                        AgeNotShare = false;
-                        Min18 = false;
-                        Age18to24 = false;
-                        Age25to35 = false;
-                        Age36to45 = false;
                         Age46to55 = true;
-                        Age56to65 = false;
-                        Plus65 = false;
                         break;
                     case "56-65":
-                        AgeNotShare = false;
-                        Min18 = false;
-                        Age18to24 = false;
-                        Age25to35 = false;
-                        Age36to45 = false;
-                        Age46to55 = false;
                         Age56to65 = true;
-                        Plus65 = false;
                         break;
                     case "65+":
-                        AgeNotShare = false;
-                        Min18 = false;
-                        Age18to24 = false;
-                        Age25to35 = false;
-                        Age36to45 = false;
-                        Age46to55 = false;
-                        Age56to65 = false;
                         Plus65 = true;
                         break;
                 }
