@@ -1,0 +1,5602 @@
+[
+  {
+    "ID": 97,
+    "Longitude": 3.18728364,
+    "Latitude": 50.93624331,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:36:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 98,
+    "Longitude": 3.18728364,
+    "Latitude": 50.93624331,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:36:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 99,
+    "Longitude": 3.18728364,
+    "Latitude": 50.93624331,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:36:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 100,
+    "Longitude": 3.18728364,
+    "Latitude": 50.93624331,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:36:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 101,
+    "Longitude": 3.18728364,
+    "Latitude": 50.93624331,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:36:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 102,
+    "Longitude": 3.18724505,
+    "Latitude": 50.93625265,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:26.864+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 103,
+    "Longitude": 3.18724505,
+    "Latitude": 50.93625265,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:26.864+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 104,
+    "Longitude": 3.18724505,
+    "Latitude": 50.93625265,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:26.864+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 105,
+    "Longitude": 3.18725544,
+    "Latitude": 50.93624404,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:28.345+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 106,
+    "Longitude": 3.18725544,
+    "Latitude": 50.93624404,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:28.345+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 107,
+    "Longitude": 3.18725544,
+    "Latitude": 50.93624404,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:28.345+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 108,
+    "Longitude": 3.18726213,
+    "Latitude": 50.93623869,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:29.853+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 109,
+    "Longitude": 3.18726213,
+    "Latitude": 50.93623869,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:29.853+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 110,
+    "Longitude": 3.18726213,
+    "Latitude": 50.93623869,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:29.853+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 111,
+    "Longitude": 3.1872725,
+    "Latitude": 50.93623587,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:31.385+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 112,
+    "Longitude": 3.1872725,
+    "Latitude": 50.93623587,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:31.385+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 113,
+    "Longitude": 3.1872725,
+    "Latitude": 50.93623587,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:31.385+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 114,
+    "Longitude": 3.18725535,
+    "Latitude": 50.93622867,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:36:34+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 115,
+    "Longitude": 3.18725535,
+    "Latitude": 50.93622867,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:36:34+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 116,
+    "Longitude": 3.18725535,
+    "Latitude": 50.93622867,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:36:34+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 117,
+    "Longitude": 3.18725535,
+    "Latitude": 50.93622867,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:36:34+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 118,
+    "Longitude": 3.18727437,
+    "Latitude": 50.93617996,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:36:36+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 119,
+    "Longitude": 3.18727437,
+    "Latitude": 50.93617996,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:36:36+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 120,
+    "Longitude": 3.18727437,
+    "Latitude": 50.93617996,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:36:36+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 121,
+    "Longitude": 3.18727437,
+    "Latitude": 50.93617996,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:36:36+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 122,
+    "Longitude": 3.18733235,
+    "Latitude": 50.93606605,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:38+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 123,
+    "Longitude": 3.18733235,
+    "Latitude": 50.93606605,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:38+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 124,
+    "Longitude": 3.18733235,
+    "Latitude": 50.93606605,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:38+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 125,
+    "Longitude": 3.18733235,
+    "Latitude": 50.93606605,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:38+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 126,
+    "Longitude": 3.1874499,
+    "Latitude": 50.9363537,
+    "Altitude": 65.5999984741211,
+    "DateTimeOffset": "2020-07-20T10:36:19.903+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 16.159000396728516,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 127,
+    "Longitude": 3.18731815,
+    "Latitude": 50.93597504,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:40+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 128,
+    "Longitude": 3.18731815,
+    "Latitude": 50.93597504,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:40+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 129,
+    "Longitude": 3.18731815,
+    "Latitude": 50.93597504,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:40+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 130,
+    "Longitude": 3.1873193,
+    "Latitude": 50.93587708,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:42+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 131,
+    "Longitude": 3.1873193,
+    "Latitude": 50.93587708,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:42+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 132,
+    "Longitude": 3.1873193,
+    "Latitude": 50.93587708,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:42+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 133,
+    "Longitude": 3.1873193,
+    "Latitude": 50.93587708,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:42+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 134,
+    "Longitude": 3.1874499,
+    "Latitude": 50.9363537,
+    "Altitude": 65.5999984741211,
+    "DateTimeOffset": "2020-07-20T10:36:19.904+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 16.159000396728516,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 135,
+    "Longitude": 3.1874499,
+    "Latitude": 50.9363537,
+    "Altitude": 65.5999984741211,
+    "DateTimeOffset": "2020-07-20T10:36:19.904+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 16.159000396728516,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 136,
+    "Longitude": 3.1874499,
+    "Latitude": 50.9363537,
+    "Altitude": 65.5999984741211,
+    "DateTimeOffset": "2020-07-20T10:36:19.904+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 16.159000396728516,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 137,
+    "Longitude": 3.18753405,
+    "Latitude": 50.93582733,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:45+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 138,
+    "Longitude": 3.18753405,
+    "Latitude": 50.93582733,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:45+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 139,
+    "Longitude": 3.18753405,
+    "Latitude": 50.93582733,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:45+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 140,
+    "Longitude": 3.18757852,
+    "Latitude": 50.93577359,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:47+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 141,
+    "Longitude": 3.18757852,
+    "Latitude": 50.93577359,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:47+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 142,
+    "Longitude": 3.18757852,
+    "Latitude": 50.93577359,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:47+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 143,
+    "Longitude": 3.18757852,
+    "Latitude": 50.93577359,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:47+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 144,
+    "Longitude": 3.18771198,
+    "Latitude": 50.93576669,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:49+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 145,
+    "Longitude": 3.18771198,
+    "Latitude": 50.93576669,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:49+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 146,
+    "Longitude": 3.18771198,
+    "Latitude": 50.93576669,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:49+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 147,
+    "Longitude": 3.18771198,
+    "Latitude": 50.93576669,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:36:49+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 148,
+    "Longitude": 3.18782986,
+    "Latitude": 50.9357467,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:51+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 149,
+    "Longitude": 3.18782986,
+    "Latitude": 50.9357467,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:51+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 150,
+    "Longitude": 3.18782986,
+    "Latitude": 50.9357467,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:51+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 151,
+    "Longitude": 3.18782986,
+    "Latitude": 50.9357467,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:51+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 152,
+    "Longitude": 3.1874252,
+    "Latitude": 50.9363216,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:31.495+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 14.177000045776367,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 153,
+    "Longitude": 3.18796141,
+    "Latitude": 50.93575374,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:53+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 154,
+    "Longitude": 3.18796141,
+    "Latitude": 50.93575374,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:53+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 155,
+    "Longitude": 3.18796141,
+    "Latitude": 50.93575374,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:53+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 156,
+    "Longitude": 3.18812376,
+    "Latitude": 50.93574223,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:55+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 157,
+    "Longitude": 3.18812376,
+    "Latitude": 50.93574223,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:55+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 158,
+    "Longitude": 3.18812376,
+    "Latitude": 50.93574223,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:55+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 159,
+    "Longitude": 3.18812376,
+    "Latitude": 50.93574223,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:55+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 160,
+    "Longitude": 3.18819259,
+    "Latitude": 50.9357331,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:56.039+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 161,
+    "Longitude": 3.18819259,
+    "Latitude": 50.9357331,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:56.039+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 162,
+    "Longitude": 3.18819259,
+    "Latitude": 50.9357331,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:36:56.039+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 163,
+    "Longitude": 3.18828248,
+    "Latitude": 50.9357464,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:57.538+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 164,
+    "Longitude": 3.18828248,
+    "Latitude": 50.9357464,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:57.538+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 165,
+    "Longitude": 3.18828248,
+    "Latitude": 50.9357464,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:36:57.538+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 166,
+    "Longitude": 3.18844903,
+    "Latitude": 50.93574161,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:37:00+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 167,
+    "Longitude": 3.18844903,
+    "Latitude": 50.93574161,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:37:00+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 168,
+    "Longitude": 3.18844903,
+    "Latitude": 50.93574161,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:37:00+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 169,
+    "Longitude": 3.18844903,
+    "Latitude": 50.93574161,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:37:00+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 170,
+    "Longitude": 3.1884617,
+    "Latitude": 50.93582196,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:02+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 171,
+    "Longitude": 3.1884617,
+    "Latitude": 50.93582196,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:02+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 172,
+    "Longitude": 3.1884617,
+    "Latitude": 50.93582196,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:02+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 173,
+    "Longitude": 3.1884617,
+    "Latitude": 50.93582196,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:02+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 174,
+    "Longitude": 3.18852511,
+    "Latitude": 50.93587982,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:37:04+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 175,
+    "Longitude": 3.18852511,
+    "Latitude": 50.93587982,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:37:04+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 176,
+    "Longitude": 3.18852511,
+    "Latitude": 50.93587982,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:37:04+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 177,
+    "Longitude": 3.18852511,
+    "Latitude": 50.93587982,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:37:04+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 178,
+    "Longitude": 3.18851916,
+    "Latitude": 50.93593626,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:37:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 179,
+    "Longitude": 3.18851916,
+    "Latitude": 50.93593626,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:37:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 180,
+    "Longitude": 3.18851916,
+    "Latitude": 50.93593626,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:37:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 181,
+    "Longitude": 3.18851916,
+    "Latitude": 50.93593626,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:37:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 182,
+    "Longitude": 3.18849751,
+    "Latitude": 50.93598722,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:08+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 183,
+    "Longitude": 3.18849751,
+    "Latitude": 50.93598722,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:08+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 184,
+    "Longitude": 3.18849751,
+    "Latitude": 50.93598722,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:08+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 185,
+    "Longitude": 3.18849751,
+    "Latitude": 50.93598722,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:08+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 186,
+    "Longitude": 3.18847392,
+    "Latitude": 50.93604021,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:10+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 187,
+    "Longitude": 3.18847392,
+    "Latitude": 50.93604021,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:10+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 188,
+    "Longitude": 3.18847392,
+    "Latitude": 50.93604021,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:10+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 189,
+    "Longitude": 3.18847392,
+    "Latitude": 50.93604021,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:10+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 190,
+    "Longitude": 3.18847942,
+    "Latitude": 50.93610457,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:37:12+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 191,
+    "Longitude": 3.18847942,
+    "Latitude": 50.93610457,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:37:12+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 192,
+    "Longitude": 3.18847942,
+    "Latitude": 50.93610457,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:37:12+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 193,
+    "Longitude": 3.18847942,
+    "Latitude": 50.93610457,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:37:12+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 194,
+    "Longitude": 3.18851936,
+    "Latitude": 50.93617591,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 195,
+    "Longitude": 3.18851936,
+    "Latitude": 50.93617591,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 196,
+    "Longitude": 3.18851936,
+    "Latitude": 50.93617591,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 197,
+    "Longitude": 3.18851936,
+    "Latitude": 50.93617591,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 198,
+    "Longitude": 3.18856559,
+    "Latitude": 50.9362281,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:16+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 199,
+    "Longitude": 3.18856559,
+    "Latitude": 50.9362281,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:16+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 200,
+    "Longitude": 3.18856559,
+    "Latitude": 50.9362281,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:16+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 201,
+    "Longitude": 3.18856559,
+    "Latitude": 50.9362281,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:16+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 202,
+    "Longitude": 3.18860324,
+    "Latitude": 50.93628442,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:37:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 203,
+    "Longitude": 3.18860324,
+    "Latitude": 50.93628442,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:37:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 204,
+    "Longitude": 3.18860324,
+    "Latitude": 50.93628442,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:37:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 205,
+    "Longitude": 3.18860324,
+    "Latitude": 50.93628442,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:37:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 206,
+    "Longitude": 3.18861112,
+    "Latitude": 50.93636627,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:20+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 207,
+    "Longitude": 3.18861112,
+    "Latitude": 50.93636627,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:20+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 208,
+    "Longitude": 3.18861112,
+    "Latitude": 50.93636627,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:20+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 209,
+    "Longitude": 3.18861112,
+    "Latitude": 50.93636627,
+    "Altitude": 54.0,
+    "DateTimeOffset": "2020-07-20T10:37:20+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 210,
+    "Longitude": 3.18861172,
+    "Latitude": 50.93645212,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:37:22+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 211,
+    "Longitude": 3.18861172,
+    "Latitude": 50.93645212,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:37:22+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 212,
+    "Longitude": 3.18861172,
+    "Latitude": 50.93645212,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:37:22+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 213,
+    "Longitude": 3.18861172,
+    "Latitude": 50.93645212,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:37:22+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 214,
+    "Longitude": 3.18863398,
+    "Latitude": 50.93654446,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:37:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 215,
+    "Longitude": 3.18863398,
+    "Latitude": 50.93654446,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:37:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 216,
+    "Longitude": 3.18863398,
+    "Latitude": 50.93654446,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:37:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 217,
+    "Longitude": 3.18863398,
+    "Latitude": 50.93654446,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:37:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 218,
+    "Longitude": 3.18863051,
+    "Latitude": 50.9366223,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 219,
+    "Longitude": 3.18863051,
+    "Latitude": 50.9366223,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 220,
+    "Longitude": 3.18863051,
+    "Latitude": 50.9366223,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 221,
+    "Longitude": 3.18863051,
+    "Latitude": 50.9366223,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 222,
+    "Longitude": 3.18859865,
+    "Latitude": 50.93673193,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:29+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 223,
+    "Longitude": 3.18859865,
+    "Latitude": 50.93673193,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:29+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 224,
+    "Longitude": 3.18859865,
+    "Latitude": 50.93673193,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:29+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 225,
+    "Longitude": 3.18859865,
+    "Latitude": 50.93673193,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:29+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 226,
+    "Longitude": 3.18859865,
+    "Latitude": 50.93673193,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:29+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 227,
+    "Longitude": 3.18859865,
+    "Latitude": 50.93673193,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:37:29+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 228,
+    "Longitude": 3.18855271,
+    "Latitude": 50.93686555,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:37:32+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 229,
+    "Longitude": 3.18855271,
+    "Latitude": 50.93686555,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:37:32+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 230,
+    "Longitude": 3.18855271,
+    "Latitude": 50.93686555,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:37:32+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 231,
+    "Longitude": 3.18855271,
+    "Latitude": 50.93686555,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:37:32+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 232,
+    "Longitude": 3.18855271,
+    "Latitude": 50.93686555,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:37:32+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 233,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 234,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 235,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 236,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 237,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 238,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 239,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 240,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 241,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 242,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 243,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 244,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 245,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 246,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 247,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 248,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 249,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 250,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 251,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 252,
+    "Longitude": 3.18825877,
+    "Latitude": 50.93788663,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 253,
+    "Longitude": 3.18825509,
+    "Latitude": 50.93792291,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:38:06.908+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 254,
+    "Longitude": 3.18825509,
+    "Latitude": 50.93792291,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:38:06.908+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 255,
+    "Longitude": 3.18825509,
+    "Latitude": 50.93792291,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:38:06.908+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 256,
+    "Longitude": 3.18824092,
+    "Latitude": 50.93793254,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:08.455+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 257,
+    "Longitude": 3.18824092,
+    "Latitude": 50.93793254,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:08.455+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 258,
+    "Longitude": 3.18824092,
+    "Latitude": 50.93793254,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:08.455+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 259,
+    "Longitude": 3.18819084,
+    "Latitude": 50.93790364,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:09.898+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 260,
+    "Longitude": 3.18819084,
+    "Latitude": 50.93790364,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:09.898+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 261,
+    "Longitude": 3.18819084,
+    "Latitude": 50.93790364,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:09.898+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 262,
+    "Longitude": 3.18819282,
+    "Latitude": 50.9379031,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:11.414+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 263,
+    "Longitude": 3.18819282,
+    "Latitude": 50.9379031,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:11.414+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 264,
+    "Longitude": 3.18819282,
+    "Latitude": 50.9379031,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:11.414+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 265,
+    "Longitude": 3.1881696,
+    "Latitude": 50.93790583,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:38:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 266,
+    "Longitude": 3.1881696,
+    "Latitude": 50.93790583,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:38:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 267,
+    "Longitude": 3.1881696,
+    "Latitude": 50.93790583,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:38:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 268,
+    "Longitude": 3.1881696,
+    "Latitude": 50.93790583,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:38:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 269,
+    "Longitude": 3.18817546,
+    "Latitude": 50.93791727,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:14.966+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 270,
+    "Longitude": 3.18817546,
+    "Latitude": 50.93791727,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:14.966+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 271,
+    "Longitude": 3.18817546,
+    "Latitude": 50.93791727,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:14.966+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 272,
+    "Longitude": 3.18816829,
+    "Latitude": 50.9379122,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:16.417+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 273,
+    "Longitude": 3.18816829,
+    "Latitude": 50.9379122,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:16.417+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 274,
+    "Longitude": 3.18816829,
+    "Latitude": 50.9379122,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:16.417+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 275,
+    "Longitude": 3.18817013,
+    "Latitude": 50.9379108,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:17.957+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 276,
+    "Longitude": 3.18817013,
+    "Latitude": 50.9379108,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:17.957+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 277,
+    "Longitude": 3.18817013,
+    "Latitude": 50.9379108,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:17.957+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 278,
+    "Longitude": 3.18816458,
+    "Latitude": 50.93791008,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:19.495+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 279,
+    "Longitude": 3.18816458,
+    "Latitude": 50.93791008,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:19.495+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 280,
+    "Longitude": 3.18816458,
+    "Latitude": 50.93791008,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:19.495+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 281,
+    "Longitude": 3.18815824,
+    "Latitude": 50.93790828,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:21.003+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 282,
+    "Longitude": 3.18815824,
+    "Latitude": 50.93790828,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:21.003+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 283,
+    "Longitude": 3.18815824,
+    "Latitude": 50.93790828,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:38:21.003+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 284,
+    "Longitude": 3.18813796,
+    "Latitude": 50.93789538,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:38:22.514+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 285,
+    "Longitude": 3.18813796,
+    "Latitude": 50.93789538,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:38:22.514+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 286,
+    "Longitude": 3.18813796,
+    "Latitude": 50.93789538,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:38:22.514+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 287,
+    "Longitude": 3.18813161,
+    "Latitude": 50.93789109,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:38:24.01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 288,
+    "Longitude": 3.18813161,
+    "Latitude": 50.93789109,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:38:24.01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 289,
+    "Longitude": 3.18813161,
+    "Latitude": 50.93789109,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:38:24.01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 290,
+    "Longitude": 3.18811981,
+    "Latitude": 50.93789144,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:25.522+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 291,
+    "Longitude": 3.18811981,
+    "Latitude": 50.93789144,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:25.522+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 292,
+    "Longitude": 3.18811981,
+    "Latitude": 50.93789144,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:25.522+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 293,
+    "Longitude": 3.18811825,
+    "Latitude": 50.9378914,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:38:27.023+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 294,
+    "Longitude": 3.18811825,
+    "Latitude": 50.9378914,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:38:27.023+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 295,
+    "Longitude": 3.18811825,
+    "Latitude": 50.9378914,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:38:27.023+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 296,
+    "Longitude": 3.18811546,
+    "Latitude": 50.93789278,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:28.503+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 297,
+    "Longitude": 3.18811546,
+    "Latitude": 50.93789278,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:28.503+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 298,
+    "Longitude": 3.18811546,
+    "Latitude": 50.93789278,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:28.503+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 299,
+    "Longitude": 3.18811535,
+    "Latitude": 50.93789272,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:30.042+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 300,
+    "Longitude": 3.18811535,
+    "Latitude": 50.93789272,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:30.042+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 301,
+    "Longitude": 3.18811535,
+    "Latitude": 50.93789272,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:30.042+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 302,
+    "Longitude": 3.18811494,
+    "Latitude": 50.93789358,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:31.567+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 303,
+    "Longitude": 3.18811494,
+    "Latitude": 50.93789358,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:31.567+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 304,
+    "Longitude": 3.18811494,
+    "Latitude": 50.93789358,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:31.567+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 305,
+    "Longitude": 3.18811517,
+    "Latitude": 50.93789355,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:33.011+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 306,
+    "Longitude": 3.18811517,
+    "Latitude": 50.93789355,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:33.011+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 307,
+    "Longitude": 3.18811517,
+    "Latitude": 50.93789355,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:33.011+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 308,
+    "Longitude": 3.18811554,
+    "Latitude": 50.9378935,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:34.569+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 309,
+    "Longitude": 3.18811554,
+    "Latitude": 50.9378935,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:34.569+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 310,
+    "Longitude": 3.18811554,
+    "Latitude": 50.9378935,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:34.569+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 311,
+    "Longitude": 3.18811558,
+    "Latitude": 50.93789351,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:36.059+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 312,
+    "Longitude": 3.18811558,
+    "Latitude": 50.93789351,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:36.059+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 313,
+    "Longitude": 3.18811558,
+    "Latitude": 50.93789351,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:36.059+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 314,
+    "Longitude": 3.18811577,
+    "Latitude": 50.93789352,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:37.543+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 315,
+    "Longitude": 3.18811577,
+    "Latitude": 50.93789352,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:37.543+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 316,
+    "Longitude": 3.18811577,
+    "Latitude": 50.93789352,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:37.543+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 317,
+    "Longitude": 3.18811591,
+    "Latitude": 50.93789344,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:39.098+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 318,
+    "Longitude": 3.18811591,
+    "Latitude": 50.93789344,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:39.098+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 319,
+    "Longitude": 3.18811591,
+    "Latitude": 50.93789344,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:39.098+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 320,
+    "Longitude": 3.18811594,
+    "Latitude": 50.93789326,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:40.591+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 321,
+    "Longitude": 3.18811594,
+    "Latitude": 50.93789326,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:40.591+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 322,
+    "Longitude": 3.18811594,
+    "Latitude": 50.93789326,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:40.591+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 323,
+    "Longitude": 3.18811624,
+    "Latitude": 50.93789309,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:42.065+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 324,
+    "Longitude": 3.18811624,
+    "Latitude": 50.93789309,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:42.065+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 325,
+    "Longitude": 3.18811624,
+    "Latitude": 50.93789309,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:42.065+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 326,
+    "Longitude": 3.18811652,
+    "Latitude": 50.93789285,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:43.578+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 327,
+    "Longitude": 3.18811652,
+    "Latitude": 50.93789285,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:43.578+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 328,
+    "Longitude": 3.18811652,
+    "Latitude": 50.93789285,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:43.578+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 329,
+    "Longitude": 3.18811653,
+    "Latitude": 50.93789279,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:45.109+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 330,
+    "Longitude": 3.18811653,
+    "Latitude": 50.93789279,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:45.109+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 331,
+    "Longitude": 3.18811653,
+    "Latitude": 50.93789279,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:45.109+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 332,
+    "Longitude": 3.18811657,
+    "Latitude": 50.93789272,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:46.617+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 333,
+    "Longitude": 3.18811657,
+    "Latitude": 50.93789272,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:46.617+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 334,
+    "Longitude": 3.18811657,
+    "Latitude": 50.93789272,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:46.617+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 335,
+    "Longitude": 3.18811661,
+    "Latitude": 50.93789276,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:48.133+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 336,
+    "Longitude": 3.18811661,
+    "Latitude": 50.93789276,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:48.133+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 337,
+    "Longitude": 3.18811661,
+    "Latitude": 50.93789276,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:48.133+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 338,
+    "Longitude": 3.18811664,
+    "Latitude": 50.93789273,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:49.608+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 339,
+    "Longitude": 3.18811664,
+    "Latitude": 50.93789273,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:49.608+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 340,
+    "Longitude": 3.18811664,
+    "Latitude": 50.93789273,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:49.608+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 341,
+    "Longitude": 3.18811699,
+    "Latitude": 50.93789315,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:51.118+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 342,
+    "Longitude": 3.18811699,
+    "Latitude": 50.93789315,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:51.118+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 343,
+    "Longitude": 3.18811699,
+    "Latitude": 50.93789315,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:51.118+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 344,
+    "Longitude": 3.18811743,
+    "Latitude": 50.93789352,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:52.665+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 345,
+    "Longitude": 3.18811743,
+    "Latitude": 50.93789352,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:52.665+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 346,
+    "Longitude": 3.18811743,
+    "Latitude": 50.93789352,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:52.665+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 347,
+    "Longitude": 3.18811743,
+    "Latitude": 50.93789351,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:54.122+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 348,
+    "Longitude": 3.18811743,
+    "Latitude": 50.93789351,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:54.122+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 349,
+    "Longitude": 3.18811743,
+    "Latitude": 50.93789351,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:54.122+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 350,
+    "Longitude": 3.18811756,
+    "Latitude": 50.9378935,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:55.661+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 351,
+    "Longitude": 3.18811756,
+    "Latitude": 50.9378935,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:55.661+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 352,
+    "Longitude": 3.18811756,
+    "Latitude": 50.9378935,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:55.661+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 353,
+    "Longitude": 3.18811755,
+    "Latitude": 50.93789348,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:57.17+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 354,
+    "Longitude": 3.18811755,
+    "Latitude": 50.93789348,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:57.17+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 355,
+    "Longitude": 3.18811755,
+    "Latitude": 50.93789348,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:57.17+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 356,
+    "Longitude": 3.18811753,
+    "Latitude": 50.93789345,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:58.639+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 357,
+    "Longitude": 3.18811753,
+    "Latitude": 50.93789345,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:58.639+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 358,
+    "Longitude": 3.18811753,
+    "Latitude": 50.93789345,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:38:58.639+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 359,
+    "Longitude": 3.18811771,
+    "Latitude": 50.93789358,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 360,
+    "Longitude": 3.18811771,
+    "Latitude": 50.93789358,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 361,
+    "Longitude": 3.18811771,
+    "Latitude": 50.93789358,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 362,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 363,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 364,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 365,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 366,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 367,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 368,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 369,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 370,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 371,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 372,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 373,
+    "Longitude": 3.18812063,
+    "Latitude": 50.93789609,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:07+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 11.791999816894531,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 374,
+    "Longitude": 3.18811672,
+    "Latitude": 50.93789812,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:39:09+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 375,
+    "Longitude": 3.18811672,
+    "Latitude": 50.93789812,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:39:09+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 376,
+    "Longitude": 3.18811672,
+    "Latitude": 50.93789812,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:39:09+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 377,
+    "Longitude": 3.18811672,
+    "Latitude": 50.93789812,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:39:09+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 378,
+    "Longitude": 3.18811491,
+    "Latitude": 50.93789811,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:11+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 379,
+    "Longitude": 3.18811491,
+    "Latitude": 50.93789811,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:11+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 380,
+    "Longitude": 3.18811491,
+    "Latitude": 50.93789811,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:11+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 381,
+    "Longitude": 3.18811491,
+    "Latitude": 50.93789811,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:11+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 382,
+    "Longitude": 3.18811788,
+    "Latitude": 50.93790361,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:13+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 383,
+    "Longitude": 3.18811788,
+    "Latitude": 50.93790361,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:13+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 384,
+    "Longitude": 3.18811788,
+    "Latitude": 50.93790361,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:13+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 385,
+    "Longitude": 3.18811788,
+    "Latitude": 50.93790361,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:13+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 386,
+    "Longitude": 3.18812258,
+    "Latitude": 50.93791161,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:15+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 387,
+    "Longitude": 3.18812258,
+    "Latitude": 50.93791161,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:15+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 388,
+    "Longitude": 3.18812258,
+    "Latitude": 50.93791161,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:15+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 389,
+    "Longitude": 3.18812258,
+    "Latitude": 50.93791161,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:15+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 390,
+    "Longitude": 3.18812544,
+    "Latitude": 50.93791589,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:17+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 391,
+    "Longitude": 3.18812544,
+    "Latitude": 50.93791589,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:17+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 392,
+    "Longitude": 3.18812544,
+    "Latitude": 50.93791589,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:17+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 393,
+    "Longitude": 3.18812544,
+    "Latitude": 50.93791589,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:17+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 394,
+    "Longitude": 3.18816118,
+    "Latitude": 50.9379427,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:19+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 395,
+    "Longitude": 3.18816118,
+    "Latitude": 50.9379427,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:19+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 396,
+    "Longitude": 3.18816118,
+    "Latitude": 50.9379427,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:19+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 397,
+    "Longitude": 3.18816118,
+    "Latitude": 50.9379427,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:19+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 398,
+    "Longitude": 3.18823841,
+    "Latitude": 50.93798058,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:19.75+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 399,
+    "Longitude": 3.18823841,
+    "Latitude": 50.93798058,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:19.75+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 400,
+    "Longitude": 3.18823841,
+    "Latitude": 50.93798058,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:19.75+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 401,
+    "Longitude": 3.18822042,
+    "Latitude": 50.93798029,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:21.281+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 402,
+    "Longitude": 3.18822042,
+    "Latitude": 50.93798029,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:21.281+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 403,
+    "Longitude": 3.18822042,
+    "Latitude": 50.93798029,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:21.281+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 404,
+    "Longitude": 3.18818011,
+    "Latitude": 50.9379948,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 405,
+    "Longitude": 3.18818011,
+    "Latitude": 50.9379948,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 406,
+    "Longitude": 3.18818011,
+    "Latitude": 50.9379948,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 407,
+    "Longitude": 3.18818011,
+    "Latitude": 50.9379948,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 408,
+    "Longitude": 3.1881357,
+    "Latitude": 50.93801339,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 409,
+    "Longitude": 3.1881357,
+    "Latitude": 50.93801339,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 410,
+    "Longitude": 3.1881357,
+    "Latitude": 50.93801339,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 411,
+    "Longitude": 3.1881357,
+    "Latitude": 50.93801339,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 412,
+    "Longitude": 3.18808452,
+    "Latitude": 50.93803812,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:28+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 413,
+    "Longitude": 3.18808452,
+    "Latitude": 50.93803812,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:28+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 414,
+    "Longitude": 3.18808452,
+    "Latitude": 50.93803812,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:28+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 415,
+    "Longitude": 3.18808452,
+    "Latitude": 50.93803812,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:28+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 416,
+    "Longitude": 3.18802015,
+    "Latitude": 50.93807667,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:30+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 417,
+    "Longitude": 3.18802015,
+    "Latitude": 50.93807667,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:30+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 418,
+    "Longitude": 3.18802015,
+    "Latitude": 50.93807667,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:30+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 419,
+    "Longitude": 3.18802015,
+    "Latitude": 50.93807667,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:30+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 420,
+    "Longitude": 3.18795817,
+    "Latitude": 50.93812372,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:32+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 421,
+    "Longitude": 3.18795817,
+    "Latitude": 50.93812372,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:32+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 422,
+    "Longitude": 3.18795817,
+    "Latitude": 50.93812372,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:32+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 423,
+    "Longitude": 3.18795817,
+    "Latitude": 50.93812372,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:32+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 424,
+    "Longitude": 3.18790888,
+    "Latitude": 50.93818272,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:34+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 425,
+    "Longitude": 3.18790888,
+    "Latitude": 50.93818272,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:34+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 426,
+    "Longitude": 3.18790888,
+    "Latitude": 50.93818272,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:34+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 427,
+    "Longitude": 3.18790888,
+    "Latitude": 50.93818272,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:39:34+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 428,
+    "Longitude": 3.1878332,
+    "Latitude": 50.93823589,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:39:36+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 429,
+    "Longitude": 3.1878332,
+    "Latitude": 50.93823589,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:39:36+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 430,
+    "Longitude": 3.1878332,
+    "Latitude": 50.93823589,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:39:36+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 431,
+    "Longitude": 3.1878332,
+    "Latitude": 50.93823589,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:39:36+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 432,
+    "Longitude": 3.18777119,
+    "Latitude": 50.93824605,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:36.832+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 433,
+    "Longitude": 3.18777119,
+    "Latitude": 50.93824605,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:36.832+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 434,
+    "Longitude": 3.18777119,
+    "Latitude": 50.93824605,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:36.832+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 435,
+    "Longitude": 3.18774349,
+    "Latitude": 50.93829471,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:38.291+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 436,
+    "Longitude": 3.18774349,
+    "Latitude": 50.93829471,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:38.291+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 437,
+    "Longitude": 3.18774349,
+    "Latitude": 50.93829471,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:38.291+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 438,
+    "Longitude": 3.18773719,
+    "Latitude": 50.93837157,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 439,
+    "Longitude": 3.18773719,
+    "Latitude": 50.93837157,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 440,
+    "Longitude": 3.18773719,
+    "Latitude": 50.93837157,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 441,
+    "Longitude": 3.18773719,
+    "Latitude": 50.93837157,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 442,
+    "Longitude": 3.1876929,
+    "Latitude": 50.93845665,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:43+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 443,
+    "Longitude": 3.1876929,
+    "Latitude": 50.93845665,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:43+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 444,
+    "Longitude": 3.1876929,
+    "Latitude": 50.93845665,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:43+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 445,
+    "Longitude": 3.1876929,
+    "Latitude": 50.93845665,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:43+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 446,
+    "Longitude": 3.18764719,
+    "Latitude": 50.93851951,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:45+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 447,
+    "Longitude": 3.18764719,
+    "Latitude": 50.93851951,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:45+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 448,
+    "Longitude": 3.18764719,
+    "Latitude": 50.93851951,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:45+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 449,
+    "Longitude": 3.18764719,
+    "Latitude": 50.93851951,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:45+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 450,
+    "Longitude": 3.18762951,
+    "Latitude": 50.93858292,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:47+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 451,
+    "Longitude": 3.18762951,
+    "Latitude": 50.93858292,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:47+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 452,
+    "Longitude": 3.18762951,
+    "Latitude": 50.93858292,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:47+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 453,
+    "Longitude": 3.18762951,
+    "Latitude": 50.93858292,
+    "Altitude": 58.0,
+    "DateTimeOffset": "2020-07-20T10:39:47+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 454,
+    "Longitude": 3.18756342,
+    "Latitude": 50.93863128,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:49+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 455,
+    "Longitude": 3.18756342,
+    "Latitude": 50.93863128,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:49+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 456,
+    "Longitude": 3.18756342,
+    "Latitude": 50.93863128,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:49+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 457,
+    "Longitude": 3.18756342,
+    "Latitude": 50.93863128,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:49+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 458,
+    "Longitude": 3.18756287,
+    "Latitude": 50.93866403,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:49.864+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 459,
+    "Longitude": 3.18756287,
+    "Latitude": 50.93866403,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:49.864+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 460,
+    "Longitude": 3.18756287,
+    "Latitude": 50.93866403,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:49.864+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 461,
+    "Longitude": 3.18754098,
+    "Latitude": 50.93871892,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:51.401+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 462,
+    "Longitude": 3.18754098,
+    "Latitude": 50.93871892,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:51.401+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 463,
+    "Longitude": 3.18754098,
+    "Latitude": 50.93871892,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:39:51.401+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 464,
+    "Longitude": 3.18746535,
+    "Latitude": 50.93876044,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:52.923+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 465,
+    "Longitude": 3.18746535,
+    "Latitude": 50.93876044,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:52.923+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 466,
+    "Longitude": 3.18746535,
+    "Latitude": 50.93876044,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:39:52.923+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 467,
+    "Longitude": 3.18745945,
+    "Latitude": 50.93881118,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:54.385+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 468,
+    "Longitude": 3.18745945,
+    "Latitude": 50.93881118,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:54.385+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 469,
+    "Longitude": 3.18745945,
+    "Latitude": 50.93881118,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:39:54.385+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 470,
+    "Longitude": 3.18744509,
+    "Latitude": 50.93886516,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:39:55.925+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 471,
+    "Longitude": 3.18744509,
+    "Latitude": 50.93886516,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:39:55.925+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 472,
+    "Longitude": 3.18744509,
+    "Latitude": 50.93886516,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:39:55.925+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 473,
+    "Longitude": 3.18744643,
+    "Latitude": 50.93891957,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:39:57.417+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 474,
+    "Longitude": 3.18744643,
+    "Latitude": 50.93891957,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:39:57.417+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 475,
+    "Longitude": 3.18744643,
+    "Latitude": 50.93891957,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:39:57.417+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 476,
+    "Longitude": 3.18747181,
+    "Latitude": 50.9389838,
+    "Altitude": 51.0,
+    "DateTimeOffset": "2020-07-20T10:39:58.942+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 477,
+    "Longitude": 3.18747181,
+    "Latitude": 50.9389838,
+    "Altitude": 51.0,
+    "DateTimeOffset": "2020-07-20T10:39:58.942+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 478,
+    "Longitude": 3.18747181,
+    "Latitude": 50.9389838,
+    "Altitude": 51.0,
+    "DateTimeOffset": "2020-07-20T10:39:58.942+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 479,
+    "Longitude": 3.18745956,
+    "Latitude": 50.93903342,
+    "Altitude": 49.0,
+    "DateTimeOffset": "2020-07-20T10:40:00.422+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 480,
+    "Longitude": 3.18745956,
+    "Latitude": 50.93903342,
+    "Altitude": 49.0,
+    "DateTimeOffset": "2020-07-20T10:40:00.422+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 481,
+    "Longitude": 3.18745956,
+    "Latitude": 50.93903342,
+    "Altitude": 49.0,
+    "DateTimeOffset": "2020-07-20T10:40:00.422+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 482,
+    "Longitude": 3.18749929,
+    "Latitude": 50.93907436,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:01.924+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 483,
+    "Longitude": 3.18749929,
+    "Latitude": 50.93907436,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:01.924+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 484,
+    "Longitude": 3.18749929,
+    "Latitude": 50.93907436,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:01.924+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 485,
+    "Longitude": 3.18747956,
+    "Latitude": 50.93911357,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:03.448+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 486,
+    "Longitude": 3.18747956,
+    "Latitude": 50.93911357,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:03.448+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 487,
+    "Longitude": 3.18747956,
+    "Latitude": 50.93911357,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:03.448+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 488,
+    "Longitude": 3.187588,
+    "Latitude": 50.93921771,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:40:04.943+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 489,
+    "Longitude": 3.187588,
+    "Latitude": 50.93921771,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:40:04.943+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 490,
+    "Longitude": 3.187588,
+    "Latitude": 50.93921771,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:40:04.943+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 491,
+    "Longitude": 3.18762271,
+    "Latitude": 50.93925653,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:40:06.418+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 492,
+    "Longitude": 3.18762271,
+    "Latitude": 50.93925653,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:40:06.418+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 493,
+    "Longitude": 3.18762271,
+    "Latitude": 50.93925653,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:40:06.418+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 494,
+    "Longitude": 3.18767651,
+    "Latitude": 50.93927746,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:40:08.206+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 495,
+    "Longitude": 3.18767651,
+    "Latitude": 50.93927746,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:40:08.206+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 496,
+    "Longitude": 3.18767651,
+    "Latitude": 50.93927746,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:40:08.206+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 497,
+    "Longitude": 3.18783856,
+    "Latitude": 50.93921627,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:40:09.6+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 498,
+    "Longitude": 3.18783856,
+    "Latitude": 50.93921627,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:40:09.6+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 499,
+    "Longitude": 3.18783856,
+    "Latitude": 50.93921627,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:40:09.6+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 500,
+    "Longitude": 3.18790778,
+    "Latitude": 50.93921698,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:40:11.2+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 501,
+    "Longitude": 3.18790778,
+    "Latitude": 50.93921698,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:40:11.2+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 502,
+    "Longitude": 3.18790778,
+    "Latitude": 50.93921698,
+    "Altitude": 62.0,
+    "DateTimeOffset": "2020-07-20T10:40:11.2+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 503,
+    "Longitude": 3.18799761,
+    "Latitude": 50.93920115,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:40:12.7+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 504,
+    "Longitude": 3.18799761,
+    "Latitude": 50.93920115,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:40:12.7+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 505,
+    "Longitude": 3.18799761,
+    "Latitude": 50.93920115,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:40:12.7+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 506,
+    "Longitude": 3.18811932,
+    "Latitude": 50.9391792,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:40:14.1+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 507,
+    "Longitude": 3.18811932,
+    "Latitude": 50.9391792,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:40:14.1+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 508,
+    "Longitude": 3.18811932,
+    "Latitude": 50.9391792,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:40:14.1+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 509,
+    "Longitude": 3.18824251,
+    "Latitude": 50.93918233,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:40:15.7+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 510,
+    "Longitude": 3.18824251,
+    "Latitude": 50.93918233,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:40:15.7+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 511,
+    "Longitude": 3.18824251,
+    "Latitude": 50.93918233,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:40:15.7+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 512,
+    "Longitude": 3.18838766,
+    "Latitude": 50.93916825,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:40:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 513,
+    "Longitude": 3.18838766,
+    "Latitude": 50.93916825,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:40:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 514,
+    "Longitude": 3.18838766,
+    "Latitude": 50.93916825,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:40:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 515,
+    "Longitude": 3.18846711,
+    "Latitude": 50.93917039,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:40:18.826+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 516,
+    "Longitude": 3.18846711,
+    "Latitude": 50.93917039,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:40:18.826+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 517,
+    "Longitude": 3.18846711,
+    "Latitude": 50.93917039,
+    "Altitude": 57.0,
+    "DateTimeOffset": "2020-07-20T10:40:18.826+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 518,
+    "Longitude": 3.18856302,
+    "Latitude": 50.93916677,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:40:20.281+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 519,
+    "Longitude": 3.18856302,
+    "Latitude": 50.93916677,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:40:20.281+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 520,
+    "Longitude": 3.18856302,
+    "Latitude": 50.93916677,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:40:20.281+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 521,
+    "Longitude": 3.18874473,
+    "Latitude": 50.93915206,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:40:21.744+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 522,
+    "Longitude": 3.18874473,
+    "Latitude": 50.93915206,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:40:21.744+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 523,
+    "Longitude": 3.18874473,
+    "Latitude": 50.93915206,
+    "Altitude": 55.0,
+    "DateTimeOffset": "2020-07-20T10:40:21.744+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 524,
+    "Longitude": 3.18889551,
+    "Latitude": 50.93912801,
+    "Altitude": 50.0,
+    "DateTimeOffset": "2020-07-20T10:40:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 525,
+    "Longitude": 3.18889551,
+    "Latitude": 50.93912801,
+    "Altitude": 50.0,
+    "DateTimeOffset": "2020-07-20T10:40:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 526,
+    "Longitude": 3.18889551,
+    "Latitude": 50.93912801,
+    "Altitude": 50.0,
+    "DateTimeOffset": "2020-07-20T10:40:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 527,
+    "Longitude": 3.18911478,
+    "Latitude": 50.9392493,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 528,
+    "Longitude": 3.18911478,
+    "Latitude": 50.9392493,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 529,
+    "Longitude": 3.18911478,
+    "Latitude": 50.9392493,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 530,
+    "Longitude": 3.18911478,
+    "Latitude": 50.9392493,
+    "Altitude": 53.0,
+    "DateTimeOffset": "2020-07-20T10:40:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 531,
+    "Longitude": 3.18925137,
+    "Latitude": 50.93924756,
+    "Altitude": 52.0,
+    "DateTimeOffset": "2020-07-20T10:40:28+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 532,
+    "Longitude": 3.18925137,
+    "Latitude": 50.93924756,
+    "Altitude": 52.0,
+    "DateTimeOffset": "2020-07-20T10:40:28+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 533,
+    "Longitude": 3.18925137,
+    "Latitude": 50.93924756,
+    "Altitude": 52.0,
+    "DateTimeOffset": "2020-07-20T10:40:28+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 534,
+    "Longitude": 3.18925137,
+    "Latitude": 50.93924756,
+    "Altitude": 52.0,
+    "DateTimeOffset": "2020-07-20T10:40:28+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 9.6480007171630859,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 535,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 536,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 537,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 538,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 539,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 540,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 541,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 542,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 543,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 544,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 545,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 546,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 547,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 548,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 549,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 550,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 551,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 552,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 553,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 554,
+    "Longitude": 3.19466476,
+    "Latitude": 50.9381576,
+    "Altitude": 39.0,
+    "DateTimeOffset": "2020-07-20T10:41:50+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 555,
+    "Longitude": 3.19477957,
+    "Latitude": 50.93809452,
+    "Altitude": 74.0,
+    "DateTimeOffset": "2020-07-20T10:41:52+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 556,
+    "Longitude": 3.19477957,
+    "Latitude": 50.93809452,
+    "Altitude": 74.0,
+    "DateTimeOffset": "2020-07-20T10:41:52+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 557,
+    "Longitude": 3.19477957,
+    "Latitude": 50.93809452,
+    "Altitude": 74.0,
+    "DateTimeOffset": "2020-07-20T10:41:52+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 558,
+    "Longitude": 3.19477957,
+    "Latitude": 50.93809452,
+    "Altitude": 74.0,
+    "DateTimeOffset": "2020-07-20T10:41:52+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 559,
+    "Longitude": 3.19488166,
+    "Latitude": 50.9379807,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:41:54+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 560,
+    "Longitude": 3.19488166,
+    "Latitude": 50.9379807,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:41:54+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 561,
+    "Longitude": 3.19488166,
+    "Latitude": 50.9379807,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:41:54+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 562,
+    "Longitude": 3.19494514,
+    "Latitude": 50.93788948,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:41:56+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 563,
+    "Longitude": 3.19494514,
+    "Latitude": 50.93788948,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:41:56+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 564,
+    "Longitude": 3.19494514,
+    "Latitude": 50.93788948,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:41:56+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 565,
+    "Longitude": 3.19494514,
+    "Latitude": 50.93788948,
+    "Altitude": 56.0,
+    "DateTimeOffset": "2020-07-20T10:41:56+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 566,
+    "Longitude": 3.19493843,
+    "Latitude": 50.93787416,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:41:56.846+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 567,
+    "Longitude": 3.19493843,
+    "Latitude": 50.93787416,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:41:56.846+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 568,
+    "Longitude": 3.19493843,
+    "Latitude": 50.93787416,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:41:56.846+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 569,
+    "Longitude": 3.19494665,
+    "Latitude": 50.93780575,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:41:58.389+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 570,
+    "Longitude": 3.19494665,
+    "Latitude": 50.93780575,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:41:58.389+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 571,
+    "Longitude": 3.19494665,
+    "Latitude": 50.93780575,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:41:58.389+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 572,
+    "Longitude": 3.19499665,
+    "Latitude": 50.93763742,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:42:01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 573,
+    "Longitude": 3.19499665,
+    "Latitude": 50.93763742,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:42:01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 574,
+    "Longitude": 3.19499665,
+    "Latitude": 50.93763742,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:42:01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 575,
+    "Longitude": 3.19499665,
+    "Latitude": 50.93763742,
+    "Altitude": 59.0,
+    "DateTimeOffset": "2020-07-20T10:42:01+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 576,
+    "Longitude": 3.19497364,
+    "Latitude": 50.93755862,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:42:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 577,
+    "Longitude": 3.19497364,
+    "Latitude": 50.93755862,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:42:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 578,
+    "Longitude": 3.19497364,
+    "Latitude": 50.93755862,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:42:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 579,
+    "Longitude": 3.19497364,
+    "Latitude": 50.93755862,
+    "Altitude": 60.0,
+    "DateTimeOffset": "2020-07-20T10:42:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 580,
+    "Longitude": 3.19499178,
+    "Latitude": 50.93752626,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:03.926+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 581,
+    "Longitude": 3.19499178,
+    "Latitude": 50.93752626,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:03.926+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 582,
+    "Longitude": 3.19499178,
+    "Latitude": 50.93752626,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:03.926+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 583,
+    "Longitude": 3.19502233,
+    "Latitude": 50.93744265,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:42:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 584,
+    "Longitude": 3.19502233,
+    "Latitude": 50.93744265,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:42:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 585,
+    "Longitude": 3.19502233,
+    "Latitude": 50.93744265,
+    "Altitude": 66.0,
+    "DateTimeOffset": "2020-07-20T10:42:06+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 586,
+    "Longitude": 3.19504359,
+    "Latitude": 50.93735148,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:42:08+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 587,
+    "Longitude": 3.19504359,
+    "Latitude": 50.93735148,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:42:08+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 588,
+    "Longitude": 3.19504359,
+    "Latitude": 50.93735148,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:42:08+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 589,
+    "Longitude": 3.19504359,
+    "Latitude": 50.93735148,
+    "Altitude": 67.0,
+    "DateTimeOffset": "2020-07-20T10:42:08+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 590,
+    "Longitude": 3.19508534,
+    "Latitude": 50.93724426,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:10+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 591,
+    "Longitude": 3.19508534,
+    "Latitude": 50.93724426,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:10+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 592,
+    "Longitude": 3.19508534,
+    "Latitude": 50.93724426,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:10+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 593,
+    "Longitude": 3.19508534,
+    "Latitude": 50.93724426,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:10+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 594,
+    "Longitude": 3.19508801,
+    "Latitude": 50.93714881,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:12+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 595,
+    "Longitude": 3.19508801,
+    "Latitude": 50.93714881,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:12+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 596,
+    "Longitude": 3.19508801,
+    "Latitude": 50.93714881,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:12+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 597,
+    "Longitude": 3.19508801,
+    "Latitude": 50.93714881,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:12+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 598,
+    "Longitude": 3.19508268,
+    "Latitude": 50.937083199999996,
+    "Altitude": 69.0,
+    "DateTimeOffset": "2020-07-20T10:42:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 599,
+    "Longitude": 3.19508268,
+    "Latitude": 50.937083199999996,
+    "Altitude": 69.0,
+    "DateTimeOffset": "2020-07-20T10:42:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 600,
+    "Longitude": 3.19508268,
+    "Latitude": 50.937083199999996,
+    "Altitude": 69.0,
+    "DateTimeOffset": "2020-07-20T10:42:14+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 601,
+    "Longitude": 3.19511606,
+    "Latitude": 50.9369779,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:16+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 602,
+    "Longitude": 3.19511606,
+    "Latitude": 50.9369779,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:16+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 603,
+    "Longitude": 3.19511606,
+    "Latitude": 50.9369779,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:16+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 604,
+    "Longitude": 3.19511606,
+    "Latitude": 50.9369779,
+    "Altitude": 68.0,
+    "DateTimeOffset": "2020-07-20T10:42:16+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 4.2880001068115234,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 605,
+    "Longitude": 3.19510167,
+    "Latitude": 50.93688713,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:42:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 606,
+    "Longitude": 3.19510167,
+    "Latitude": 50.93688713,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:42:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 607,
+    "Longitude": 3.19510167,
+    "Latitude": 50.93688713,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:42:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 608,
+    "Longitude": 3.19510167,
+    "Latitude": 50.93688713,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:42:18+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 609,
+    "Longitude": 3.19518701,
+    "Latitude": 50.93677911,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:42:20+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 610,
+    "Longitude": 3.19518701,
+    "Latitude": 50.93677911,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:42:20+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 611,
+    "Longitude": 3.19518701,
+    "Latitude": 50.93677911,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:42:20+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 612,
+    "Longitude": 3.19518701,
+    "Latitude": 50.93677911,
+    "Altitude": 64.0,
+    "DateTimeOffset": "2020-07-20T10:42:20+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 613,
+    "Longitude": 3.19520508,
+    "Latitude": 50.93668628,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:42:22+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 614,
+    "Longitude": 3.19520508,
+    "Latitude": 50.93668628,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:42:22+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 615,
+    "Longitude": 3.19520508,
+    "Latitude": 50.93668628,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:42:22+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 616,
+    "Longitude": 3.19520508,
+    "Latitude": 50.93668628,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:42:22+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 3.2160000801086426,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 617,
+    "Longitude": 3.19526182,
+    "Latitude": 50.93657685,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 618,
+    "Longitude": 3.19526182,
+    "Latitude": 50.93657685,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 619,
+    "Longitude": 3.19526182,
+    "Latitude": 50.93657685,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 620,
+    "Longitude": 3.19526182,
+    "Latitude": 50.93657685,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:24+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 621,
+    "Longitude": 3.1952506,
+    "Latitude": 50.93647733,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 622,
+    "Longitude": 3.1952506,
+    "Latitude": 50.93647733,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 623,
+    "Longitude": 3.1952506,
+    "Latitude": 50.93647733,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 624,
+    "Longitude": 3.1952506,
+    "Latitude": 50.93647733,
+    "Altitude": 63.0,
+    "DateTimeOffset": "2020-07-20T10:42:26+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 7.504000186920166,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 625,
+    "Longitude": 3.19484589,
+    "Latitude": 50.93543902,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:42:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 626,
+    "Longitude": 3.19484589,
+    "Latitude": 50.93543902,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:42:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 627,
+    "Longitude": 3.19484589,
+    "Latitude": 50.93543902,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:42:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 628,
+    "Longitude": 3.19484589,
+    "Latitude": 50.93543902,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:42:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 629,
+    "Longitude": 3.19484589,
+    "Latitude": 50.93543902,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:42:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 630,
+    "Longitude": 3.19484589,
+    "Latitude": 50.93543902,
+    "Altitude": 61.0,
+    "DateTimeOffset": "2020-07-20T10:42:41+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 15.008000373840332,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 631,
+    "Longitude": 3.19478849,
+    "Latitude": 50.93538164,
+    "Altitude": 70.0,
+    "DateTimeOffset": "2020-07-20T10:42:44+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 632,
+    "Longitude": 3.19478849,
+    "Latitude": 50.93538164,
+    "Altitude": 70.0,
+    "DateTimeOffset": "2020-07-20T10:42:44+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 633,
+    "Longitude": 3.19478849,
+    "Latitude": 50.93538164,
+    "Altitude": 70.0,
+    "DateTimeOffset": "2020-07-20T10:42:44+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 634,
+    "Longitude": 3.19478849,
+    "Latitude": 50.93538164,
+    "Altitude": 70.0,
+    "DateTimeOffset": "2020-07-20T10:42:44+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 635,
+    "Longitude": 3.19478849,
+    "Latitude": 50.93538164,
+    "Altitude": 70.0,
+    "DateTimeOffset": "2020-07-20T10:42:44+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 636,
+    "Longitude": 3.19478849,
+    "Latitude": 50.93538164,
+    "Altitude": 70.0,
+    "DateTimeOffset": "2020-07-20T10:42:44+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 8.5760002136230469,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 637,
+    "Longitude": 3.19480907,
+    "Latitude": 50.9353447,
+    "Altitude": 73.0,
+    "DateTimeOffset": "2020-07-20T10:42:46+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 638,
+    "Longitude": 3.19480907,
+    "Latitude": 50.9353447,
+    "Altitude": 73.0,
+    "DateTimeOffset": "2020-07-20T10:42:46+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 639,
+    "Longitude": 3.19480907,
+    "Latitude": 50.9353447,
+    "Altitude": 73.0,
+    "DateTimeOffset": "2020-07-20T10:42:46+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 640,
+    "Longitude": 3.19480907,
+    "Latitude": 50.9353447,
+    "Altitude": 73.0,
+    "DateTimeOffset": "2020-07-20T10:42:46+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 5.3600001335144043,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 641,
+    "Longitude": 3.19484352,
+    "Latitude": 50.93524549,
+    "Altitude": 71.0,
+    "DateTimeOffset": "2020-07-20T10:42:48+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 642,
+    "Longitude": 3.19484352,
+    "Latitude": 50.93524549,
+    "Altitude": 71.0,
+    "DateTimeOffset": "2020-07-20T10:42:48+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 643,
+    "Longitude": 3.19484352,
+    "Latitude": 50.93524549,
+    "Altitude": 71.0,
+    "DateTimeOffset": "2020-07-20T10:42:48+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 6.4320001602172852,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 644,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 645,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 646,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 647,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 648,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 649,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 650,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 651,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 652,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 653,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 654,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 655,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  },
+  {
+    "ID": 656,
+    "Longitude": 3.19537944,
+    "Latitude": 50.93507777,
+    "Altitude": 65.0,
+    "DateTimeOffset": "2020-07-20T10:43:03+00:00",
+    "IsFromMockProvider": false,
+    "Accuracy": 13.936000823974609,
+    "RideInfoID": 5
+  }
+]
