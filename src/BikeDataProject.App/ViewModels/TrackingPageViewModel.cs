@@ -1,5 +1,6 @@
 ﻿using BikeDataProject.App.API;
 using BikeDataProject.App.Models;
+using BikeDataProject.App.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,16 +40,19 @@ namespace BikeDataProject.App.ViewModels
             {
                 continueTimer = false;
 
-                await App.Database.SaveRideInfoAsync(new RideInfo() {ID=rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
+                await App.Database.SaveRideInfoAsync(new RideInfo() { ID = rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
 
                 await GetRideInfoAsync();
 
-                //await SendTracks();
+                await SendTracks();
 
-                await NavigateToMainPage();
+                //await NavigateToMainPage();
+
+                await NavigateToTrackingSummaryPage();
             });
 
-            Device.StartTimer(TimeSpan.FromMilliseconds(1000), () => {
+            Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
+            {
 
                 Device.BeginInvokeOnMainThread(() =>
                 {
@@ -59,9 +63,9 @@ namespace BikeDataProject.App.ViewModels
             });
 
             List<Loc> locs = new List<Loc>();
-            Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
+            Device.StartTimer(TimeSpan.FromMilliseconds(500), () =>
             {
-                
+
                 Task.Factory.StartNew(async () =>
                 {
                     var location = await MainThread.InvokeOnMainThreadAsync<Location>(this.GetLocation);
@@ -73,6 +77,10 @@ namespace BikeDataProject.App.ViewModels
                         if (location.Altitude != null)
                         {
                             loc.Altitude = (double)location.Altitude;
+                        }
+                        if (location.Accuracy != null) 
+                        {
+                            loc.Accuracy = (double)location.Accuracy;
                         }
 
                         await App.Database.SaveLocationAsync(loc);
@@ -141,6 +149,15 @@ namespace BikeDataProject.App.ViewModels
         private async Task NavigateToMainPage()
         {
             await Application.Current.MainPage.Navigation.PopAsync();
+        }
+
+        private async Task NavigateToTrackingSummaryPage()
+        {
+            var trackingSummaryVM = new TrackingSummaryPageViewModel(Distance, ElapsedTime);
+            var trackingSummaryPage = new TrackingSummaryPage();
+            trackingSummaryPage.BindingContext = trackingSummaryVM;
+
+            await Application.Current.MainPage.Navigation.PushAsync(trackingSummaryPage);
         }
 
         private async Task<Location> GetLocation()

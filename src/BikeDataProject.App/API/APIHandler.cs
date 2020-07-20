@@ -25,6 +25,8 @@ namespace BikeDataProject.App.API
                 Content = new StringContent(JsonConvert.SerializeObject(track), Encoding.UTF8, Constants.ApplicationJson)
             };
 
+            var test = JsonConvert.SerializeObject(track);
+
             var response =  await client.SendAsync(requestMessage);
 
             return response.IsSuccessStatusCode;

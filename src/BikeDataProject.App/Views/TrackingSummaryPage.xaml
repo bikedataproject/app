@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="BikeDataProject.App.Views.TrackingPage"
+             x:Class="BikeDataProject.App.Views.TrackingSummaryPage"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -13,17 +13,13 @@
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="VerticalTextAlignment" Value="Center"/>
-                <Setter Property="FontSize" Value="40"/>
+                <Setter Property="FontSize" Value="30"/>
             </Style>
             <Style x:Key="trackingValueInfo" TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
-                <Setter Property="FontSize" Value="20"/>
-            </Style>
-            <Style x:Key="trackingValueWrapper" TargetType="Frame">
-                <Setter Property="Padding" Value="0"/>
-                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="FontSize" Value="15"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -31,8 +27,9 @@
         <Frame Padding="0" BackgroundColor="LightGray">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -40,48 +37,44 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="White" Margin="0,20,0,0" Padding="0,0,0,0" CornerRadius="20">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
+                <!-- First row -->
+                <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="White" Padding="0" Margin="0,20,0,0" CornerRadius="10">
+                    <Grid Margin="20,10,20,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-                        <Grid Grid.Row="0" Margin="20,20,20,0">
+                        <!-- Distance -->
+                        <Grid Grid.Column="0" Margin="0,5,10,0">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
 
-                            <Frame Grid.Row="0" Style="{StaticResource trackingValueWrapper}">
-                                <Label  Text="{Binding Distance, StringFormat='{0:0.000000} km'}" Style="{StaticResource trackingValue}"/>
-                            </Frame>
-                            
+                            <Label Grid.Row="0" Text="{Binding Distance, StringFormat='{0:0.0} km'}" Style="{StaticResource trackingValue}"/>
                             <Label Grid.Row="1" Text="DISTANCE" Style="{StaticResource trackingValueInfo}"/>
                         </Grid>
 
-                        <Grid Grid.Row="1" Margin="20,10,20,10">
+                        <!-- Vertical line -->
+                        <BoxView Grid.Column="1" Margin="0" Color="LightGray" WidthRequest="1"/>
+
+                        <!-- Time -->
+                        <Grid Grid.Column="2" Margin="10,5,0,0">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="auto"/>
                                 <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
 
-                            <Frame Grid.Row="0" Style="{StaticResource trackingValueWrapper}">
-                                <Label Text="{Binding ElapsedTime, StringFormat='{}{0:hh}:{0:mm}:{0:ss}' }" Style="{StaticResource trackingValue}"/>
-                            </Frame>
-                            
+                            <Label Grid.Row="0" Text="{Binding ElapsedTime, StringFormat='{}{0:hh}:{0:mm}'}" Style="{StaticResource trackingValue}"/>
                             <Label Grid.Row="1" Text="TIME" Style="{StaticResource trackingValueInfo}"/>
                         </Grid>
                     </Grid>
                 </Frame>
-
-
-                <Button Grid.Row="1" Grid.Column="1" Text="Stop Tracking" 
-                    Command="{Binding StopTrackingCommand}"
-                    Style="{StaticResource buttonTracking}"
-                    VerticalOptions="End"
-                    Margin="0,0,0,50"></Button>
-
+                <!-- User Info-->
+                
+                <!-- Buttons -->
             </Grid>
         </Frame>
     </ContentPage.Content>
