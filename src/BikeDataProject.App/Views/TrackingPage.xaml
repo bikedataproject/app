@@ -56,7 +56,7 @@
                             <Frame Grid.Row="0" Style="{StaticResource trackingValueWrapper}">
                                 <Label  Text="{Binding Distance, StringFormat='{0:0.000000} km'}" Style="{StaticResource trackingValue}"/>
                             </Frame>
-                            
+
                             <Label Grid.Row="1" Text="DISTANCE" Style="{StaticResource trackingValueInfo}"/>
                         </Grid>
 
@@ -69,7 +69,7 @@
                             <Frame Grid.Row="0" Style="{StaticResource trackingValueWrapper}">
                                 <Label Text="{Binding ElapsedTime, StringFormat='{}{0:hh}:{0:mm}:{0:ss}' }" Style="{StaticResource trackingValue}"/>
                             </Frame>
-                            
+
                             <Label Grid.Row="1" Text="TIME" Style="{StaticResource trackingValueInfo}"/>
                         </Grid>
                     </Grid>

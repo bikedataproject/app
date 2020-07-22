@@ -16,12 +16,13 @@ namespace BikeDataProject.App.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        APIHandler handler;
+        private bool _state = false;
+        private object _sync = new object();
+
         Stopwatch stopwatch;
 
         public TrackingPageViewModel()
         {
-            handler = new APIHandler();
             stopwatch = new Stopwatch();
             stopwatch.Start();
             continueTimer = true;
@@ -35,17 +36,31 @@ namespace BikeDataProject.App.ViewModels
 
             StopTrackingCommand = new Command(async () =>
             {
-                continueTimer = false;
+                //This doesn't work yet
+                lock (_sync)
+                {
 
-                await App.Database.SaveRideInfoAsync(new RideInfo() { ID = rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
+                    if (_state) return;
+                    _state = true;
+                }
 
-                await GetRideInfoAsync();
+                try
+                {
+                    continueTimer = false;
 
-                //await SendTracks();
+                    await App.Database.SaveRideInfoAsync(new RideInfo() { ID = rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
 
-                //await NavigateToMainPage();
+                    await NavigateToTrackingSummaryPage();
+                }
+                catch (Exception e)
+                {
+                    // TODO: log exception here!
+                }
+                finally
+                {
+                    _state = false;
+                }
 
-                await NavigateToTrackingSummaryPage();
             });
 
             Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
@@ -59,7 +74,6 @@ namespace BikeDataProject.App.ViewModels
                 return continueTimer;
             });
 
-            List<Loc> locs = new List<Loc>();
             Device.StartTimer(TimeSpan.FromMilliseconds(500), () =>
             {
 
@@ -68,14 +82,13 @@ namespace BikeDataProject.App.ViewModels
                     var location = await MainThread.InvokeOnMainThreadAsync<Location>(this.GetLocation);
                     if (location != null)
                     {
-                        Debug.WriteLine($"------- Speed: {location.Speed} Longitude: {location.Longitude}");
                         var loc = new Loc { Longitude = location.Longitude, Latitude = location.Latitude, DateTimeOffset = location.Timestamp, RideInfoID = rideInfoId };
 
                         if (location.Altitude != null)
                         {
                             loc.Altitude = (double)location.Altitude;
                         }
-                        if (location.Accuracy != null) 
+                        if (location.Accuracy != null)
                         {
                             loc.Accuracy = (double)location.Accuracy;
                         }
@@ -87,13 +100,10 @@ namespace BikeDataProject.App.ViewModels
                             Distance += Location.CalculateDistance(lastLoc.Latitude, lastLoc.Longitude, loc.Latitude, loc.Longitude, DistanceUnits.Kilometers);
                         }
                         lastLoc = loc;
-
-                        //Console.WriteLine($"Accuracy: {location.Accuracy}, Time: {location.Timestamp}, Long: {location.Longitude}, lat: {location.Latitude}");
                     }
                     else
                     {
-                        //await SendTracks();
-                        await MainThread.InvokeOnMainThreadAsync(this.NavigateToMainPage);
+                        await MainThread.InvokeOnMainThreadAsync(this.NavigateToTrackingSummaryPage);
                     }
                 });
 
@@ -133,21 +143,6 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
-        private async Task<bool> SendTracks()
-        {
-            return await handler.SendTracks(new Track()
-            {
-                Locations = await GetLocationsAsync(),
-                UserId = Guid.Empty
-            });
-        }
-
-
-        private async Task NavigateToMainPage()
-        {
-            await Application.Current.MainPage.Navigation.PopAsync();
-        }
-
         private async Task NavigateToTrackingSummaryPage()
         {
             var trackingSummaryVM = new TrackingSummaryPageViewModel(Distance, ElapsedTime);
@@ -177,43 +172,6 @@ namespace BikeDataProject.App.ViewModels
                 Debug.WriteLine($"Something is wrong: {ex.Message}");
                 return null;
             }
-        }
-
-        private async Task<List<Loc>> GetLocationsAsync()
-        {
-            var locations = await App.Database.GetLocationsAsync();
-
-            //foreach(Loc loc in locations)
-            //{
-            //    Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude} {loc.DateTimeOffset} {loc.RideInfoID}");
-            //}
-
-            return locations;
-        }
-
-        private async Task<List<RideInfo>> GetRideInfoAsync()
-        {
-            var rideInfos = await App.Database.GetRideInfoAsync();
-
-            foreach (RideInfo rideInfo in rideInfos)
-            {
-                Debug.WriteLine($"---------------- From Database: {rideInfo.ID} {rideInfo.AmountOfKm} {rideInfo.ElapsedTime.TotalSeconds}");
-            }
-
-
-            return rideInfos;
-        }
-
-        private async Task<List<Loc>> GetLocationsAsyncByRideInfo()
-        {
-            var locations = await App.Database.GetLocationsAsync(rideInfoId);
-
-            foreach (Loc loc in locations)
-            {
-                Debug.WriteLine($"---------------- From Database: {loc.ID} {loc.Longitude} {loc.DateTimeOffset}");
-            }
-
-            return locations;
         }
 
         private async Task<long> CreateRideInfoAsync()

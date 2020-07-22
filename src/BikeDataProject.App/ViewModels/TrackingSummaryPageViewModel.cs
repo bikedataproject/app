@@ -173,7 +173,6 @@ namespace BikeDataProject.App.ViewModels
 
             SendTrackCommand = new Command(() =>
             {
-                Debug.WriteLine("Send data!!");
                 Debug.WriteLine($"{gender} - {ageRange} # {bikeType} - {tripPurpose}");
 
                 //await SendTracks();
@@ -527,6 +526,12 @@ namespace BikeDataProject.App.ViewModels
         }
 
         private async Task<bool> DiscardData() {
+            var locations = await GetLocationsAsync();
+            foreach (Loc loc in locations)
+            {
+                Debug.WriteLine($"Longitude: {loc.Longitude}, Latitude: {loc.Latitude}, Time: {loc.DateTimeOffset}, RideId: {loc.RideInfoID}");
+            }
+
             return await Application.Current.MainPage.DisplayAlert("Discard data?", "Are you sure you want to discard the data you just collected?", "Yes", "No");
         }
     }
