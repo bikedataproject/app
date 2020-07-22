@@ -30,7 +30,6 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -56,9 +55,17 @@
                    HorizontalTextAlignment="Center"
                    Margin="0,20,0,0"/>
 
-                <Button Grid.Row="3" Grid.Column="1" Text="Start Tracking" IsEnabled="False" Command="{Binding StartTrackingCommand}" Style="{StaticResource buttonTracking}"></Button>
+                <ActivityIndicator Grid.Row="3" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}" Margin="0,50,0,0"/>
 
-                <ActivityIndicator Grid.Row="4" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}"/>
+                <Button Grid.Row="4" Grid.Column="1" 
+                        Text="Start Tracking" 
+                        IsEnabled="False" 
+                        Command="{Binding StartTrackingCommand}" 
+                        Style="{StaticResource buttonTracking}" 
+                        BackgroundColor="{StaticResource green}"
+                        FontAttributes="Bold"
+                        VerticalOptions="End"
+                        Margin="0,0,0,50"/>
 
             </Grid>
         </Frame>

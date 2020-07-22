@@ -8,14 +8,14 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="buttonTracking" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="Black"/>
                 <Setter Property="TextColor" Value="White"/>
-                <Setter Property="CornerRadius" Value="45"/>
-                <Setter Property="Margin" Value="0,30,0,0"/>
-                <Setter Property="Font" Value="SF Pro Text"/>
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="Font" Value="Roboto"/>
             </Style>
             <Color x:Key="backgroundColor">#EDEDED</Color>
             <Color x:Key="loadingColor">#000000</Color>
+            <Color x:Key="green">#5E9444</Color>
+            <Color x:Key="red">#E34C4C</Color>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
