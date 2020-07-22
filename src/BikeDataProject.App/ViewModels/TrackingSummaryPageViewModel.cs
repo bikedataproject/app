@@ -17,6 +17,8 @@ namespace BikeDataProject.App.ViewModels
 
         public Command BikeTypeCommand { private set; get; }
 
+        public Command TripPurposeCommand { private set; get; }
+
         public TrackingSummaryPageViewModel(double dist, TimeSpan time)
         {
             Distance = dist;
@@ -113,6 +115,34 @@ namespace BikeDataProject.App.ViewModels
                         break;
                     case "Other":
                         BikeOther = true;
+                        break;
+                }
+            });
+
+            TripPurposeCommand = new Command(option =>
+            {
+                TripNotShare = false;
+                TripCommute = false;
+                TripLeisure = false;
+                TripShopping = false;
+                TripOther = false;
+
+                switch ($"{option}")
+                {
+                    case "Rather not share":
+                        TripNotShare = true;
+                        break;
+                    case "Commute":
+                        TripCommute = true;
+                        break;
+                    case "Leisure":
+                        TripLeisure = true;
+                        break;
+                    case "Shopping":
+                        TripShopping = true;
+                        break;
+                    case "Other":
+                        TripOther = true;
                         break;
                 }
             });
@@ -288,7 +318,7 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
-        // BikeType
+        // Bike Type
         bool bikeNotShare;
         public bool BikeNotShare
         {
@@ -357,6 +387,67 @@ namespace BikeDataProject.App.ViewModels
             {
                 bikeOther = value;
                 var args = new PropertyChangedEventArgs(nameof(BikeOther));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        //Trip Purpose
+        bool tripNotShare;
+        public bool TripNotShare
+        {
+            get => tripNotShare;
+            set
+            {
+                tripNotShare = value;
+                var args = new PropertyChangedEventArgs(nameof(TripNotShare));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool tripCommute;
+        public bool TripCommute
+        {
+            get => tripCommute;
+            set
+            {
+                tripCommute = value;
+                var args = new PropertyChangedEventArgs(nameof(TripCommute));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool tripLeisure;
+        public bool TripLeisure
+        {
+            get => tripLeisure;
+            set
+            {
+                tripLeisure = value;
+                var args = new PropertyChangedEventArgs(nameof(TripLeisure));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool tripShopping;
+        public bool TripShopping
+        {
+            get => tripShopping;
+            set
+            {
+                tripShopping = value;
+                var args = new PropertyChangedEventArgs(nameof(TripShopping));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool tripOther;
+        public bool TripOther
+        {
+            get => tripOther;
+            set
+            {
+                tripOther = value;
+                var args = new PropertyChangedEventArgs(nameof(TripOther));
                 PropertyChanged?.Invoke(this, args);
             }
         }

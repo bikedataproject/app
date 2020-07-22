@@ -35,7 +35,7 @@
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontFamily" Value="Roboto"/>
                 <Setter Property="FontSize" Value="20"/>
-                <Setter Property="Padding" Value="5"/>
+                <Setter Property="Padding" Value="0"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
             <Style x:Key="optionLabelWrapper" TargetType="Frame">
@@ -95,7 +95,7 @@
                 </Frame>
 
                 <!-- User Info-->
-                <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="White" Padding="0" Margin="0,0,0,0" CornerRadius="10">
+                <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="LightBlue" Padding="0,0,0,0" Margin="0,0,0,0" CornerRadius="10">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto" />
@@ -129,7 +129,7 @@
                             <!-- Options -->
                             <Grid Grid.Row="1">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto" />
                                     <RowDefinition Height="auto"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
@@ -137,7 +137,6 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
 
-                                <!-- Rather not share-->
                                 <Frame Grid.Row="0" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
                                     <Label Text="Rather not share" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderNotShare, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -147,7 +146,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- female-->
                                 <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
                                     <Label Text="Female" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderFemale, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -157,7 +155,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- Male-->
                                 <Frame Grid.Row="0" Grid.Column="1" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="Male" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderMale, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -167,7 +164,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- Other-->
                                 <Frame Grid.Row="1" Grid.Column="1" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="Other" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding GenderOther, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -186,10 +182,10 @@
                                 <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
 
-                            <!-- Title -->
+                            <!--Title-->
                             <Label Grid.Row="0" Text="Age Range" Style="{StaticResource userInfoOptionTitle}"/>
 
-                            <!-- Options -->
+                            <!--Options-->
                             <Grid Grid.Row="1">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"/>
@@ -203,7 +199,6 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
 
-                                <!-- Rather not share-->
                                 <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
                                     <Label Text="Rather not share" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding AgeNotShare, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -213,7 +208,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- -18-->
                                 <Frame Grid.Row="0" Grid.Column="2" Style="{StaticResource optionLabelWrapper}">
                                     <Label Text="-18" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Min18, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -223,7 +217,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- 18-24-->
                                 <Frame Grid.Row="0" Grid.Column="3" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="18-24" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age18to24, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -233,7 +226,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- 25-35-->
                                 <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="25-35" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age25to35, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -243,7 +235,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- 36-45-->
                                 <Frame Grid.Row="1" Grid.Column="1" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="36-45" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age36to45, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -253,7 +244,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- 46-55-->
                                 <Frame Grid.Row="1" Grid.Column="2" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="46-55" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age46to55, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -263,7 +253,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- 56-65-->
                                 <Frame Grid.Row="1" Grid.Column="3" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="56-65" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Age56to65, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -273,7 +262,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- 65+-->
                                 <Frame Grid.Row="2" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="65+" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding Plus65, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -292,10 +280,10 @@
                                 <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
 
-                            <!-- Title -->
+                            <!--Title-->
                             <Label Grid.Row="0" Text="Bike Type" Style="{StaticResource userInfoOptionTitle}"/>
 
-                            <!-- Options -->
+                            <!--Options-->
                             <Grid Grid.Row="1">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"/>
@@ -309,7 +297,6 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
 
-                                <!-- Rather not share-->
                                 <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
                                     <Label Text="Rather not share" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeNotShare, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -319,7 +306,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- City Bike-->
                                 <Frame Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
                                     <Label Text="City Bike" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeCity, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -329,7 +315,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- MTB-->
                                 <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="MTB" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeMTB, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -339,7 +324,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- Race Bike-->
                                 <Frame Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="Race Bike" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeRace, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -349,7 +333,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- Electric-->
                                 <Frame Grid.Row="1" Grid.Column="3" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="Electric" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeElectric, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -359,7 +342,6 @@
                                     </Label>
                                 </Frame>
 
-                                <!-- Other-->
                                 <Frame Grid.Row="2" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
                                     <Label  Text="Other" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeOther, Converter={StaticResource BoolToColorConverter}}">
                                         <Label.GestureRecognizers>
@@ -370,14 +352,83 @@
                                 </Frame>
                             </Grid>
                         </Grid>
-                        
-                        <!-- Trip Purpose -->
-                       
 
+                        <!-- Trip Purpose -->
+                        <Grid Grid.Row="4" Margin="10,0,10,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Title -->
+                            <Label Grid.Row="0" Text="Trip Purpose" Style="{StaticResource userInfoOptionTitle}"/>
+
+                            <!-- Options -->
+                            <Grid Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
+                                    <Label Text="Rather not share" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding TripNotShare, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding TripPurposeCommand}"
+                                                              CommandParameter="Rather not share"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <Frame Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
+                                    <Label Text="Commute" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding TripCommute, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding TripPurposeCommand}"
+                                                              CommandParameter="Commute"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="Leisure" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding TripLeisure, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding TripPurposeCommand}"
+                                                              CommandParameter="Leisure"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <Frame Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="Shopping" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding TripShopping, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding TripPurposeCommand}"
+                                                              CommandParameter="Shopping"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <Frame Grid.Row="1" Grid.Column="3" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="Other" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding TripOther, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding TripPurposeCommand}"
+                                                              CommandParameter="Other"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Frame>
 
                 <!-- Buttons -->
+                <Frame Grid.Row="2" Grid.Column="1" Padding="0" Margin="0,0,0,0" CornerRadius="10">
+                    <Label Text="Submit"/>
+                </Frame>
             </Grid>
         </ScrollView>
     </ContentPage.Content>
