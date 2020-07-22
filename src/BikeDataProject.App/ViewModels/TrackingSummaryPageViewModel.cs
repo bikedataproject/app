@@ -35,7 +35,8 @@ namespace BikeDataProject.App.ViewModels
         {
             Distance = dist;
             ElapsedTime = time;
-            
+
+            InitializeButtons();
 
             handler = new APIHandler();
 
@@ -61,6 +62,7 @@ namespace BikeDataProject.App.ViewModels
                         GenderOther = true;
                         break;
                 }
+                gender = $"{option}";
             });
 
             AgeRangeCommand = new Command(option =>
@@ -101,6 +103,8 @@ namespace BikeDataProject.App.ViewModels
                         Plus65 = true;
                         break;
                 }
+
+                ageRange = $"{option}";
             });
 
             BikeTypeCommand = new Command(option =>
@@ -133,6 +137,8 @@ namespace BikeDataProject.App.ViewModels
                         BikeOther = true;
                         break;
                 }
+
+                bikeType = $"{option}";
             });
 
             TripPurposeCommand = new Command(option =>
@@ -161,11 +167,14 @@ namespace BikeDataProject.App.ViewModels
                         TripOther = true;
                         break;
                 }
+
+                tripPurpose = $"{option}";
             });
 
             SendTrackCommand = new Command(() =>
             {
                 Debug.WriteLine("Send data!!");
+                Debug.WriteLine($"{gender} - {ageRange} # {bikeType} - {tripPurpose}");
 
                 //await SendTracks();
             });
@@ -486,11 +495,19 @@ namespace BikeDataProject.App.ViewModels
         }
 
         private void InitializeButtons() {
-            GenderNotShare = true;
-            AgeNotShare = true;
-            bikeNotShare = true;
-            tripNotShare = true;
+            String notShare = "Rather not share";
 
+            GenderNotShare = true;
+            gender = notShare;
+
+            AgeNotShare = true;
+            ageRange = notShare;
+
+            bikeNotShare = true;
+            bikeType = notShare;
+
+            tripNotShare = true;
+            tripPurpose = notShare;
 
         }
 
