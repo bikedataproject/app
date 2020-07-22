@@ -58,7 +58,7 @@
 
                 <Button Grid.Row="3" Grid.Column="1" Text="Start Tracking" IsEnabled="False" Command="{Binding StartTrackingCommand}" Style="{StaticResource buttonTracking}"></Button>
 
-                <ActivityIndicator Grid.Row="4" Grid.Column="1" IsRunning="{Binding Running}"/>
+                <ActivityIndicator Grid.Row="4" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}"/>
 
             </Grid>
         </Frame>

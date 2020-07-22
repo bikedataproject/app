@@ -36,7 +36,7 @@ namespace BikeDataProject.App.ViewModels
 
             StopTrackingCommand = new Command(async () =>
             {
-                //This doesn't work yet
+                //This doesn't work yet + when turning off location, it navigates twice!
                 lock (_sync)
                 {
 
@@ -48,9 +48,13 @@ namespace BikeDataProject.App.ViewModels
                 {
                     continueTimer = false;
 
+                    Running = true;
+
                     await App.Database.SaveRideInfoAsync(new RideInfo() { ID = rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
 
                     await NavigateToTrackingSummaryPage();
+
+                    Running = false;
                 }
                 catch (Exception e)
                 {
@@ -103,7 +107,9 @@ namespace BikeDataProject.App.ViewModels
                     }
                     else
                     {
+                        Running = true;
                         await MainThread.InvokeOnMainThreadAsync(this.NavigateToTrackingSummaryPage);
+                        Running = false;
                     }
                 });
 
@@ -139,6 +145,18 @@ namespace BikeDataProject.App.ViewModels
             {
                 elapsedTime = value;
                 var args = new PropertyChangedEventArgs(nameof(ElapsedTime));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool running;
+        public bool Running
+        {
+            get => running;
+            set
+            {
+                running = value;
+                var args = new PropertyChangedEventArgs(nameof(Running));
                 PropertyChanged?.Invoke(this, args);
             }
         }

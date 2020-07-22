@@ -15,6 +15,7 @@
                 <Setter Property="Font" Value="SF Pro Text"/>
             </Style>
             <Color x:Key="backgroundColor">#EDEDED</Color>
+            <Color x:Key="loadingColor">#000000</Color>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
