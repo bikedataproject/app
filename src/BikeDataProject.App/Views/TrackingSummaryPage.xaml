@@ -286,8 +286,91 @@
                         </Grid>
 
                         <!-- Bike Type -->
-                        
+                        <Grid Grid.Row="3" Margin="10,0,10,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
 
+                            <!-- Title -->
+                            <Label Grid.Row="0" Text="Bike Type" Style="{StaticResource userInfoOptionTitle}"/>
+
+                            <!-- Options -->
+                            <Grid Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Rather not share-->
+                                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
+                                    <Label Text="Rather not share" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeNotShare, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BikeTypeCommand}"
+                                                              CommandParameter="Rather not share"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- City Bike-->
+                                <Frame Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
+                                    <Label Text="City Bike" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeCity, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BikeTypeCommand}"
+                                                              CommandParameter="City Bike"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- MTB-->
+                                <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="MTB" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeMTB, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BikeTypeCommand}"
+                                                              CommandParameter="MTB"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- Race Bike-->
+                                <Frame Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="Race Bike" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeRace, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BikeTypeCommand}"
+                                                              CommandParameter="Race Bike"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- Electric-->
+                                <Frame Grid.Row="1" Grid.Column="3" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="Electric" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeElectric, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BikeTypeCommand}"
+                                                              CommandParameter="Electric"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+
+                                <!-- Other-->
+                                <Frame Grid.Row="2" Grid.Column="0" Style="{StaticResource optionLabelWrapper}">
+                                    <Label  Text="Other" Style="{StaticResource optionLabelButton}" BackgroundColor="{Binding BikeOther, Converter={StaticResource BoolToColorConverter}}">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BikeTypeCommand}"
+                                                              CommandParameter="Other"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+                            </Grid>
+                        </Grid>
+                        
                         <!-- Trip Purpose -->
                        
 

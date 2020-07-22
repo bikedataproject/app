@@ -15,15 +15,15 @@ namespace BikeDataProject.App.ViewModels
 
         public Command AgeRangeCommand { private set; get; }
 
+        public Command BikeTypeCommand { private set; get; }
+
         public TrackingSummaryPageViewModel(double dist, TimeSpan time)
         {
             Distance = dist;
             ElapsedTime = time;
 
-            GenderCommand = new Command((option) =>
+            GenderCommand = new Command(option =>
             {
-                Debug.WriteLine($"The label is pressed: {option}");
-
                 GenderNotShare = false;
                 GenderFemale = false;
                 GenderMale = false;
@@ -47,8 +47,6 @@ namespace BikeDataProject.App.ViewModels
 
             AgeRangeCommand = new Command(option =>
             {
-                Debug.WriteLine($"The label is pressed: {option}");
-
                 AgeNotShare = false;
                 Min18 = false;
                 Age18to24 = false;
@@ -83,6 +81,38 @@ namespace BikeDataProject.App.ViewModels
                         break;
                     case "65+":
                         Plus65 = true;
+                        break;
+                }
+            });
+
+            BikeTypeCommand = new Command(option =>
+            {
+                BikeNotShare = false;
+                BikeCity = false;
+                BikeMTB = false;
+                BikeRace = false;
+                BikeElectric = false;
+                BikeOther = false;
+
+                switch ($"{option}")
+                {
+                    case "Rather not share":
+                        BikeNotShare = true;
+                        break;
+                    case "City Bike":
+                        BikeCity = true;
+                        break;
+                    case "MTB":
+                        BikeMTB = true;
+                        break;
+                    case "Race Bike":
+                        BikeRace = true;
+                        break;
+                    case "Electric":
+                        BikeElectric = true;
+                        break;
+                    case "Other":
+                        BikeOther = true;
                         break;
                 }
             });
@@ -254,6 +284,79 @@ namespace BikeDataProject.App.ViewModels
             {
                 plus65 = value;
                 var args = new PropertyChangedEventArgs(nameof(Plus65));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        // BikeType
+        bool bikeNotShare;
+        public bool BikeNotShare
+        {
+            get => bikeNotShare;
+            set
+            {
+                bikeNotShare = value;
+                var args = new PropertyChangedEventArgs(nameof(BikeNotShare));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool bikeCity;
+        public bool BikeCity
+        {
+            get => bikeCity;
+            set
+            {
+                bikeCity = value;
+                var args = new PropertyChangedEventArgs(nameof(BikeCity));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool bikeMTB;
+        public bool BikeMTB
+        {
+            get => bikeMTB;
+            set
+            {
+                bikeMTB = value;
+                var args = new PropertyChangedEventArgs(nameof(BikeMTB));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool bikeRace;
+        public bool BikeRace
+        {
+            get => bikeRace;
+            set
+            {
+                bikeRace = value;
+                var args = new PropertyChangedEventArgs(nameof(BikeRace));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool bikeElectric;
+        public bool BikeElectric
+        {
+            get => bikeElectric;
+            set
+            {
+                bikeElectric = value;
+                var args = new PropertyChangedEventArgs(nameof(BikeElectric));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool bikeOther;
+        public bool BikeOther
+        {
+            get => bikeOther;
+            set
+            {
+                bikeOther = value;
+                var args = new PropertyChangedEventArgs(nameof(BikeOther));
                 PropertyChanged?.Invoke(this, args);
             }
         }
