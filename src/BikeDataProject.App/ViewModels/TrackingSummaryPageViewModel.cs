@@ -1,8 +1,10 @@
-﻿using System;
+﻿using BikeDataProject.App.API;
+using BikeDataProject.App.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace BikeDataProject.App.ViewModels
@@ -19,10 +21,18 @@ namespace BikeDataProject.App.ViewModels
 
         public Command TripPurposeCommand { private set; get; }
 
+        public Command SendTrackCommand { private set; get; }
+
+        public Command DiscardTrackCommand { private set; get; }
+
+        APIHandler handler;
+
         public TrackingSummaryPageViewModel(double dist, TimeSpan time)
         {
             Distance = dist;
             ElapsedTime = time;
+
+            handler = new APIHandler();
 
             GenderCommand = new Command(option =>
             {
@@ -31,7 +41,8 @@ namespace BikeDataProject.App.ViewModels
                 GenderMale = false;
                 GenderOther = false;
 
-                switch ($"{option}") {
+                switch ($"{option}")
+                {
                     case "Rather not share":
                         GenderNotShare = true;
                         break;
@@ -145,6 +156,16 @@ namespace BikeDataProject.App.ViewModels
                         TripOther = true;
                         break;
                 }
+            });
+
+            SendTrackCommand = new Command(() =>
+            {
+                Debug.WriteLine("Send data!!");
+            });
+
+            DiscardTrackCommand = new Command(async () => {
+                bool discard = await DiscardData();
+                Debug.WriteLine($"Discard data: {discard}");
             });
         }
 
@@ -452,5 +473,26 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        private async Task<bool> SendTracks()
+        {
+
+            return await handler.SendTracks(new Track()
+            {
+                Locations = await GetLocationsAsync(),
+                UserId = Guid.Empty
+            });
+
+
+        }
+
+        private async Task<List<Loc>> GetLocationsAsync()
+        {
+            var lastRide = await App.Database.GetLastRideInfoId();
+            return await App.Database.GetLocationsAsync(lastRide[0].ID);
+        }
+
+        private async Task<bool> DiscardData() {
+            return await Application.Current.MainPage.DisplayAlert("Discard data?", "Are you sure you want to discard the data you just collected?", "Yes", "No");
+        }
     }
 }

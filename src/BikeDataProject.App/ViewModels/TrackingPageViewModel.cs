@@ -19,8 +19,6 @@ namespace BikeDataProject.App.ViewModels
         APIHandler handler;
         Stopwatch stopwatch;
 
-        private readonly Random _random;
-
         public TrackingPageViewModel()
         {
             handler = new APIHandler();
@@ -29,7 +27,6 @@ namespace BikeDataProject.App.ViewModels
             continueTimer = true;
             Distance = 0;
             lastLoc = null;
-            _random = new Random();
 
             Task.Factory.StartNew(async () =>
             {
