@@ -66,7 +66,6 @@
                         FontAttributes="Bold"
                         VerticalOptions="End"
                         Margin="0,0,0,50"/>
-
             </Grid>
         </Frame>
     </ContentPage.Content>

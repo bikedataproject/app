@@ -184,6 +184,18 @@ namespace BikeDataProject.App.ViewModels
                 if (discard) 
                 {
                     // delete data
+                    var lastRide = await App.Database.GetLastRideInfoId();
+                    await App.Database.DeleteLocationsFromRide(lastRide[0].ID);
+
+                    //var locations = await App.Database.GetLocationsAsync();
+
+                    //Debug.WriteLine("Deleted");
+
+                    //foreach (Loc loc in locations) 
+                    //{
+                    //    Debug.WriteLine($"Longitude: {loc.Longitude}, Latitude: {loc.Latitude}, Time: {loc.DateTimeOffset}, RideId: {loc.RideInfoID}");
+                    //}
+
                     await Application.Current.MainPage.Navigation.PopToRootAsync();
                 }
             });
@@ -526,11 +538,11 @@ namespace BikeDataProject.App.ViewModels
         }
 
         private async Task<bool> DiscardData() {
-            var locations = await GetLocationsAsync();
-            foreach (Loc loc in locations)
-            {
-                Debug.WriteLine($"Longitude: {loc.Longitude}, Latitude: {loc.Latitude}, Time: {loc.DateTimeOffset}, RideId: {loc.RideInfoID}");
-            }
+            //var locations = await GetLocationsAsync();
+            //foreach (Loc loc in locations)
+            //{
+            //    Debug.WriteLine($"Longitude: {loc.Longitude}, Latitude: {loc.Latitude}, Time: {loc.DateTimeOffset}, RideId: {loc.RideInfoID}");
+            //}
 
             return await Application.Current.MainPage.DisplayAlert("Discard data?", "Are you sure you want to discard the data you just collected?", "Yes", "No");
         }

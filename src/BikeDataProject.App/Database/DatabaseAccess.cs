@@ -97,7 +97,10 @@ namespace BikeDataProject.App.Database
             return Database.Table<RideInfo>().ToListAsync();        
         }
 
-
+        public Task<List<Loc>> DeleteLocationsFromRide(long rideInfoId) 
+        {
+            return Database.QueryAsync<Loc>($"DELETE FROM LOC WHERE RIDEINFOID  = {rideInfoId}");
+        }
 
     }
 }
