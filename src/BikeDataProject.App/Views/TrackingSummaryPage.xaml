@@ -45,7 +45,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ScrollView Padding="0" BackgroundColor="#EDEDED">
+        <ScrollView Padding="0" BackgroundColor="{StaticResource backgroundColor}">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>

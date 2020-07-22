@@ -26,11 +26,16 @@ namespace BikeDataProject.App.ViewModels
         public Command DiscardTrackCommand { private set; get; }
 
         APIHandler handler;
+        String gender;
+        String ageRange;
+        String bikeType;
+        String tripPurpose;
 
         public TrackingSummaryPageViewModel(double dist, TimeSpan time)
         {
             Distance = dist;
             ElapsedTime = time;
+            
 
             handler = new APIHandler();
 
@@ -161,11 +166,18 @@ namespace BikeDataProject.App.ViewModels
             SendTrackCommand = new Command(() =>
             {
                 Debug.WriteLine("Send data!!");
+
+                //await SendTracks();
             });
 
             DiscardTrackCommand = new Command(async () => {
                 bool discard = await DiscardData();
-                Debug.WriteLine($"Discard data: {discard}");
+
+                if (discard) 
+                {
+                    // delete data
+                    await Application.Current.MainPage.Navigation.PopToRootAsync();
+                }
             });
         }
 
@@ -473,16 +485,22 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        private void InitializeButtons() {
+            GenderNotShare = true;
+            AgeNotShare = true;
+            bikeNotShare = true;
+            tripNotShare = true;
+
+
+        }
+
         private async Task<bool> SendTracks()
         {
-
             return await handler.SendTracks(new Track()
             {
                 Locations = await GetLocationsAsync(),
                 UserId = Guid.Empty
             });
-
-
         }
 
         private async Task<List<Loc>> GetLocationsAsync()

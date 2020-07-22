@@ -21,45 +21,47 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="15*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <Frame Padding="0" BackgroundColor="{StaticResource backgroundColor}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Margin="0,50,0,20">
-                <Label Text="THE" Style="{StaticResource labelTitle}"></Label>
-                <Label Text="BIKE DATA" Style="{StaticResource labelTitle}"></Label>
-                <Label Text="PROJECT" Style="{StaticResource labelTitle}"></Label>
-            </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Margin="0,50,0,20">
+                    <Label Text="THE" Style="{StaticResource labelTitle}"></Label>
+                    <Label Text="BIKE DATA" Style="{StaticResource labelTitle}"></Label>
+                    <Label Text="PROJECT" Style="{StaticResource labelTitle}"></Label>
+                </StackLayout>
 
-            <BoxView Grid.Row="1" Grid.Column="1" 
+                <BoxView Grid.Row="1" Grid.Column="1" 
                      Color="Black" 
                      VerticalOptions="Center"
                      HorizontalOptions="FillAndExpand" 
                      HeightRequest="3"/>
 
-            <Label Grid.Row="2" Grid.Column="1"
+                <Label Grid.Row="2" Grid.Column="1"
                    Text="Help cities find better solutions for mobility problems by sharing your bike ride with us. You wont be recognizable by your given data" 
                    HorizontalTextAlignment="Center"
                    Margin="0,20,0,0"/>
 
-            <Button Grid.Row="3" Grid.Column="1" Text="Start Tracking" IsEnabled="False" Command="{Binding StartTrackingCommand}" Style="{StaticResource buttonTracking}"></Button>
+                <Button Grid.Row="3" Grid.Column="1" Text="Start Tracking" IsEnabled="False" Command="{Binding StartTrackingCommand}" Style="{StaticResource buttonTracking}"></Button>
 
-            <ActivityIndicator Grid.Row="4" Grid.Column="1" IsRunning="{Binding Running}"/>
+                <ActivityIndicator Grid.Row="4" Grid.Column="1" IsRunning="{Binding Running}"/>
 
-        </Grid>
+            </Grid>
+        </Frame>
     </ContentPage.Content>
 
 </ContentPage>

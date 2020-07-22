@@ -14,6 +14,7 @@
                 <Setter Property="Margin" Value="0,30,0,0"/>
                 <Setter Property="Font" Value="SF Pro Text"/>
             </Style>
+            <Color x:Key="backgroundColor">#EDEDED</Color>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

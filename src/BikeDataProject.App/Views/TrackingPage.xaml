@@ -28,7 +28,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <Frame Padding="0" BackgroundColor="LightGray">
+        <Frame Padding="0" BackgroundColor="{StaticResource backgroundColor}">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
