@@ -171,11 +171,13 @@ namespace BikeDataProject.App.ViewModels
                 tripPurpose = $"{option}";
             });
 
-            SendTrackCommand = new Command(() =>
+            SendTrackCommand = new Command(async () =>
             {
                 Debug.WriteLine($"{gender} - {ageRange} # {bikeType} - {tripPurpose}");
 
                 //await SendTracks();
+
+                await NavigateToMainPage();
             });
 
             DiscardTrackCommand = new Command(async () => {
@@ -188,15 +190,13 @@ namespace BikeDataProject.App.ViewModels
                     await App.Database.DeleteLocationsFromRide(lastRide[0].ID);
 
                     //var locations = await App.Database.GetLocationsAsync();
-
                     //Debug.WriteLine("Deleted");
-
                     //foreach (Loc loc in locations) 
                     //{
                     //    Debug.WriteLine($"Longitude: {loc.Longitude}, Latitude: {loc.Latitude}, Time: {loc.DateTimeOffset}, RideId: {loc.RideInfoID}");
                     //}
 
-                    await Application.Current.MainPage.Navigation.PopToRootAsync();
+                    await NavigateToMainPage();
                 }
             });
         }
@@ -545,6 +545,11 @@ namespace BikeDataProject.App.ViewModels
             //}
 
             return await Application.Current.MainPage.DisplayAlert("Discard data?", "Are you sure you want to discard the data you just collected?", "Yes", "No");
+        }
+
+        private async Task NavigateToMainPage() 
+        {
+            await Application.Current.MainPage.Navigation.PopToRootAsync();
         }
     }
 }
