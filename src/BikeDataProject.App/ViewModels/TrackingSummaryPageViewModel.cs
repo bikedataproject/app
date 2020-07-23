@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace BikeDataProject.App.ViewModels
@@ -176,28 +177,37 @@ namespace BikeDataProject.App.ViewModels
                 Guid userId;
                 Debug.WriteLine($"#### {gender} - {ageRange} # {bikeType} - {tripPurpose}");
 
-                List<UserInfo> userInfo = await App.Database.GetUserInfos();
-                if (userInfo.Count == 0)
+                // Need check if user has internet connection
+                var connectivity = Connectivity.NetworkAccess;
+                Debug.WriteLine($"-------- Connectivity: {connectivity}");
+                if (connectivity == NetworkAccess.Internet)
                 {
-                    UserInfo user = await handler.GetUserId(new UserInfo { Imei = "random imei number" });
-                    await App.Database.SaveUserInfo(user);
-                    userId = user.UserIdentifier;
+                    List<UserInfo> userInfo = await App.Database.GetUserInfos();
+                    if (userInfo.Count == 0)
+                    {
+                        UserInfo user = await handler.GetUserId(new UserInfo { Imei = "random imei number" });
+                        await App.Database.SaveUserInfo(user);
+                        userId = user.UserIdentifier;
+                    }
+                    else
+                    {
+                        userId = userInfo[0].UserIdentifier;
+                    }
+
+                    var result = await SendTracks(userId);
+
+                    if (result)
+                    {
+                        await DeleteLocations();
+                    }
+
+                    await NavigateToMainPage();
                 }
                 else
                 {
-                    userId = userInfo[0].UserIdentifier;
+                    await Application.Current.MainPage.DisplayAlert("Alert", "Please enable internet connection", "Ok");
                 }
 
-
-                // Need check if user has internet connection
-                var result = await SendTracks(userId);
-
-                if (result) 
-                {
-                    await DeleteLocations();
-                }
-
-                await NavigateToMainPage();
             });
 
             DiscardTrackCommand = new Command(async () =>
@@ -552,7 +562,7 @@ namespace BikeDataProject.App.ViewModels
             List<LocPost> locations = MapLocationsForApi(await GetLocationsAsync());
             return await handler.SendTracks(new Track()
             {
-                Locations =locations,
+                Locations = locations,
                 UserId = userId
             });
         }
@@ -597,7 +607,7 @@ namespace BikeDataProject.App.ViewModels
             return locPosts;
         }
 
-        private async Task DeleteLocations() 
+        private async Task DeleteLocations()
         {
             var lastRide = await App.Database.GetLastRideInfoId();
             await App.Database.DeleteLocationsFromRide(lastRide[0].ID);
