@@ -198,7 +198,7 @@ namespace BikeDataProject.App.ViewModels
 
                     if (result)
                     {
-                        await DeleteLocations();
+                        await DeleteLastRide();
                     }
 
                     await NavigateToMainPage();
@@ -217,7 +217,7 @@ namespace BikeDataProject.App.ViewModels
                 if (discard)
                 {
                     // delete data
-                    await DeleteLocations();
+                    await DeleteLastRide();
 
                     await NavigateToMainPage();
                 }
@@ -607,7 +607,7 @@ namespace BikeDataProject.App.ViewModels
             return locPosts;
         }
 
-        private async Task DeleteLocations()
+        private async Task DeleteLastRide()
         {
             var lastRide = await App.Database.GetLastRideInfoId();
             await App.Database.DeleteLocationsFromRide(lastRide[0].ID);
