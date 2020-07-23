@@ -8,8 +8,8 @@ namespace BikeDataProject.App
     public static class Constants
     {
         // API
-        public const string BaseAPIUri = "https://localhost:5001/";
-        public const string StoreTrackEndPoint = "Track/StoreTrack";
+        public const string BaseAPIUri = "https://api.bikedataproject.info/geo/";
+        public const string StoreTrackEndPoint = "Track/StoreTrack?test=true";
         public const string ApplicationJson = "application/json";
 
         // Database

@@ -175,15 +175,25 @@ namespace BikeDataProject.App.ViewModels
             {
                 Debug.WriteLine($"{gender} - {ageRange} # {bikeType} - {tripPurpose}");
 
-                //await SendTracks();
+                //bool status = await SendTracks();
+                //Debug.WriteLine($"Succesfull: {status}");
+                var locPosts = MapLocationsForApi(await GetLocationsAsync());
+                foreach (LocPost loc in locPosts)
+                {
+                    Debug.WriteLine($"{loc.Longitude} {loc.Latitude} {loc.Altitude} {loc.DateTimeOffset} {loc.IsFromMockProvider}");
+                }
+
+                MapLocationsForApi(await GetLocationsAsync());
+
 
                 await NavigateToMainPage();
             });
 
-            DiscardTrackCommand = new Command(async () => {
+            DiscardTrackCommand = new Command(async () =>
+            {
                 bool discard = await DiscardData();
 
-                if (discard) 
+                if (discard)
                 {
                     // delete data
                     var lastRide = await App.Database.GetLastRideInfoId();
@@ -505,7 +515,8 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
-        private void InitializeButtons() {
+        private void InitializeButtons()
+        {
             String notShare = "Rather not share";
 
             GenderNotShare = true;
@@ -526,7 +537,7 @@ namespace BikeDataProject.App.ViewModels
         {
             return await handler.SendTracks(new Track()
             {
-                Locations = await GetLocationsAsync(),
+                Locations = MapLocationsForApi(await GetLocationsAsync()),
                 UserId = Guid.Empty
             });
         }
@@ -537,19 +548,38 @@ namespace BikeDataProject.App.ViewModels
             return await App.Database.GetLocationsAsync(lastRide[0].ID);
         }
 
-        private async Task<bool> DiscardData() {
-            //var locations = await GetLocationsAsync();
-            //foreach (Loc loc in locations)
-            //{
-            //    Debug.WriteLine($"Longitude: {loc.Longitude}, Latitude: {loc.Latitude}, Time: {loc.DateTimeOffset}, RideId: {loc.RideInfoID}");
-            //}
+        private async Task<bool> DiscardData()
+        {
+            var locations = await GetLocationsAsync();
+            foreach (Loc loc in locations)
+            {
+                Debug.WriteLine($"Longitude: {loc.Longitude}, Latitude: {loc.Latitude}, Time: {loc.DateTimeOffset}, RideId: {loc.RideInfoID}");
+            }
 
             return await Application.Current.MainPage.DisplayAlert("Discard data?", "Are you sure you want to discard the data you just collected?", "Yes", "No");
         }
 
-        private async Task NavigateToMainPage() 
+        private async Task NavigateToMainPage()
         {
             await Application.Current.MainPage.Navigation.PopToRootAsync();
+        }
+
+        private List<LocPost> MapLocationsForApi(List<Loc> locations)
+        {
+            List<LocPost> locPosts = new List<LocPost>();
+            foreach (Loc location in locations)
+            {
+                locPosts.Add(new LocPost
+                {
+                    Longitude = location.Longitude,
+                    Latitude = location.Latitude,
+                    Altitude = location.Altitude,
+                    DateTimeOffset = location.DateTimeOffset,
+                    IsFromMockProvider = location.IsFromMockProvider
+                });
+            }
+
+            return locPosts;
         }
     }
 }
