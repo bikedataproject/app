@@ -32,6 +32,8 @@ namespace BikeDataProject.App.Database
         async Task InitializeAsync()
         {
             var initLoc = false;
+            var initRideInfo = false;
+
             if (!initialized)
             {
                 if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(Loc).Name))
@@ -44,7 +46,17 @@ namespace BikeDataProject.App.Database
                 if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(RideInfo).Name))
                 {
                     await Database.CreateTablesAsync(CreateFlags.None, typeof(RideInfo)).ConfigureAwait(false);
-                    if (initLoc)
+                    initRideInfo = true;
+                    //if (initLoc)
+                    //{
+                    //    initialized = true;
+                    //}
+                    //initialized = true;
+                }
+                if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(UserInfo).Name))
+                {
+                    await Database.CreateTablesAsync(CreateFlags.None, typeof(UserInfo)).ConfigureAwait(false);
+                    if (initLoc && initRideInfo)
                     {
                         initialized = true;
                     }
@@ -100,6 +112,11 @@ namespace BikeDataProject.App.Database
         public Task<List<Loc>> DeleteLocationsFromRide(long rideInfoId) 
         {
             return Database.QueryAsync<Loc>($"DELETE FROM LOC WHERE RIDEINFOID  = {rideInfoId}");
+        }
+
+        public Task<UserInfo> GetUserInfoAsync()
+        {
+            return Database.Table<UserInfo>().FirstOrDefaultAsync();
         }
 
     }

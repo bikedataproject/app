@@ -177,14 +177,20 @@ namespace BikeDataProject.App.ViewModels
 
                 //bool status = await SendTracks();
                 //Debug.WriteLine($"Succesfull: {status}");
-                var locPosts = MapLocationsForApi(await GetLocationsAsync());
-                foreach (LocPost loc in locPosts)
+
+                //var locPosts = MapLocationsForApi(await GetLocationsAsync());
+                //foreach (LocPost loc in locPosts)
+                //{
+                //    Debug.WriteLine($"{loc.Longitude} {loc.Latitude} {loc.Altitude} {loc.DateTimeOffset} {loc.IsFromMockProvider}");
+                //}
+
+                var userInfo = await App.Database.GetUserInfoAsync();
+
+                if (userInfo == null) 
                 {
-                    Debug.WriteLine($"{loc.Longitude} {loc.Latitude} {loc.Altitude} {loc.DateTimeOffset} {loc.IsFromMockProvider}");
+                    Debug.WriteLine("No user in database");
                 }
-
-                MapLocationsForApi(await GetLocationsAsync());
-
+                
 
                 await NavigateToMainPage();
             });
