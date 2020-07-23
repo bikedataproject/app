@@ -104,6 +104,19 @@ namespace BikeDataProject.App.Database
             }
         }
 
+        public Task<int> SaveUserInfo(UserInfo userInfo) 
+        {
+            //if (userInfo.UserIdentifier != null)
+            //{
+            //    return Database.UpdateAsync(userInfo);
+            //}
+            //else 
+            //{
+            //    return Database.InsertAsync(userInfo);
+            //}
+            return Database.InsertAsync(userInfo);
+        }
+
         public Task<List<RideInfo>> GetRideInfoAsync() 
         {
             return Database.Table<RideInfo>().ToListAsync();        
@@ -117,6 +130,11 @@ namespace BikeDataProject.App.Database
         public Task<UserInfo> GetUserInfoAsync()
         {
             return Database.Table<UserInfo>().FirstOrDefaultAsync();
+        }
+
+        public Task<List<UserInfo>> GetUserInfos() 
+        {
+            return Database.Table<UserInfo>().ToListAsync();
         }
 
     }

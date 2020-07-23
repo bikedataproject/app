@@ -173,24 +173,29 @@ namespace BikeDataProject.App.ViewModels
 
             SendTrackCommand = new Command(async () =>
             {
-                Debug.WriteLine($"{gender} - {ageRange} # {bikeType} - {tripPurpose}");
+                Guid userId;
+                Debug.WriteLine($"#### {gender} - {ageRange} # {bikeType} - {tripPurpose}");
 
-                //bool status = await SendTracks();
-                //Debug.WriteLine($"Succesfull: {status}");
-
-                //var locPosts = MapLocationsForApi(await GetLocationsAsync());
-                //foreach (LocPost loc in locPosts)
-                //{
-                //    Debug.WriteLine($"{loc.Longitude} {loc.Latitude} {loc.Altitude} {loc.DateTimeOffset} {loc.IsFromMockProvider}");
-                //}
-
-                var userInfo = await App.Database.GetUserInfoAsync();
-
-                if (userInfo == null) 
+                List<UserInfo> userInfo = await App.Database.GetUserInfos();
+                if (userInfo.Count == 0)
                 {
-                    Debug.WriteLine("No user in database");
+                    UserInfo user = await handler.GetUserId(new UserInfo { Imei = "random imei number" });
+                    await App.Database.SaveUserInfo(user);
+                    userId = user.UserIdentifier;
                 }
-                
+                else
+                {
+                    userId = userInfo[0].UserIdentifier;
+                }
+
+
+                // Need check if user has internet connection
+                var result = await SendTracks(userId);
+
+                if (result) 
+                {
+                    await DeleteLocations();
+                }
 
                 await NavigateToMainPage();
             });
@@ -202,20 +207,23 @@ namespace BikeDataProject.App.ViewModels
                 if (discard)
                 {
                     // delete data
-                    var lastRide = await App.Database.GetLastRideInfoId();
-                    await App.Database.DeleteLocationsFromRide(lastRide[0].ID);
-
-                    //var locations = await App.Database.GetLocationsAsync();
-                    //Debug.WriteLine("Deleted");
-                    //foreach (Loc loc in locations) 
-                    //{
-                    //    Debug.WriteLine($"Longitude: {loc.Longitude}, Latitude: {loc.Latitude}, Time: {loc.DateTimeOffset}, RideId: {loc.RideInfoID}");
-                    //}
+                    await DeleteLocations();
 
                     await NavigateToMainPage();
                 }
             });
         }
+
+        //string GetIMEI()
+        //{
+        //    Android.Telephony.TelephonyManager mTelephonyMgr = (Android.Telephony.TelephonyManager)Forms.Context.GetSystemService(Android.Content.Context.TelephonyService);
+        //    if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.O)
+        //        // TODO: Some phones has more than 1 SIM card or may not have a SIM card inserted at all
+        //        return mTelephonyMgr.GetMeid(0);
+        //    else
+
+        //        return mTelephonyMgr.DeviceId;
+        //}
 
         double distance;
         public double Distance
@@ -539,12 +547,13 @@ namespace BikeDataProject.App.ViewModels
 
         }
 
-        private async Task<bool> SendTracks()
+        private async Task<bool> SendTracks(Guid userId)
         {
+            List<LocPost> locations = MapLocationsForApi(await GetLocationsAsync());
             return await handler.SendTracks(new Track()
             {
-                Locations = MapLocationsForApi(await GetLocationsAsync()),
-                UserId = Guid.Empty
+                Locations =locations,
+                UserId = userId
             });
         }
 
@@ -586,6 +595,12 @@ namespace BikeDataProject.App.ViewModels
             }
 
             return locPosts;
+        }
+
+        private async Task DeleteLocations() 
+        {
+            var lastRide = await App.Database.GetLastRideInfoId();
+            await App.Database.DeleteLocationsFromRide(lastRide[0].ID);
         }
     }
 }

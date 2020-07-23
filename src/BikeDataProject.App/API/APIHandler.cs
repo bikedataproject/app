@@ -31,5 +31,18 @@ namespace BikeDataProject.App.API
 
             return response.IsSuccessStatusCode;
         }
+
+        public async Task<UserInfo> GetUserId(UserInfo userInfo) 
+        {
+            HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Post, Constants.UserIdEndPoint)
+            {
+                Content = new StringContent(JsonConvert.SerializeObject(userInfo), Encoding.UTF8, Constants.ApplicationJson)
+            };
+
+            var response = await client.SendAsync(requestMessage);
+            var content = await response.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<UserInfo>(content);
+        }
     }
 }
