@@ -574,6 +574,12 @@ namespace BikeDataProject.App.ViewModels
 
         private async Task<bool> DiscardData()
         {
+            List<RideInfo> rideInfos = await App.Database.GetRideInfoAsync();
+            foreach (RideInfo ride in rideInfos) 
+            {
+                Debug.WriteLine($"-------- ID: {ride.ID} Distance: {ride.AmountOfKm} Time: {ride.ElapsedTime}");
+            }
+
             return await Application.Current.MainPage.DisplayAlert("Discard data?", "Are you sure you want to discard the data you just collected?", "Yes", "No");
         }
 
@@ -604,6 +610,8 @@ namespace BikeDataProject.App.ViewModels
         {
             var lastRide = await App.Database.GetLastRideInfoId();
             await App.Database.DeleteLocationsFromRide(lastRide[0].ID);
+
+            await App.Database.DeleteRideAsync(lastRide[0].ID);
         }
 
         private async Task DeleteAllLocationsAsync() 

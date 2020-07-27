@@ -127,6 +127,11 @@ namespace BikeDataProject.App.Database
             return Database.QueryAsync<Loc>($"DELETE FROM LOC WHERE RIDEINFOID  = {rideInfoId}");
         }
 
+        public Task<List<RideInfo>> DeleteRideAsync(long rideInfoId) 
+        {
+            return Database.QueryAsync<RideInfo>($"DELETE FROM RIDEINFO WHERE ID = {rideInfoId}");
+        }
+
         public Task<int> DeleteAllLocationsAsync() 
         {
             return Database.DeleteAllAsync<Loc>();
