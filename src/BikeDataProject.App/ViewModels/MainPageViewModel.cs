@@ -7,7 +7,6 @@ using Xamarin.Essentials;
 using BikeDataProject.App.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Diagnostics;
 
 namespace BikeDataProject.App.ViewModels
 {
@@ -87,7 +86,7 @@ namespace BikeDataProject.App.ViewModels
         }
 
         /// <summary>
-        /// The total distance that a user has cycled (in meters)
+        /// The total distance that a user has cycled (in kilometers)
         /// </summary>
         double totalDistance;
         public double TotalDistance
@@ -207,7 +206,7 @@ namespace BikeDataProject.App.ViewModels
         /// Calculate the total distance that a user has cycled
         /// </summary>
         /// <param name="rides">List of RideInfo-objects</param>
-        /// <returns>The total cycled distance in meters</returns>
+        /// <returns>The total cycled distance in kilometers</returns>
         private double CalculateTotalDistance(List<RideInfo> rides) 
         {
             return rides.Sum(ride => ride.AmountOfKm);

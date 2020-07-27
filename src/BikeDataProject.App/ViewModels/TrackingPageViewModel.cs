@@ -1,8 +1,6 @@
-﻿using BikeDataProject.App.API;
-using BikeDataProject.App.Models;
+﻿using BikeDataProject.App.Models;
 using BikeDataProject.App.Views;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
@@ -19,6 +17,9 @@ namespace BikeDataProject.App.ViewModels
         private bool _state = false;
         private object _sync = new object();
 
+        /// <summary>
+        /// Stopwatch to time the current bike ride
+        /// </summary>
         Stopwatch stopwatch;
 
         public TrackingPageViewModel()
@@ -34,6 +35,7 @@ namespace BikeDataProject.App.ViewModels
                 rideInfoId = await CreateRideInfoAsync();
             });
 
+            // Save info to database and navigate to TrackingSummaryPage when the stop tracking button is pressed
             StopTrackingCommand = new Command(async () =>
             {
                 //This doesn't work yet + when turning off location, it navigates twice!
@@ -67,6 +69,7 @@ namespace BikeDataProject.App.ViewModels
 
             });
 
+            // To get the total time of the current bike ride
             Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
             {
 
@@ -78,6 +81,7 @@ namespace BikeDataProject.App.ViewModels
                 return continueTimer;
             });
 
+            // To get the current location and calculate the distance between this location and the previous location
             Device.StartTimer(TimeSpan.FromMilliseconds(500), () =>
             {
 
@@ -120,12 +124,24 @@ namespace BikeDataProject.App.ViewModels
 
         public Command StopTrackingCommand { private set; get; }
 
+        /// <summary>
+        /// Value to check if Device.StartTimer needs to continue or stop
+        /// </summary>
         private bool continueTimer;
 
+        /// <summary>
+        /// The Id of the current bike ride
+        /// </summary>
         private long rideInfoId;
 
+        /// <summary>
+        /// To store the previous location
+        /// </summary>
         private Loc lastLoc;
 
+        /// <summary>
+        /// The total distance of the current bike ride (in kilometers)
+        /// </summary>
         double distance;
         public double Distance
         {
@@ -138,6 +154,9 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        /// <summary>
+        /// The total time of the current bike ride
+        /// </summary>
         TimeSpan elapsedTime;
         public TimeSpan ElapsedTime
         {
@@ -150,6 +169,9 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        /// <summary>
+        /// To enable/disable ActivityIndicator (spinning wheel)
+        /// </summary>
         bool running;
         public bool Running
         {
@@ -162,6 +184,10 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        /// <summary>
+        /// Navigates to the TrackingSummaryPage and initialize the bindingContext to set the connection between the view and the ViewModel
+        /// Also add Distance and Elapsed time as parameters to the constructor
+        /// </summary>
         private async Task NavigateToTrackingSummaryPage()
         {
             var trackingSummaryVM = new TrackingSummaryPageViewModel(Distance, ElapsedTime);
@@ -171,6 +197,11 @@ namespace BikeDataProject.App.ViewModels
             await Application.Current.MainPage.Navigation.PushAsync(trackingSummaryPage);
         }
 
+        /// <summary>
+        /// Gets the current location of the user
+        /// If the feature isn't enabled => set continueTimer to false to stop Device.StartTimer()
+        /// </summary>
+        /// <returns>Returns the location if the location is enabled, otherwise it returns null</returns>
         private async Task<Location> GetLocation()
         {
             try
@@ -189,10 +220,15 @@ namespace BikeDataProject.App.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine($"Something is wrong: {ex.Message}");
+                continueTimer = false;
                 return null;
             }
         }
 
+        /// <summary>
+        /// Create a new RideInfo object and save to database
+        /// </summary>
+        /// <returns>The id of the created RideInfo object, if something went wrong: return -1</returns>
         private async Task<long> CreateRideInfoAsync()
         {
             await App.Database.SaveRideInfoAsync(new RideInfo() { AmountOfKm = 0, ElapsedTime = new TimeSpan(0) });
@@ -202,6 +238,9 @@ namespace BikeDataProject.App.ViewModels
             return -1;
         }
 
+        /// <summary>
+        /// Save the Distance and ElapsedTime to the database in a rideInfo object
+        /// </summary>
         private async Task SaveRideInfoAsync() 
         {
             await App.Database.SaveRideInfoAsync(new RideInfo() { ID = rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });

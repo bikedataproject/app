@@ -41,6 +41,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
+                <!-- Statistics of current ride -->
                 <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="White" Margin="0,20,0,0" Padding="0,0,0,0" CornerRadius="20">
                     <Grid>
                         <Grid.RowDefinitions>
@@ -48,25 +49,29 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
 
+                        <!-- Distance component -->
                         <Grid Grid.Row="0" Margin="20,20,20,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
 
+                            <!-- Displays current cycled distance -->
                             <Frame Grid.Row="0" Style="{StaticResource trackingValueWrapper}">
-                                <Label  Text="{Binding Distance, StringFormat='{0:0.000000} km'}" Style="{StaticResource trackingValue}"/>
+                                <Label  Text="{Binding Distance, StringFormat='{0:0.00} km'}" Style="{StaticResource trackingValue}"/>
                             </Frame>
 
                             <Label Grid.Row="1" Text="DISTANCE" Style="{StaticResource trackingValueInfo}"/>
                         </Grid>
 
+                        <!-- Time component -->
                         <Grid Grid.Row="1" Margin="20,10,20,10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
 
+                            <!-- Displays current cycled time -->
                             <Frame Grid.Row="0" Style="{StaticResource trackingValueWrapper}">
                                 <Label Text="{Binding ElapsedTime, StringFormat='{}{0:hh}:{0:mm}:{0:ss}' }" Style="{StaticResource trackingValue}"/>
                             </Frame>
@@ -76,8 +81,10 @@
                     </Grid>
                 </Frame>
 
+                <!-- Spinning wheel -->
                 <ActivityIndicator Grid.Row="1" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}" Margin="0,50,0,0"/>
 
+                <!-- Button to stop tracking -->
                 <Button Grid.Row="2" Grid.Column="1" Text="Stop Tracking" 
                     Command="{Binding StopTrackingCommand}"
                     Style="{StaticResource buttonTracking}" BackgroundColor="{StaticResource red}" FontAttributes="Bold"
