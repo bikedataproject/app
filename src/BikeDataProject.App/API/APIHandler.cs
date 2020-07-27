@@ -52,5 +52,15 @@ namespace BikeDataProject.App.API
 
             return JsonConvert.DeserializeObject<UserInfo>(content);
         }
+
+        public async Task<WorldStatistics> GetWorldStatisticsAsync() 
+        {
+            HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Get, Constants.WorldStatisticsEndPoint);
+
+            var response = await client.SendAsync(requestMessage);
+            var content = await response.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<WorldStatistics>(content);
+        }
     }
 }

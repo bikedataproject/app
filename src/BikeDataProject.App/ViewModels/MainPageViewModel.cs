@@ -7,6 +7,7 @@ using Xamarin.Essentials;
 using BikeDataProject.App.Models;
 using System.Collections.Generic;
 using System.Linq;
+using BikeDataProject.App.API;
 
 namespace BikeDataProject.App.ViewModels
 {
@@ -14,6 +15,7 @@ namespace BikeDataProject.App.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        APIHandler handler;
         private bool _state = false;
         private object _sync = new object();
 
@@ -21,6 +23,8 @@ namespace BikeDataProject.App.ViewModels
         {
             // Make sure the spinnnig wheel isn't running
             Running = false;
+
+            handler = new APIHandler();
 
             _ = InitializeStatisticsAsync();
 
@@ -200,6 +204,8 @@ namespace BikeDataProject.App.ViewModels
 
             TotalDistance = CalculateTotalDistance(rideInfos);
             TotalTime = CalculateTotalTime(rideInfos);
+
+            await GetWorldStatisticsAsync();
         }
 
         /// <summary>
@@ -225,6 +231,12 @@ namespace BikeDataProject.App.ViewModels
                 total += ride.ElapsedTime;
             }
             return total;
+        }
+
+
+        private async Task<WorldStatistics> GetWorldStatisticsAsync() 
+        {
+            return await handler.GetWorldStatisticsAsync();
         }
     }
 }

@@ -11,6 +11,7 @@ namespace BikeDataProject.App
         public const string BaseAPIUri = "https://api.bikedataproject.info/";
         public const string StoreTrackEndPoint = "geo/Track/StoreTrack";
         public const string UserIdEndPoint = "registrations/MobileApp";
+        public const string WorldStatisticsEndPoint = "geo/Track/Publish";
 
         public const string ApplicationJson = "application/json";
 
