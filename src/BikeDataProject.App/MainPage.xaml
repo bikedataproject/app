@@ -19,6 +19,33 @@
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
             </Style>
+            <Style x:Key="StatisticsTitle" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontFamily" Value="Roboto"/>
+            </Style>
+            <Style x:Key="StatisticsValueWrapper" TargetType="Frame">
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="HasShadow" Value="False"/>
+            </Style>
+            <Style x:Key="StatisticsValue" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="15,0,15,0"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontFamily" Value="Roboto"/>
+            </Style>
+            <Style x:Key="StatisticsValueInfo" TargetType="Label">
+                <Setter Property="FontFamily" Value="Roboto"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -26,6 +53,7 @@
         <Frame Padding="0" BackgroundColor="{StaticResource backgroundColor}">
             <Grid>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -55,9 +83,58 @@
                    HorizontalTextAlignment="Center"
                    Margin="0,20,0,0"/>
 
-                <ActivityIndicator Grid.Row="3" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}" Margin="0,50,0,0"/>
+                <!-- Personal statistics component -->
+                <Frame Grid.Row="3" Grid.Column="1" BackgroundColor="White" Margin="0,20,0,0" Padding="0,5,0,5" CornerRadius="10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
 
-                <Button Grid.Row="4" Grid.Column="1" 
+                        <!-- Title -->
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Grid.Row="0" Text="YOUR DATA" Style="{StaticResource StatisticsTitle}" FontSize="20"/>
+                            <BoxView Grid.Row="1" Color="LightGray" HeightRequest="1" Margin="10,0,10,0"/>
+                        </Grid>
+
+                        <!-- Km's Collected -->
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Frame Grid.Row="0" Style="{StaticResource StatisticsValueWrapper}">
+                                <Label Text="1.302" Style="{StaticResource StatisticsValue}"/>
+                            </Frame>
+                            <Label Grid.Row="1" Text="KM's Collected" Style="{StaticResource StatisticsValueInfo}"/>
+                        </Grid>
+
+                        <!-- Hours Cycled -->
+                        <Grid Grid.Row="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Frame Grid.Row="0" Style="{StaticResource StatisticsValueWrapper}">
+                                <Label Text="79" Style="{StaticResource StatisticsValue}"/>
+                            </Frame>
+                            <Label Grid.Row="1" Text="Hours Cycled" Style="{StaticResource StatisticsValueInfo}"/>
+                        </Grid>
+
+                    </Grid>
+                </Frame>
+
+                <ActivityIndicator Grid.Row="4" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}" Margin="0,0,0,0"/>
+
+                <Button Grid.Row="5" Grid.Column="1" 
                         Text="Start Tracking" 
                         IsEnabled="False" 
                         Command="{Binding StartTrackingCommand}" 
