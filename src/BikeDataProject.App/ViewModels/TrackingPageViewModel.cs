@@ -232,7 +232,7 @@ namespace BikeDataProject.App.ViewModels
         private async Task<long> CreateRideInfoAsync()
         {
             await App.Database.SaveRideInfoAsync(new RideInfo() { AmountOfKm = 0, ElapsedTime = new TimeSpan(0) });
-            var ids = await App.Database.GetLastRideInfoId();
+            var ids = await App.Database.GetLastRideInfo();
 
             if (ids.Count > 0) return ids.First().ID;
             return -1;
