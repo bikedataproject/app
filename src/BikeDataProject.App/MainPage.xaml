@@ -66,18 +66,21 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
+                <!-- Title -->
                 <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Margin="0,50,0,20">
                     <Label Text="THE" Style="{StaticResource labelTitle}"></Label>
                     <Label Text="BIKE DATA" Style="{StaticResource labelTitle}"></Label>
                     <Label Text="PROJECT" Style="{StaticResource labelTitle}"></Label>
                 </StackLayout>
 
+                <!-- Black line-->
                 <BoxView Grid.Row="1" Grid.Column="1" 
                      Color="Black" 
                      VerticalOptions="Center"
                      HorizontalOptions="FillAndExpand" 
                      HeightRequest="3"/>
 
+                <!-- Description -->
                 <Label Grid.Row="2" Grid.Column="1"
                    Text="Help cities find better solutions for mobility problems by sharing your bike ride with us. You wont be recognizable by your given data" 
                    HorizontalTextAlignment="Center"
@@ -132,8 +135,10 @@
                     </Grid>
                 </Frame>
 
+                <!-- Spinning wheel -->
                 <ActivityIndicator Grid.Row="4" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}" Margin="0,0,0,0"/>
 
+                <!-- Button to start tracking -->
                 <Button Grid.Row="5" Grid.Column="1" 
                         Text="Start Tracking" 
                         IsEnabled="False" 
@@ -146,5 +151,4 @@
             </Grid>
         </Frame>
     </ContentPage.Content>
-
 </ContentPage>

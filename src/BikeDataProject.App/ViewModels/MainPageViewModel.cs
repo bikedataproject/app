@@ -20,12 +20,15 @@ namespace BikeDataProject.App.ViewModels
 
         public MainPageViewModel()
         {
+            // Make sure the spinnnig wheel isn't running
             Running = false;
 
             _ = InitializeStatisticsAsync();
 
+            // Execute this code when the button in MainPage is pressed
             StartTrackingCommand = new Command(async () =>
             {
+                // Make sure the user can't press the button multiple times
                 lock (_sync)
                 {
 
@@ -35,7 +38,7 @@ namespace BikeDataProject.App.ViewModels
 
                 try
                 {
-                    //await InitializeStatisticsAsync();
+                    // Navigate to TrackingPage if app has locationpermission and the location is enabled
                     if (await GetLocationPermissions())
                     {
                         if (await GetLocation())
@@ -68,6 +71,9 @@ namespace BikeDataProject.App.ViewModels
 
         public Command StartTrackingCommand { get; }
 
+        /// <summary>
+        /// To enable/disable ActivityIndicator (spinning wheel)
+        /// </summary>
         bool running;
         public bool Running
         {
@@ -80,6 +86,9 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        /// <summary>
+        /// The total distance that a user has cycled (in meters)
+        /// </summary>
         double totalDistance;
         public double TotalDistance
         {
@@ -92,6 +101,9 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        /// <summary>
+        /// The total time the user has cycled
+        /// </summary>
         TimeSpan totalTime;
         public TimeSpan TotalTime
         {
@@ -104,6 +116,10 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        /// <summary>
+        /// Check if the user has granted permission to use the location
+        /// </summary>
+        /// <returns>True if the user has granted permissions, else false</returns>
         private async Task<bool> GetLocationPermissions()
         {
             var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
@@ -117,6 +133,11 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        /// <summary>
+        /// Gets the current location of the user
+        /// This function is just to check if the location is enabled and supported on the phone
+        /// </summary>
+        /// <returns>True if no exception is thrown</returns>
         private async Task<Boolean> GetLocation()
         {
             try
@@ -150,6 +171,9 @@ namespace BikeDataProject.App.ViewModels
 
         }
 
+        /// <summary>
+        /// Navigates to the TrackingPage and and initialize the bindingContext to set the connection between the view and the ViewModel
+        /// </summary>
         private async Task NavigateToTrackingPage()
         {
             var trackingVM = new TrackingPageViewModel();
@@ -159,30 +183,41 @@ namespace BikeDataProject.App.ViewModels
             await Application.Current.MainPage.Navigation.PushAsync(trackingPage);
         }
 
+        /// <summary>
+        /// Request permission to use location functionality
+        /// </summary>
+        /// <returns></returns>
         private async Task RequestLocationPermission()
         {
             await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
         }
 
+        /// <summary>
+        /// Initialize the statistics, these are: TotalDistance and TotalTime
+        /// </summary>
         private async Task InitializeStatisticsAsync() 
         {
             List<RideInfo> rideInfos = await App.Database.GetRideInfoAsync();
-            //foreach (RideInfo ride in rideInfos) 
-            //{
-            //    Debug.WriteLine($"-------- {ride.AmountOfKm} {ride.ElapsedTime} {ride.ID}");
-            //}
 
             TotalDistance = CalculateTotalDistance(rideInfos);
             TotalTime = CalculateTotalTime(rideInfos);
-
-            //Debug.WriteLine($"------------- Total distance: {totalDistance} Total time: {totalTime}");
         }
 
+        /// <summary>
+        /// Calculate the total distance that a user has cycled
+        /// </summary>
+        /// <param name="rides">List of RideInfo-objects</param>
+        /// <returns>The total cycled distance in meters</returns>
         private double CalculateTotalDistance(List<RideInfo> rides) 
         {
             return rides.Sum(ride => ride.AmountOfKm);
         }
 
+        /// <summary>
+        /// Calculate the total time that a user has cycled
+        /// </summary>
+        /// <param name="rides">List of RideInfo-objects</param>
+        /// <returns>The total cylcled time</returns>
         private TimeSpan CalculateTotalTime(List<RideInfo> rides) 
         {
             TimeSpan total = new TimeSpan(0);
