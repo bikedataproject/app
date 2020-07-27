@@ -204,8 +204,6 @@ namespace BikeDataProject.App.ViewModels
 
             TotalDistance = CalculateTotalDistance(rideInfos);
             TotalTime = CalculateTotalTime(rideInfos);
-
-            await GetWorldStatisticsAsync();
         }
 
         /// <summary>
@@ -233,7 +231,10 @@ namespace BikeDataProject.App.ViewModels
             return total;
         }
 
-
+        /// <summary>
+        /// Gets the statistics (aggregated data) of all the cyclists bike rides
+        /// </summary>
+        /// <returns></returns>
         private async Task<WorldStatistics> GetWorldStatisticsAsync() 
         {
             return await handler.GetWorldStatisticsAsync();

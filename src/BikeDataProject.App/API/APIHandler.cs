@@ -53,6 +53,10 @@ namespace BikeDataProject.App.API
             return JsonConvert.DeserializeObject<UserInfo>(content);
         }
 
+        /// <summary>
+        /// Gets the statistics (aggregated data) of all the cyclists bike rides
+        /// </summary>
+        /// <returns>A WorldStatistics object</returns>
         public async Task<WorldStatistics> GetWorldStatisticsAsync() 
         {
             HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Get, Constants.WorldStatisticsEndPoint);
