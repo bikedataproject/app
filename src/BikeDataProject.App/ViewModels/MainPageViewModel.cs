@@ -4,6 +4,10 @@ using System.ComponentModel;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
+using BikeDataProject.App.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Diagnostics;
 
 namespace BikeDataProject.App.ViewModels
 {
@@ -17,6 +21,9 @@ namespace BikeDataProject.App.ViewModels
         public MainPageViewModel()
         {
             Running = false;
+
+            _ = InitializeStatisticsAsync();
+
             StartTrackingCommand = new Command(async () =>
             {
                 lock (_sync)
@@ -28,6 +35,7 @@ namespace BikeDataProject.App.ViewModels
 
                 try
                 {
+                    //await InitializeStatisticsAsync();
                     if (await GetLocationPermissions())
                     {
                         if (await GetLocation())
@@ -68,6 +76,30 @@ namespace BikeDataProject.App.ViewModels
             {
                 running = value;
                 var args = new PropertyChangedEventArgs(nameof(Running));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        double totalDistance;
+        public double TotalDistance
+        {
+            get => totalDistance;
+            set
+            {
+                totalDistance = value;
+                var args = new PropertyChangedEventArgs(nameof(TotalDistance));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        TimeSpan totalTime;
+        public TimeSpan TotalTime
+        {
+            get => totalTime;
+            set
+            {
+                totalTime = value;
+                var args = new PropertyChangedEventArgs(nameof(TotalTime));
                 PropertyChanged?.Invoke(this, args);
             }
         }
@@ -130,6 +162,35 @@ namespace BikeDataProject.App.ViewModels
         private async Task RequestLocationPermission()
         {
             await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+        }
+
+        private async Task InitializeStatisticsAsync() 
+        {
+            List<RideInfo> rideInfos = await App.Database.GetRideInfoAsync();
+            //foreach (RideInfo ride in rideInfos) 
+            //{
+            //    Debug.WriteLine($"-------- {ride.AmountOfKm} {ride.ElapsedTime} {ride.ID}");
+            //}
+
+            TotalDistance = CalculateTotalDistance(rideInfos);
+            TotalTime = CalculateTotalTime(rideInfos);
+
+            //Debug.WriteLine($"------------- Total distance: {totalDistance} Total time: {totalTime}");
+        }
+
+        private double CalculateTotalDistance(List<RideInfo> rides) 
+        {
+            return rides.Sum(ride => ride.AmountOfKm);
+        }
+
+        private TimeSpan CalculateTotalTime(List<RideInfo> rides) 
+        {
+            TimeSpan total = new TimeSpan(0);
+            foreach (RideInfo ride in rides) 
+            {
+                total += ride.ElapsedTime;
+            }
+            return total;
         }
     }
 }

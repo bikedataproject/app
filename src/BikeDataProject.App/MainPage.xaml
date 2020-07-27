@@ -111,7 +111,7 @@
                             </Grid.RowDefinitions>
 
                             <Frame Grid.Row="0" Style="{StaticResource StatisticsValueWrapper}">
-                                <Label Text="1.302" Style="{StaticResource StatisticsValue}"/>
+                                <Label Text="{Binding TotalDistance, StringFormat='{0:0.00}'}" Style="{StaticResource StatisticsValue}"/>
                             </Frame>
                             <Label Grid.Row="1" Text="KM's Collected" Style="{StaticResource StatisticsValueInfo}"/>
                         </Grid>
@@ -124,9 +124,9 @@
                             </Grid.RowDefinitions>
 
                             <Frame Grid.Row="0" Style="{StaticResource StatisticsValueWrapper}">
-                                <Label Text="79" Style="{StaticResource StatisticsValue}"/>
+                                <Label Text="{Binding TotalTime, StringFormat='{}{0:hh}:{0:mm}'}" Style="{StaticResource StatisticsValue}"/>
                             </Frame>
-                            <Label Grid.Row="1" Text="Hours Cycled" Style="{StaticResource StatisticsValueInfo}"/>
+                            <Label Grid.Row="1" Text="Time Cycled" Style="{StaticResource StatisticsValueInfo}"/>
                         </Grid>
 
                     </Grid>
