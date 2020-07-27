@@ -50,7 +50,7 @@ namespace BikeDataProject.App.ViewModels
 
                     Running = true;
 
-                    await App.Database.SaveRideInfoAsync(new RideInfo() { ID = rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
+                    await SaveRideInfoAsync();
 
                     await NavigateToTrackingSummaryPage();
 
@@ -108,6 +108,7 @@ namespace BikeDataProject.App.ViewModels
                     else
                     {
                         Running = true;
+                        await SaveRideInfoAsync();
                         await MainThread.InvokeOnMainThreadAsync(this.NavigateToTrackingSummaryPage);
                         Running = false;
                     }
@@ -199,6 +200,11 @@ namespace BikeDataProject.App.ViewModels
 
             if (ids.Count > 0) return ids.First().ID;
             return -1;
+        }
+
+        private async Task SaveRideInfoAsync() 
+        {
+            await App.Database.SaveRideInfoAsync(new RideInfo() { ID = rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
         }
     }
 }
