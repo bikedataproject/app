@@ -66,6 +66,9 @@ namespace BikeDataProject.App.ViewModels
                         await DeleteAllLocationsAsync();
                     }
 
+                    // Execute code so that the statistics in MainPageViewModel are updated
+                    MessagingCenter.Send<ShortSummaryPageViewModel>(this, "reload");
+
                     Running = false;
                     await NavigateToMainPage();
                 }

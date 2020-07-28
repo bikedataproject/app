@@ -8,6 +8,7 @@ using BikeDataProject.App.Models;
 using System.Collections.Generic;
 using System.Linq;
 using BikeDataProject.App.API;
+using System.Diagnostics;
 
 namespace BikeDataProject.App.ViewModels
 {
@@ -69,6 +70,12 @@ namespace BikeDataProject.App.ViewModels
                 {
                     _state = false;
                 }
+            });
+
+            // The statistics need to be updated when a user finishes a track
+            MessagingCenter.Subscribe<ShortSummaryPageViewModel>(this, "reload", async(sender) =>
+            {
+                await InitializeStatisticsAsync();
             });
         }
 
