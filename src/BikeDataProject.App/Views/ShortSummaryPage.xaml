@@ -6,11 +6,96 @@
              mc:Ignorable="d"
              x:Class="BikeDataProject.App.Views.ShortSummaryPage"
              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <Style x:Key="trackingValue" TargetType="Label">
+            <Setter Property="BackgroundColor" Value="Black"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontFamily" Value="Roboto"/>
+        </Style>
+        <Style x:Key="trackingValueInfo" TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontFamily" Value="Roboto"/>
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Frame Padding="0" BackgroundColor="{StaticResource backgroundColor}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                
+                <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="{StaticResource white}" Padding="0" Margin="0,20,0,0" CornerRadius="10">
+                    <Grid Margin="20,10,20,10" VerticalOptions="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                         <!--Distance--> 
+                        <Grid Grid.Column="0" Margin="0,5,10,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Grid.Row="0" Text="0.45 km" Style="{StaticResource trackingValue}"/>
+                            <Label Grid.Row="1" Text="DISTANCE" Style="{StaticResource trackingValueInfo}"/>
+                        </Grid>
+
+                         <!--Vertical line--> 
+                        <BoxView Grid.Column="1" Margin="0" Color="LightGray" WidthRequest="1"/>
+
+                         <!--Time--> 
+                        <Grid Grid.Column="2" Margin="10,5,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Grid.Row="0" Text="00:10" Style="{StaticResource trackingValue}"/>
+                            <Label Grid.Row="1" Text="TIME" Style="{StaticResource trackingValueInfo}"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+
+                <Label Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                       Text="Thank you for collecting the data! Please submit the data so you can contribute to a world where cyclist are more visible!"
+                       TextColor="Black"
+                       FontSize="20"
+                       Padding="20,0,20,0"/>
+
+                <!-- Buttons -->
+                <Grid Grid.Row="3" Grid.Column="1" Margin="0,0,0,50" VerticalOptions="End">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="0" Grid.Column="1" Text="Submit" TextColor="White" BackgroundColor="{StaticResource green}" CornerRadius="5"/>
+                    <Button Grid.Row="1" Grid.Column="1" Text="Discard" TextColor="Black" BackgroundColor="Transparent" HorizontalOptions="Center" />
+                </Grid>
+            </Grid>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>

@@ -16,6 +16,7 @@
             <Color x:Key="loadingColor">#000000</Color>
             <Color x:Key="green">#5E9444</Color>
             <Color x:Key="red">#E34C4C</Color>
+            <Color x:Key="white">#FFFFFF</Color>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
