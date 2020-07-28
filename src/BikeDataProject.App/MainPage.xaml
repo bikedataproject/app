@@ -141,13 +141,13 @@
                 <!-- Button to start tracking -->
                 <Button Grid.Row="5" Grid.Column="1" 
                         Text="Start Tracking" 
-                        IsEnabled="False" 
                         Command="{Binding StartTrackingCommand}" 
                         Style="{StaticResource buttonTracking}" 
                         BackgroundColor="{StaticResource green}"
                         FontAttributes="Bold"
                         VerticalOptions="End"
-                        Margin="0,0,0,50"/>
+                        Margin="0,0,0,50"
+                        IsEnabled="{Binding IsEnabled}"/>
             </Grid>
         </Frame>
     </ContentPage.Content>

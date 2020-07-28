@@ -75,7 +75,7 @@
                 </Frame>
 
                 <Label Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-                       Text="Thank you for collecting the data! Please submit the data so you can contribute to a world where cyclist are more visible!"
+                       Text="Thank you for collecting the data! Please submit the data so you can contribute to a world where cyclists are more visible!"
                        TextColor="Black"
                        FontSize="20"
                        Padding="20,0,20,0"/>

@@ -17,13 +17,12 @@ namespace BikeDataProject.App.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         APIHandler handler;
-        private bool _state = false;
-        private object _sync = new object();
 
         public MainPageViewModel()
         {
             // Make sure the spinnnig wheel isn't running
             Running = false;
+            IsEnabled = true;
 
             handler = new APIHandler();
 
@@ -32,48 +31,34 @@ namespace BikeDataProject.App.ViewModels
             // Execute this code when the button in MainPage is pressed
             StartTrackingCommand = new Command(async () =>
             {
-                // Make sure the user can't press the button multiple times
-                lock (_sync)
+                IsEnabled = false;
+                // Navigate to TrackingPage if app has locationpermission and the location is enabled
+                if (await GetLocationPermissions())
                 {
-
-                    if (_state) return;
-                    _state = true;
+                    if (await GetLocation())
+                    {
+                        await NavigateToTrackingPage();
+                    }
+                    IsEnabled = true;
                 }
-
-                try
+                else
                 {
-                    // Navigate to TrackingPage if app has locationpermission and the location is enabled
+                    await RequestLocationPermission();
                     if (await GetLocationPermissions())
                     {
                         if (await GetLocation())
                         {
                             await NavigateToTrackingPage();
+                            IsEnabled = true;
                         }
+                        IsEnabled = true;
                     }
-                    else
-                    {
-                        await RequestLocationPermission();
-                        if (await GetLocationPermissions())
-                        {
-                            if (await GetLocation())
-                            {
-                                await NavigateToTrackingPage();
-                            }
-                        }
-                    }
-                }
-                catch (Exception e)
-                {
-                    // TODO: log exception here!
-                }
-                finally
-                {
-                    _state = false;
+                    IsEnabled = true;
                 }
             });
 
             // The statistics need to be updated when a user finishes a track
-            MessagingCenter.Subscribe<ShortSummaryPageViewModel>(this, "reload", async(sender) =>
+            MessagingCenter.Subscribe<ShortSummaryPageViewModel>(this, "reload", async (sender) =>
             {
                 await InitializeStatisticsAsync();
             });
@@ -122,6 +107,21 @@ namespace BikeDataProject.App.ViewModels
             {
                 totalTime = value;
                 var args = new PropertyChangedEventArgs(nameof(TotalTime));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        /// <summary>
+        /// To enable/disable button
+        /// </summary>
+        bool isEnabled;
+        public bool IsEnabled
+        {
+            get => isEnabled;
+            set
+            {
+                isEnabled = value;
+                var args = new PropertyChangedEventArgs(nameof(IsEnabled));
                 PropertyChanged?.Invoke(this, args);
             }
         }
@@ -205,7 +205,7 @@ namespace BikeDataProject.App.ViewModels
         /// <summary>
         /// Initialize the statistics, these are: TotalDistance and TotalTime
         /// </summary>
-        private async Task InitializeStatisticsAsync() 
+        private async Task InitializeStatisticsAsync()
         {
             List<RideInfo> rideInfos = await App.Database.GetRideInfoAsync();
 
@@ -218,7 +218,7 @@ namespace BikeDataProject.App.ViewModels
         /// </summary>
         /// <param name="rides">List of RideInfo-objects</param>
         /// <returns>The total cycled distance in kilometers</returns>
-        private double CalculateTotalDistance(List<RideInfo> rides) 
+        private double CalculateTotalDistance(List<RideInfo> rides)
         {
             return rides.Sum(ride => ride.AmountOfKm);
         }
@@ -228,10 +228,10 @@ namespace BikeDataProject.App.ViewModels
         /// </summary>
         /// <param name="rides">List of RideInfo-objects</param>
         /// <returns>The total cylcled time</returns>
-        private TimeSpan CalculateTotalTime(List<RideInfo> rides) 
+        private TimeSpan CalculateTotalTime(List<RideInfo> rides)
         {
             TimeSpan total = new TimeSpan(0);
-            foreach (RideInfo ride in rides) 
+            foreach (RideInfo ride in rides)
             {
                 total += ride.ElapsedTime;
             }
@@ -242,7 +242,7 @@ namespace BikeDataProject.App.ViewModels
         /// Gets the statistics (aggregated data) of all the cyclists bike rides
         /// </summary>
         /// <returns></returns>
-        private async Task<WorldStatistics> GetWorldStatisticsAsync() 
+        private async Task<WorldStatistics> GetWorldStatisticsAsync()
         {
             return await handler.GetWorldStatisticsAsync();
         }
