@@ -14,9 +14,6 @@ namespace BikeDataProject.App.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private bool _state = false;
-        private object _sync = new object();
-
         /// <summary>
         /// Stopwatch to time the current bike ride
         /// </summary>
@@ -41,18 +38,7 @@ namespace BikeDataProject.App.ViewModels
             StopTrackingCommand = new Command(async () =>
             {
                 IsEnabled = false;
-                //This doesn't work yet + when turning off location, it navigates twice!
-                //lock (_sync)
-                //{
-
-                //    if (_state) return;
-                //    _state = true;
-                //}
-
-                //try
-                //{
                 continueTimer = false;
-
                 Running = true;
 
                 await SaveRideInfoAsync();
@@ -62,15 +48,6 @@ namespace BikeDataProject.App.ViewModels
                 //await NavigateToTrackingSummaryPage();
 
                 Running = false;
-                //}
-                //catch (Exception e)
-                //{
-                //    // TODO: log exception here!
-                //}
-                //finally
-                //{
-                //    _state = false;
-                //}
 
             });
 
