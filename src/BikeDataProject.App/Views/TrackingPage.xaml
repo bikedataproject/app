@@ -89,7 +89,8 @@
                     Command="{Binding StopTrackingCommand}"
                     Style="{StaticResource buttonTracking}" BackgroundColor="{StaticResource red}" FontAttributes="Bold"
                     VerticalOptions="End"
-                    Margin="0,0,0,50"></Button>
+                    Margin="0,0,0,50"
+                    IsEnabled="{Binding IsEnabled}"/>
             </Grid>
         </Frame>
     </ContentPage.Content>

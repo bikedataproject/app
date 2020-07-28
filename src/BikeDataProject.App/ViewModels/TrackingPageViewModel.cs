@@ -30,6 +30,8 @@ namespace BikeDataProject.App.ViewModels
             Distance = 0;
             lastLoc = null;
 
+            IsEnabled = true;
+
             Task.Factory.StartNew(async () =>
             {
                 rideInfoId = await CreateRideInfoAsync();
@@ -38,35 +40,37 @@ namespace BikeDataProject.App.ViewModels
             // Save info to database and navigate to TrackingSummaryPage when the stop tracking button is pressed
             StopTrackingCommand = new Command(async () =>
             {
+                IsEnabled = false;
                 //This doesn't work yet + when turning off location, it navigates twice!
-                lock (_sync)
-                {
+                //lock (_sync)
+                //{
 
-                    if (_state) return;
-                    _state = true;
-                }
+                //    if (_state) return;
+                //    _state = true;
+                //}
 
-                try
-                {
-                    continueTimer = false;
+                //try
+                //{
+                continueTimer = false;
 
-                    Running = true;
+                Running = true;
 
-                    await SaveRideInfoAsync();
+                await SaveRideInfoAsync();
 
-                    await NavigateToShortSummaryPage();
-                    //await NavigateToTrackingSummaryPage();
+                IsEnabled = false;
+                await NavigateToShortSummaryPage();
+                //await NavigateToTrackingSummaryPage();
 
-                    Running = false;
-                }
-                catch (Exception e)
-                {
-                    // TODO: log exception here!
-                }
-                finally
-                {
-                    _state = false;
-                }
+                Running = false;
+                //}
+                //catch (Exception e)
+                //{
+                //    // TODO: log exception here!
+                //}
+                //finally
+                //{
+                //    _state = false;
+                //}
 
             });
 
@@ -112,11 +116,15 @@ namespace BikeDataProject.App.ViewModels
                     }
                     else
                     {
-                        Running = true;
-                        await SaveRideInfoAsync();
-                        await MainThread.InvokeOnMainThreadAsync(this.NavigateToShortSummaryPage);
-                        //await MainThread.InvokeOnMainThreadAsync(this.NavigateToTrackingSummaryPage);
-                        Running = false;
+                        if (IsEnabled)
+                        {
+                            Running = true;
+                            await SaveRideInfoAsync();
+                            await MainThread.InvokeOnMainThreadAsync(this.NavigateToShortSummaryPage);
+                            //await MainThread.InvokeOnMainThreadAsync(this.NavigateToTrackingSummaryPage);
+                            Running = false;
+                            IsEnabled = false;
+                        }
                     }
                 });
 
@@ -187,6 +195,21 @@ namespace BikeDataProject.App.ViewModels
         }
 
         /// <summary>
+        /// To enable/disable button
+        /// </summary>
+        bool isEnabled;
+        public bool IsEnabled
+        {
+            get => isEnabled;
+            set
+            {
+                isEnabled = value;
+                var args = new PropertyChangedEventArgs(nameof(IsEnabled));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        /// <summary>
         /// Navigates to the TrackingSummaryPage and initialize the bindingContext to set the connection between the view and the ViewModel
         /// Also add Distance and Elapsed time as parameters to the constructor
         /// </summary>
@@ -199,7 +222,7 @@ namespace BikeDataProject.App.ViewModels
             await Application.Current.MainPage.Navigation.PushAsync(trackingSummaryPage);
         }
 
-        private async Task NavigateToShortSummaryPage() 
+        private async Task NavigateToShortSummaryPage()
         {
             var shortSummaryVM = new ShortSummaryPageViewModel(Distance, ElapsedTime);
             var shortSummaryPage = new ShortSummaryPage();
@@ -251,7 +274,7 @@ namespace BikeDataProject.App.ViewModels
         /// <summary>
         /// Save the Distance and ElapsedTime to the database in a rideInfo object
         /// </summary>
-        private async Task SaveRideInfoAsync() 
+        private async Task SaveRideInfoAsync()
         {
             await App.Database.SaveRideInfoAsync(new RideInfo() { ID = rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
         }

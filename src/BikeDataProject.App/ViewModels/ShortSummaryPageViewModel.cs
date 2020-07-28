@@ -67,7 +67,6 @@ namespace BikeDataProject.App.ViewModels
                     }
 
                     Running = false;
-                    IsEnabledSubmit = true;
                     await NavigateToMainPage();
                 }
                 else
@@ -87,8 +86,6 @@ namespace BikeDataProject.App.ViewModels
                 {
                     // delete data
                     await DeleteLastRide();
-
-                    IsEnabledDiscard = true;
                     await NavigateToMainPage();
                 }
                 IsEnabledDiscard = true;
@@ -140,6 +137,9 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        /// <summary>
+        /// To enable/disable button
+        /// </summary>
         bool isEnabledDiscard;
         public bool IsEnabledDiscard
         {
@@ -152,6 +152,9 @@ namespace BikeDataProject.App.ViewModels
             }
         }
 
+        /// <summary>
+        /// To enable/disable button
+        /// </summary>
         bool isEnabledSubmit;
         public bool IsEnabledSubmit
         {
