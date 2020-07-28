@@ -80,6 +80,9 @@
                        FontSize="20"
                        Padding="20,0,20,0"/>
 
+                <!-- Spinning wheel -->
+                <ActivityIndicator Grid.Row="2" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}" Margin="0,0,0,0" VerticalOptions="Start"/>
+                
                 <!-- Buttons -->
                 <Grid Grid.Row="3" Grid.Column="1" Margin="0,0,0,50" VerticalOptions="End">
                     <Grid.RowDefinitions>

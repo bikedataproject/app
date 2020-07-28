@@ -36,6 +36,8 @@ namespace BikeDataProject.App.ViewModels
 
                 if (connectivity == NetworkAccess.Internet)
                 {
+                    Running = true;
+
                     // Check if the user already has a userId stored in the local database
                     // If true => use the already existing userId
                     // If false => request a userId from the server
@@ -60,6 +62,7 @@ namespace BikeDataProject.App.ViewModels
                         await DeleteAllLocationsAsync();
                     }
 
+                    Running = false;
                     await NavigateToMainPage();
                 }
                 else
@@ -109,6 +112,21 @@ namespace BikeDataProject.App.ViewModels
             {
                 elapsedTime = value;
                 var args = new PropertyChangedEventArgs(nameof(ElapsedTime));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        /// <summary>
+        /// To enable/disable ActivityIndicator (spinning wheel)
+        /// </summary>
+        bool running;
+        public bool Running
+        {
+            get => running;
+            set
+            {
+                running = value;
+                var args = new PropertyChangedEventArgs(nameof(Running));
                 PropertyChanged?.Invoke(this, args);
             }
         }
