@@ -22,6 +22,9 @@ namespace BikeDataProject.App.ViewModels
 
         public ShortSummaryPageViewModel(double dist, TimeSpan time)
         {
+            IsEnabledDiscard = true;
+            IsEnabledSubmit = true;
+
             Distance = dist;
             ElapsedTime = time;
 
@@ -29,6 +32,7 @@ namespace BikeDataProject.App.ViewModels
 
             SendTrackCommand = new Command(async () =>
             {
+                IsEnabledSubmit = false;
                 Guid userId;
 
                 // Check if user has internet connectivity
@@ -63,17 +67,20 @@ namespace BikeDataProject.App.ViewModels
                     }
 
                     Running = false;
+                    IsEnabledSubmit = true;
                     await NavigateToMainPage();
                 }
                 else
                 {
                     await Application.Current.MainPage.DisplayAlert("Alert", "Please enable internet connection", "Ok");
+                    IsEnabledSubmit = true;
                 }
 
             });
 
             DiscardTrackCommand = new Command(async () =>
             {
+                IsEnabledDiscard = false;
                 bool discard = await DiscardData();
 
                 if (discard)
@@ -81,8 +88,10 @@ namespace BikeDataProject.App.ViewModels
                     // delete data
                     await DeleteLastRide();
 
+                    IsEnabledDiscard = true;
                     await NavigateToMainPage();
                 }
+                IsEnabledDiscard = true;
             });
         }
 
@@ -127,6 +136,30 @@ namespace BikeDataProject.App.ViewModels
             {
                 running = value;
                 var args = new PropertyChangedEventArgs(nameof(Running));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool isEnabledDiscard;
+        public bool IsEnabledDiscard
+        {
+            get => isEnabledDiscard;
+            set
+            {
+                isEnabledDiscard = value;
+                var args = new PropertyChangedEventArgs(nameof(IsEnabledDiscard));
+                PropertyChanged?.Invoke(this, args);
+            }
+        }
+
+        bool isEnabledSubmit;
+        public bool IsEnabledSubmit
+        {
+            get => isEnabledSubmit;
+            set
+            {
+                isEnabledSubmit = value;
+                var args = new PropertyChangedEventArgs(nameof(IsEnabledSubmit));
                 PropertyChanged?.Invoke(this, args);
             }
         }
