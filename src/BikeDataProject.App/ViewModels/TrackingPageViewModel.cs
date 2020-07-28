@@ -54,7 +54,8 @@ namespace BikeDataProject.App.ViewModels
 
                     await SaveRideInfoAsync();
 
-                    await NavigateToTrackingSummaryPage();
+                    await NavigateToShortSummaryPage();
+                    //await NavigateToTrackingSummaryPage();
 
                     Running = false;
                 }
@@ -113,7 +114,8 @@ namespace BikeDataProject.App.ViewModels
                     {
                         Running = true;
                         await SaveRideInfoAsync();
-                        await MainThread.InvokeOnMainThreadAsync(this.NavigateToTrackingSummaryPage);
+                        await MainThread.InvokeOnMainThreadAsync(this.NavigateToShortSummaryPage);
+                        //await MainThread.InvokeOnMainThreadAsync(this.NavigateToTrackingSummaryPage);
                         Running = false;
                     }
                 });
@@ -195,6 +197,14 @@ namespace BikeDataProject.App.ViewModels
             trackingSummaryPage.BindingContext = trackingSummaryVM;
 
             await Application.Current.MainPage.Navigation.PushAsync(trackingSummaryPage);
+        }
+
+        private async Task NavigateToShortSummaryPage() 
+        {
+            var shortSummaryVM = new ShortSummaryPageViewModel(Distance, ElapsedTime);
+            var shortSummaryPage = new ShortSummaryPage();
+            shortSummaryPage.BindingContext = shortSummaryVM;
+            await Application.Current.MainPage.Navigation.PushAsync(shortSummaryPage);
         }
 
         /// <summary>
