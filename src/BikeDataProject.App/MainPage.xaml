@@ -57,7 +57,6 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -80,14 +79,8 @@
                      HorizontalOptions="FillAndExpand" 
                      HeightRequest="3"/>
 
-                <!-- Description -->
-                <Label Grid.Row="2" Grid.Column="1"
-                   Text="Help cities find better solutions for mobility problems by sharing your bike ride with us. You wont be recognizable by your given data" 
-                   HorizontalTextAlignment="Center"
-                   Margin="0,20,0,0"/>
-
                 <!-- Personal statistics component -->
-                <Frame Grid.Row="3" Grid.Column="1" BackgroundColor="White" Margin="0,20,0,0" Padding="0,5,0,5" CornerRadius="10">
+                <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="White" Margin="0,20,0,0" Padding="0,5,0,5" CornerRadius="10">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto"/>
@@ -136,10 +129,10 @@
                 </Frame>
 
                 <!-- Spinning wheel -->
-                <ActivityIndicator Grid.Row="4" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}" Margin="0,0,0,0"/>
+                <ActivityIndicator Grid.Row="3" Grid.Column="1" Color="{StaticResource loadingColor}" IsRunning="{Binding Running}" Margin="0,0,0,0"/>
 
                 <!-- Button to start tracking -->
-                <Button Grid.Row="5" Grid.Column="1" 
+                <Button Grid.Row="4" Grid.Column="1" 
                         Text="Start Tracking" 
                         Command="{Binding StartTrackingCommand}" 
                         Style="{StaticResource buttonTracking}" 
