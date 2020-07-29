@@ -69,16 +69,6 @@ namespace BikeDataProject.App.Database
         }
 
         /// <summary>
-        /// Gets all the locations from a certain bike ride
-        /// </summary>
-        /// <param name="rideInfoId">The id of the bike ride</param>
-        /// <returns>A list of all the locations from a certain bike ride</returns>
-        public Task<List<Loc>> GetLocationsAsync(long rideInfoId)
-        {
-            return Database.QueryAsync<Loc>($"SELECT * FROM [LOC] WHERE [RIDEINFOID] = {rideInfoId}");
-        }
-
-        /// <summary>
         /// Saves the location
         /// </summary>
         /// <param name="location">The location to save</param>
