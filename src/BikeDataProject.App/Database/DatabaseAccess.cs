@@ -50,11 +50,12 @@ namespace BikeDataProject.App.Database
                 if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(UserInfo).Name))
                 {
                     await Database.CreateTablesAsync(CreateFlags.None, typeof(UserInfo)).ConfigureAwait(false);
-                    if (initLoc && initRideInfo)
-                    {
-                        initialized = true;
-                    }
+                    //if (initLoc && initRideInfo)
+                    //{
+                    //    initialized = true;
+                    //}
                 }
+                initialized = true;
             }
         }
 
@@ -72,7 +73,7 @@ namespace BikeDataProject.App.Database
         /// </summary>
         /// <param name="rideInfoId">The id of the bike ride</param>
         /// <returns>A list of all the locations from a certain bike ride</returns>
-        public Task<List<Loc>> GetLocationsAsync(long rideInfoId) 
+        public Task<List<Loc>> GetLocationsAsync(long rideInfoId)
         {
             return Database.QueryAsync<Loc>($"SELECT * FROM [LOC] WHERE [RIDEINFOID] = {rideInfoId}");
         }
@@ -98,9 +99,9 @@ namespace BikeDataProject.App.Database
         /// Gets the last bike ride
         /// </summary>
         /// <returns>A list containing the last bike ride</returns>
-        public Task<List<RideInfo>> GetLastRideInfo()
+        public Task<RideInfo> GetLastRideInfo() 
         {
-            return Database.QueryAsync<RideInfo>("SELECT * FROM RideInfo ORDER BY ID DESC LIMIT 1");
+            return Database.Table<RideInfo>().OrderByDescending(r => r.ID).FirstOrDefaultAsync();
         }
 
         /// <summary>
@@ -125,7 +126,7 @@ namespace BikeDataProject.App.Database
         /// </summary>
         /// <param name="userInfo">The user info to save</param>
         /// <returns>The amount of rows that are added or updated</returns>
-        public Task<int> SaveUserInfo(UserInfo userInfo) 
+        public Task<int> SaveUserInfo(UserInfo userInfo)
         {
             return Database.InsertAsync(userInfo);
         }
@@ -134,9 +135,9 @@ namespace BikeDataProject.App.Database
         /// Gets all the rideInfo's
         /// </summary>
         /// <returns>Returns a list of all the bike rides</returns>
-        public Task<List<RideInfo>> GetRideInfoAsync() 
+        public Task<List<RideInfo>> GetRideInfoAsync()
         {
-            return Database.Table<RideInfo>().ToListAsync();        
+            return Database.Table<RideInfo>().ToListAsync();
         }
 
         /// <summary>
@@ -144,7 +145,7 @@ namespace BikeDataProject.App.Database
         /// </summary>
         /// <param name="rideInfoId">The id of the bike ride</param>
         /// <returns></returns>
-        public Task<List<Loc>> DeleteLocationsFromRide(long rideInfoId) 
+        public Task<List<Loc>> DeleteLocationsFromRide(long rideInfoId)
         {
             return Database.QueryAsync<Loc>($"DELETE FROM LOC WHERE RIDEINFOID  = {rideInfoId}");
         }
@@ -154,7 +155,7 @@ namespace BikeDataProject.App.Database
         /// </summary>
         /// <param name="rideInfoId">The id of rideInfo the delete</param>
         /// <returns></returns>
-        public Task<List<RideInfo>> DeleteRideAsync(long rideInfoId) 
+        public Task<List<RideInfo>> DeleteRideAsync(long rideInfoId)
         {
             return Database.QueryAsync<RideInfo>($"DELETE FROM RIDEINFO WHERE ID = {rideInfoId}");
         }
@@ -163,19 +164,28 @@ namespace BikeDataProject.App.Database
         /// Deletes all the locations
         /// </summary>
         /// <returns>The amount of rows that are deleted</returns>
-        public Task<int> DeleteAllLocationsAsync() 
+        public Task<int> DeleteAllLocationsAsync()
         {
             return Database.DeleteAllAsync<Loc>();
         }
-        
+
         /// <summary>
         /// Get the user info
         /// </summary>
         /// <returns>A list of user info objects (the list should maximum have 1 userInfo object)</returns>
-        public Task<List<UserInfo>> GetUserInfos() 
+        public Task<List<UserInfo>> GetUserInfos()
         {
             return Database.Table<UserInfo>().ToListAsync();
         }
 
+        //public Task<int> DeleteAllRides()
+        //{
+        //    return Database.DeleteAllAsync<RideInfo>();
+        //}
+
+        //public Task<int> DeleteAllUsers()
+        //{
+        //    return Database.DeleteAllAsync<UserInfo>();
+        //}
     }
 }

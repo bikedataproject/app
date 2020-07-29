@@ -242,9 +242,9 @@ namespace BikeDataProject.App.ViewModels
         private async Task DeleteLastRide()
         {
             var lastRide = await App.Database.GetLastRideInfo();
-            await App.Database.DeleteLocationsFromRide(lastRide[0].ID);
+            await App.Database.DeleteLocationsFromRide(lastRide.ID);
 
-            await App.Database.DeleteRideAsync(lastRide[0].ID);
+            await App.Database.DeleteRideAsync(lastRide.ID);
         }
 
         /// <summary>

@@ -31,6 +31,20 @@ namespace BikeDataProject.App.ViewModels
 
             Task.Factory.StartNew(async () =>
             {
+                var rides = await App.Database.GetRideInfoAsync();
+                Debug.WriteLine("------------- RideInfo");
+                foreach (RideInfo r in rides)
+                {
+                    Debug.WriteLine($"------------ Id: {r.ID}, dist: {r.AmountOfKm}, time: {r.ElapsedTime}");
+                }
+                Debug.WriteLine("------------- Locations");
+                var locs = await App.Database.GetLocationsAsync();
+                foreach (Loc l in locs)
+                {
+                    Debug.WriteLine($"--------- Loc: {l.ID}, time: {l.DateTimeOffset}, rideid: {l.RideInfoID}");
+                }
+
+
                 rideInfoId = await CreateRideInfoAsync();
                 Debug.WriteLine($"----- new ride info object created with id: {rideInfoId}");
             });
@@ -243,10 +257,8 @@ namespace BikeDataProject.App.ViewModels
         private async Task<long> CreateRideInfoAsync()
         {
             await App.Database.SaveRideInfoAsync(new RideInfo() { AmountOfKm = 0, ElapsedTime = new TimeSpan(0) });
-            var ids = await App.Database.GetLastRideInfo();
-
-            if (ids.Count > 0) return ids.First().ID;
-            return -1;
+            var lastRideInfo = await App.Database.GetLastRideInfo();
+            return lastRideInfo.ID;
         }
 
         /// <summary>
