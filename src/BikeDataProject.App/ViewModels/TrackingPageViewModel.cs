@@ -32,6 +32,7 @@ namespace BikeDataProject.App.ViewModels
             Task.Factory.StartNew(async () =>
             {
                 rideInfoId = await CreateRideInfoAsync();
+                Debug.WriteLine($"----- new ride info object created with id: {rideInfoId}");
             });
 
             // Save info to database and navigate to TrackingSummaryPage when the stop tracking button is pressed
@@ -253,6 +254,7 @@ namespace BikeDataProject.App.ViewModels
         /// </summary>
         private async Task SaveRideInfoAsync()
         {
+            Debug.WriteLine($"----------- Save ride info: id: {rideInfoId}");
             await App.Database.SaveRideInfoAsync(new RideInfo() { ID = rideInfoId, AmountOfKm = Distance, ElapsedTime = ElapsedTime });
         }
     }

@@ -100,7 +100,7 @@ namespace BikeDataProject.App.Database
         /// <returns>A list containing the last bike ride</returns>
         public Task<List<RideInfo>> GetLastRideInfo()
         {
-            return Database.QueryAsync<RideInfo>("SELECT * FROM RIDEINFO ORDER BY ID DESC LIMIT 1");
+            return Database.QueryAsync<RideInfo>("SELECT * FROM RideInfo ORDER BY ID DESC LIMIT 1");
         }
 
         /// <summary>
